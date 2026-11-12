@@ -24,7 +24,9 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install runtime deps
-        run: pip install requests
+        run: pip install requests yt-dlp
+      - name: Install ffmpeg (required by the HLS download selftests)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: Byte-compile all python
         run: python -m py_compile colab/ict_tui.py colab/build_notebook.py colab-mcp/server.py
       - name: Engine + bridge offline selftest (17 scenarios)
