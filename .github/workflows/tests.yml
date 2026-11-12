@@ -13,5 +13,40 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Offline regression suite
+      - name: Offline regression suite (bypass v3.0.2, 40 tests)
         run: node --test "ict-toolkit/tests/node/*.test.mjs"
+
+  python-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install runtime deps
+        run: pip install requests
+      - name: Byte-compile all python
+        run: python -m py_compile colab/ict_tui.py colab/build_notebook.py colab-mcp/server.py
+      - name: Engine + bridge offline selftest (17 scenarios)
+        run: python colab-mcp/server.py selftest
+
+  notebook-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild notebook from the engine
+        run: python colab/build_notebook.py
+      - name: Committed notebook must match the builder byte-for-byte
+        run: git diff --exit-code -- colab/ICT_TUI_Colab.ipynb
+      - name: JSON validity (notebook + playwright config)
+        run: |
+          python - <<'PY'
+          import json
+          for f in ("colab/ICT_TUI_Colab.ipynb", "playwright-mcp.config.json"):
+              with open(f, encoding="utf-8") as fh:
+                  json.load(fh)
+              print("ok", f)
+          PY

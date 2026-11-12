@@ -1,0 +1,16 @@
+ictfromabc self-pentest workspace
+Copyright (c) 2026 Javitha080. All rights reserved.
+
+This is a private security-research repository. It documents an authorized
+self-pentest of the author's own account on a named production service, plus
+tooling built for that engagement.
+
+No license is granted. You may not copy, distribute, publish, sublicense, or
+reuse any part of this repository or its artifacts without the author's
+written permission. Making the repository visible to a viewer (including via
+a future change of visibility) does not place its contents under any
+open-source license.
+
+Third-party material included as research evidence (e.g. site bundle
+snapshots under js/ and bundles/) remains the property of its respective
+owners and is included for analysis reference only.

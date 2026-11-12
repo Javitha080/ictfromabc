@@ -1,5 +1,7 @@
 # ictfromabc — self-pentest workspace
 
+[![tests](https://github.com/Javitha080/ictfromabc/actions/workflows/tests.yml/badge.svg)](https://github.com/Javitha080/ictfromabc/actions/workflows/tests.yml)
+
 Authorized security testing of **my own** ictfromabc.com student account
 (STUDENT role, user id 79787). Work ran 2026-09-11 → 2026-11-12 against my
 own account only — no third-party account, data, or privilege was touched,
@@ -7,7 +9,7 @@ and no actual privilege escalation was attempted (admin surface was probed
 from the STUDENT side and confirmed closed: 403 namespace-wide).
 
 **Status: complete.** Full evidence trail in [`TODO.md`](TODO.md) —
-items 1–33 closed.
+items 1–35 closed.
 
 ## Repo layout
 
@@ -56,9 +58,29 @@ items 1–33 closed.
 3. **Playwright test bed**: `playwright-mcp.config.json` is passed to the
    Playwright MCP via `--config` (see `opencode.jsonc` playwright entry).
    Init-scripts are file-backed and re-read on every context creation.
-4. **Tests**: `node --test "ict-toolkit\tests\node\*.test.mjs"` → 40/40.
+4. **Tests**: `node --test "ict-toolkit\tests\node\*.test.mjs"` → 40/40
+   (or `npm --prefix ict-toolkit test`).
 5. **Colab flow**: open `colab/ICT_TUI_Colab.ipynb`; the CONFIG cell ships
    empty and the TUI prompts with getpass at runtime.
+
+## Repo ops
+
+- **Branches**: `main` = stable (releases are tagged here), `develop` =
+  integration (feature branches land here via PR first). Force-pushes and
+  branch deletion are blocked on `main` where the plan allows protection.
+  See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+- **CI** (`.github/workflows/tests.yml`): every push runs the Node suite
+  (40/40), the offline Python engine/bridge selftest (17 scenarios via
+  `colab-mcp/server.py selftest`), and a notebook-sync check —
+  `colab/build_notebook.py` must reproduce `ICT_TUI_Colab.ipynb`
+  byte-for-byte.
+- **Dependabot**: weekly GitHub-Actions + npm (`ict-toolkit`) and monthly
+  pip (`colab`) version updates.
+- **Releases**: annotated `vX.Y.Z` tags on `main`; release assets are
+  extracted from the committed tree, never a dirty worktree. See
+  [Releases](../../releases).
+- **License**: none — all rights reserved, private research. See
+  [`LICENSE`](LICENSE).
 
 ## Secrets policy
 

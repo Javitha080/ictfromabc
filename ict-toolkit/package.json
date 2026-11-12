@@ -1,0 +1,14 @@
+{
+  "name": "ict-toolkit",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "ictfromabc self-pentest toolkit: userscripts, Node CLI, offline regression suite",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"tests/node/*.test.mjs\""
+  }
+}
