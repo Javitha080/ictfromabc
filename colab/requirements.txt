@@ -1,3 +1,3 @@
 # Runtime deps for colab/ict_tui.py (the notebook's install cell adds the
 # Colab-only extras: kurigram, hachoir, yt-dlp, aria2, deno).
-requests>=2.31
+requests>=2.34.2
