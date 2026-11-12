@@ -64,9 +64,25 @@ Menus: `1` login (+ keepalive toggle) · `2` dashboard · `3` lessons browser ·
 !pip -q install "kurigram[fast]" hachoir yt-dlp
 !apt-get -qq -y install aria2 > /dev/null 2>&1
 
-import shutil, subprocess, sys
+# Colab's yt-dlp needs a JS runtime (deno) + remote EJS challenge components
+# for YouTube extraction (some lessons are YouTube embeds): without them the
+# n-challenge fails and "-f best" finds no pre-merged format.
+import os, shutil, subprocess
+if not shutil.which("deno"):
+    subprocess.run("curl -fsSL https://deno.land/install.sh | sh -s -- -y", shell=True,
+                   capture_output=True, text=True, timeout=180)
+    if os.path.exists("/root/.deno/bin/deno"):
+        os.environ["PATH"] = "/root/.deno/bin:" + os.environ["PATH"]
+_cfg = os.path.expanduser("~/.config/yt-dlp/config")
+os.makedirs(os.path.dirname(_cfg), exist_ok=True)
+if not os.path.exists(_cfg):
+    with open(_cfg, "w") as f:
+        f.write("--remote-components ejs:github\\n")
+
+import sys
 print("python   ", sys.version.split()[0])
 print("ffmpeg   ", shutil.which("ffmpeg"))
+print("deno     ", shutil.which("deno"))
 print("yt-dlp   ", shutil.which("yt-dlp"))
 print("aria2c   ", shutil.which("aria2c"))
 try:
