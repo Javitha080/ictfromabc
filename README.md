@@ -40,7 +40,9 @@ items 1–33 closed.
   login uses it; raw/unpinned logins trigger the device lock.
 - **RBAC**: STUDENT → 403 across the whole admin namespace (canary battery
   9×200 + `/admin/courses 403`, plus 5 admin group spot-checks, all 403,
-  token preserved).
+  token preserved). Full live census 2026-11-12: **60 admin GET probes →
+  37× 403, zero 200s inside `/admin/*`** — see
+  [`analysis/RBAC_CENSUS.md`](analysis/RBAC_CENSUS.md).
 
 ## Quickstart
 
