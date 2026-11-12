@@ -1,0 +1,1 @@
+var r=(e=>(e.ALL="all",e.PENDING="pending",e.APPROVED="approved",e.REJECTED="rejected",e))(r||{});const t=e=>{switch(e){case"all":return"bg-white text-gray-800";case"pending":return"bg-yellow-100 text-yellow-800";case"approved":return"bg-green-100 text-green-800";case"rejected":return"bg-red-100 text-red-800"}};export{r as R,t as s};

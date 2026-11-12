@@ -1,0 +1,1 @@
+const a=["Colombo","Gampaha","Kalutara","Kandy","Matale","Nuwara Eliya","Galle","Matara","Hambantota","Jaffna","Killinochchi","Mannar","Vavuniya","Mulativ","Batticaloa","Ampara","Trincomalee","Kurunegala","Puttalam","Anuradhapura","Polonnaruwa","Badulla","Monaragala","Ratnapura","Kegalle"],l={Sinhala:"S",English:"E"};export{a as d,l as m};

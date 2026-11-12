@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Second Movie</title>
+    
+    
+    <meta property="og:url" content="https://player.mediadelivery.net/embed/759/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe" />
+    
+    <meta property="og:image" content="https://vz-63dcc9a5-af6.b-cdn.net/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe/thumbnail_a5dcb377.jpg" />
+    
+    <meta property="og:image:secure_url" content="https://vz-63dcc9a5-af6.b-cdn.net/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe/thumbnail_a5dcb377.jpg" />
+    
+    <meta property="og:title" content="Second Movie" />
+    
+    <meta property="og:type" content="video.other" />
+    
+    <meta property="og:video:url" content="https://player.mediadelivery.net/embed/759/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe" />
+    
+    <meta property="og:video:secure_url" content="https://player.mediadelivery.net/embed/759/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe" />
+    
+    <meta property="og:video:type" content="text/html" />
+    
+    <meta property="og:video:width" content="640" />
+    
+    <meta property="og:video:height" content="360" />
+    
+    <meta property="video:duration" content="17" />
+    
+    <meta name="twitter:card" content="player" />
+    
+    <meta name="twitter:url" content="https://player.mediadelivery.net/embed/759/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe" />
+    
+    <meta name="twitter:title" content="Second Movie" />
+    
+    <meta name="twitter:image" content="https://vz-63dcc9a5-af6.b-cdn.net/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe/thumbnail_a5dcb377.jpg" />
+    
+    <meta name="twitter:player" content="https://player.mediadelivery.net/embed/759/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe" />
+    
+    <meta name="twitter:player:width" content="640" />
+    
+    <meta name="twitter:player:height" content="360" />
+    
+    
+    
+    
+    <!-- All JavaScript dependencies bundled locally -->
+    
+    <script type="module" src="/assets/1.3.39/player.es.js"></script>
+    <link rel="stylesheet" href="/assets/1.3.39/player.es.css">
+    
+    
+    <link href="https://fonts.bunny.net/css?family=rubik" rel="stylesheet" />
+    
+
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh; /* Fallback */
+    height: 100svh; /* Small Viewport Height - excludes browser UI on mobile */
+    font-family: rubik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+media-controller {
+    width: 100%;
+    height: 100%;
+    position: relative; /* anchor gradient and overlay children */
+    --media-control-padding: 6px;
+    --media-button-icon-height: 22px;
+    --media-primary-color: white;
+    --media-secondary-color: #f44336;
+    --media-text-color: white;
+    --media-text-background: transparent;
+    --media-icon-color: white;
+    --media-font-family: rubik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    --media-font-size: 14px;
+    --media-control-background: transparent;
+    --media-control-hover-background: rgba(255, 255, 255, 0.1);
+    background: transparent;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #000;
+}
+
+/* Large play button - translucent circle over the frame, hidden while playing */
+media-controller media-play-button.large-play {
+    /* Media Chrome sizes icons from --media-button-icon-height, which is declared once
+       on media-controller at 22px for the 32px control-bar buttons. Without overriding
+       it here the glyph inherits that size inside an 80px circle - about 20% of the
+       button, against 40-50% in every comparable player (STREAM-1103). The font-size
+       that used to sit in this block never did anything: Media Chrome does not size
+       icons from it. */
+    --play-size: clamp(56px, 18vmin, 80px);
+    --media-button-icon-height: calc(var(--play-size) * 0.5);
+    --play-shadow: 0 1px 24px rgba(0, 0, 0, 0.35);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Smooth scaling instead of one hardcoded size either side of a breakpoint. vmin is
+       still a viewport unit, which is exactly right for an iframe embed - the iframe is
+       the viewport - but only an approximation for an inline SDK embed. Container
+       queries are the correct tool and sit above our browser floor.
+
+       The coefficient is set against the sizes people actually embed at. vmin on a 16:9
+       embed is the height, so a low one keeps every real embed pinned to the floor:
+       11vmin only reached its cap above 654px tall, which almost nothing is. */
+    width: var(--play-size);
+    height: var(--play-size);
+    border-radius: 50%;
+    background: rgba(244, 67, 54, 0.94);
+    border: none;
+    color: white;
+    fill: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Named rather than `all`, which also animated the focus ring into view. */
+    transition: transform 0.18s cubic-bezier(0.2, 0.7, 0.3, 1),
+                background-color 0.18s linear,
+                box-shadow 0.18s linear;
+    z-index: 10;
+    box-shadow: var(--play-shadow);
+    padding: 0;
+}
+
+/* One explanation at a time (STREAM-829).
+   The status message and the countdown are server-rendered from what the API says about
+   the video, so they state specifically why playback cannot start; a playback error is a
+   downstream symptom of the same thing. Suppress the error overlay rather than stacking
+   the two. `data-live` means a live stream became playable and the offline overlays are
+   already hidden, so the error is free to show again. */
+media-controller[data-status="true"]:not([data-live="true"]) bunny-error-display,
+media-controller[data-countdown="true"]:not([data-live="true"]) bunny-error-display {
+    display: none !important;
+}
+
+/* Nothing to start while a message is showing, so the big play button should not sit on
+   top of it. The live-stream cases are covered above; this adds VOD and the error state. */
+media-controller[data-status="true"]:not([data-live="true"]) media-play-button.large-play,
+media-controller[data-countdown="true"]:not([data-live="true"]) media-play-button.large-play,
+media-controller[data-error="true"] media-play-button.large-play {
+    display: none !important;
+}
+
+/* The gesture receiver listens on the media controller and only uses its own box to
+   bound the click; it must never be the hit target, because Media Chrome ignores any
+   gesture whose composed target is not the <video> or the controller. Media Chrome's
+   own receiver gets this for free inside the shadow root, but a slotted element is
+   given pointer-events by ::slotted(), so turn them back off. The stretch rules are
+   here for the same reason: Media Chrome sizes its receiver with a tag-name
+   ::slotted() rule that does not match ours, and a zero-sized box fails its rect
+   check. */
+bunny-gesture-receiver[slot="gestures-chrome"] {
+    align-self: stretch;
+    flex-grow: 1;
+    pointer-events: none;
+}
+
+bunny-poster-image::part(img) {
+    object-fit: cover;
+}
+
+bunny-poster-image,
+bunny-poster-video {
+    --media-poster-image-background-size: cover;
+}
+
+bunny-poster-video::part(video) {
+    object-fit: cover;
+}
+
+/* An active stream whose playlist has been missing for longer than an ingest failover
+   takes (STREAM-922): keep the last frame, or the thumbnail when the stream has one, and
+   take the spinner and the dead controls off it. The status and countdown overlays are
+   not in play here, the control plane still says the stream is running. */
+.live-stopped-poster {
+    position: absolute;
+    inset: 0;
+    display: none;
+    pointer-events: none;
+    z-index: 5;
+    background: #000;
+}
+.live-stopped-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+media-controller[data-live-stopped="true"] .live-stopped-poster[data-artwork="true"] {
+    display: block;
+}
+media-controller[data-live-stopped="true"] media-play-button.large-play,
+media-controller[data-live-stopped="true"] media-control-bar,
+media-controller[data-live-stopped="true"] bunny-media-control-bar,
+media-controller[data-live-stopped="true"] bunny-settings-menu,
+media-controller[data-live-stopped="true"] media-loading-indicator {
+    display: none !important;
+}
+media-controller[data-live-stopped="true"].has-controls::after {
+    display: none;
+}
+
+/* Avoid first-paint poster flash while pre-stream trailer is active. */
+media-controller[data-trailer-active="true"] bunny-poster-image {
+    display: none !important;
+}
+
+media-controller media-play-button.large-play:hover {
+    transform: translate(-50%, -50%) scale(1.06);
+    box-shadow: 0 2px 28px rgba(0, 0, 0, 0.45);
+}
+
+media-controller media-play-button.large-play:active {
+    transform: translate(-50%, -50%) scale(0.97);
+}
+
+/* Media Chrome draws its focus ring with `:host(:focus-visible) { box-shadow: inset ... }`,
+   and our own box-shadow on the element beats any :host() rule - so tabbing to the
+   largest control in the player produced no visual change at all. */
+media-controller media-play-button.large-play:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.9), var(--play-shadow);
+}
+
+/* Show large play only when paused */
+media-controller:not([mediapaused]) media-play-button.large-play {
+    display: none;
+}
+
+/* For live streams, controls are only shown while stream is playable */
+media-controller[data-live-stream="true"]:not([data-live="true"]) media-play-button.large-play,
+media-controller[data-live-stream="true"]:not([data-live="true"]) media-control-bar,
+media-controller[data-live-stream="true"]:not([data-live="true"]) bunny-media-control-bar,
+media-controller[data-live-stream="true"][data-countdown="true"] media-play-button.large-play,
+media-controller[data-live-stream="true"][data-countdown="true"] media-control-bar,
+media-controller[data-live-stream="true"][data-countdown="true"] bunny-media-control-bar,
+media-controller[data-live-stream="true"][data-status="true"] media-play-button.large-play,
+media-controller[data-live-stream="true"][data-status="true"] media-control-bar,
+media-controller[data-live-stream="true"][data-status="true"] bunny-media-control-bar,
+media-controller[data-live-stream="true"]:not([data-live="true"]) bunny-settings-menu {
+    display: none !important;
+}
+
+media-controller[data-live-stream="true"][data-countdown="true"] bunny-settings-menu,
+media-controller[data-live-stream="true"][data-status="true"] bunny-settings-menu {
+    display: none !important;
+}
+
+media-controller[data-live-stream="true"]:not([data-live="true"]) media-loading-indicator {
+    display: none !important;
+}
+
+media-controller[data-live-stream="true"]:not([data-live="true"]).has-controls::after,
+media-controller[data-live-stream="true"][data-countdown="true"].has-controls::after,
+media-controller[data-live-stream="true"][data-status="true"].has-controls::after {
+    display: none;
+}
+
+
+/* Hide custom controls when iOS shows native inline UI (playsinline=false) */
+media-controller[data-ios-native-ui] media-play-button.large-play,
+media-controller[data-ios-native-ui] media-control-bar,
+media-controller[data-ios-native-ui] bunny-media-control-bar,
+media-controller[data-ios-native-ui] bunny-settings-menu,
+media-controller[data-ios-native-ui] media-loading-indicator,
+media-controller[data-ios-native-ui] bunny-captions-display {
+    display: none !important;
+}
+
+media-controller[data-ios-native-ui]::after {
+    display: none;
+}
+
+/* =========================
+   Control Bar — Layout
+   ========================= */
+media-control-bar,
+bunny-media-control-bar {
+    padding: 8px 12px;
+    gap: 8px;
+    position: relative; /* ensure bars are above the unified gradient */
+    z-index: 1;
+}
+
+/* Responsive control bar needs constrained width for overflow detection */
+bunny-media-control-bar {
+    --media-control-bar-display: flex; /* Override inline-flex from shadow DOM */
+    width: 100%;
+    overflow: hidden;
+    min-width: 0; /* Allow container to shrink below content */
+}
+
+/* =========================
+   Control Bar — Components
+   ========================= */
+/* Spacer for control bar */
+.spacer {
+    flex-grow: 1;
+}
+
+/* Time range control bar (top bar) — desktop only */
+@media (min-width: 769px) {
+    media-control-bar:first-of-type {
+        padding: 0 16px;
+    }
+}
+
+/* Button control bar (second bar) - reduce top padding to tighten spacing with time bar */
+media-control-bar + media-control-bar,
+media-control-bar + bunny-media-control-bar {
+    padding-top: 4px;
+}
+
+/* Control Bar — Components: button base styles */
+media-control-bar :is(
+    media-play-button:not(.large-play),
+    media-seek-backward-button,
+    media-seek-forward-button,
+    media-mute-button,
+    media-pip-button,
+    media-fullscreen-button,
+    media-captions-button,
+    media-cast-button,
+    media-airplay-button,
+    media-settings-menu-button,
+    bunny-settings-menu-button,
+    media-time-display
+),
+bunny-media-control-bar :is(
+    media-play-button:not(.large-play),
+    media-seek-backward-button,
+    media-seek-forward-button,
+    media-mute-button,
+    media-pip-button,
+    media-fullscreen-button,
+    media-captions-button,
+    media-cast-button,
+    media-airplay-button,
+    media-settings-menu-button,
+    bunny-settings-menu-button,
+    media-time-display
+) {
+    border: none;
+    border-radius: 4px;
+    flex-shrink: 0;
+    min-width: 32px;
+}
+
+
+/* =========================
+   Control Bar — States
+   ========================= */
+
+bunny-media-time-range {
+    /* Only set the dynamic color here; component provides other defaults */
+    --media-range-bar-color: #f44336;
+    /* Improve preview callout readability */
+    --media-preview-background: rgba(20, 20, 30, .85);
+    --media-box-border-radius: 6px;
+    --media-box-padding-left: 10px;
+    --media-box-padding-right: 10px;
+    /* Ensure arrow uses same background */
+    --media-box-arrow-background: var(--media-preview-background);
+    width: 100%;
+}
+
+/* When time range is placed inside the button bar (small playback bar mode) */
+bunny-media-control-bar bunny-media-time-range {
+    flex: 1 1 auto;
+    min-width: 80px;
+    width: auto;
+}
+
+/* =========================
+   Small Playback Bar Mode
+   ========================= */
+
+/* Only suppress the spacer when the inline time range is present */
+media-controller[data-small-bar="true"] bunny-media-control-bar:has(.small-bar-time-range) .spacer {
+    display: none;
+}
+
+/* Allow seek preview to escape upward out of the button bar in compact mode */
+media-controller[data-small-bar="true"] bunny-media-control-bar {
+    overflow: visible;
+}
+
+/* Hide heatmap in compact mode — it needs vertical space the inline bar doesn't have */
+media-controller[data-small-bar="true"] bunny-media-time-range {
+    --media-heatmap-display: none;
+}
+
+media-volume-range {
+    --media-range-bar-color: #f44336;
+    --media-range-track-color: rgba(255, 255, 255, 0.3);
+    --media-range-track-background: rgba(0, 0, 0, 0.4);
+    --media-range-thumb-background: white;
+    --media-range-track-height: 4px;
+    --media-range-thumb-height: 12px;
+    --media-range-thumb-width: 12px;
+    --media-range-thumb-border-radius: 50%;
+    border: none;
+    background: transparent;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    flex-shrink: 0;
+}
+
+/* Playback rate menu styling */
+media-playback-rate-menu {
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: white;
+    min-width: 200px;
+    padding: 8px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Media Chrome settings menu styling */
+media-settings-menu,
+bunny-settings-menu {
+    --media-menu-background: rgba(0, 0, 0, 0.9);
+    --media-menu-border: 1px solid rgba(255, 255, 255, 0.2);
+    --media-menu-border-radius: 6px;
+    --media-primary-color: white;
+    --media-font-size: 14px;
+    z-index: 20;
+}
+
+media-settings-menu-item:hover,
+bunny-settings-menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+/* =========================
+   Control Bar — Responsive
+   ========================= */
+@media (max-width: 768px) {
+    media-control-bar,
+    bunny-media-control-bar {
+        padding: 6px 8px;
+        gap: 6px;
+    }
+    media-control-bar + media-control-bar,
+    media-control-bar + bunny-media-control-bar {
+        padding-top: 2px;
+    }
+    
+    media-volume-range {
+        width: 60px;
+    }
+    
+    media-time-display {
+        font-size: 12px;
+        min-width: 70px;
+    }
+}
+
+@media (max-width: 400px) {
+    media-control-bar,
+    bunny-media-control-bar {
+        padding: 4px 6px;
+        gap: 4px;
+    }
+    
+    media-control-bar :is(
+        media-play-button:not(.large-play),
+        media-seek-backward-button,
+        media-seek-forward-button,
+        media-mute-button,
+        media-pip-button,
+        media-fullscreen-button,
+        media-captions-button,
+        media-cast-button,
+        media-airplay-button,
+        media-settings-menu-button,
+        bunny-settings-menu-button
+    ),
+    bunny-media-control-bar :is(
+        media-play-button:not(.large-play),
+        media-seek-backward-button,
+        media-seek-forward-button,
+        media-mute-button,
+        media-pip-button,
+        media-fullscreen-button,
+        media-captions-button,
+        media-cast-button,
+        media-airplay-button,
+        media-settings-menu-button,
+        bunny-settings-menu-button
+    ) {
+        min-width: 28px;
+    }
+    
+    media-time-display {
+        font-size: 11px;
+        min-width: 60px;
+    }
+}
+
+/* Unified bottom gradient spanning both control bars - only shown when controls are present */
+media-controller.has-controls::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px; /* Default height for single row of controls */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    pointer-events: none;
+    z-index: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+/* Taller gradient when both progress and buttons are present */
+media-controller.has-full-controls::after {
+    height: 100px;
+}
+
+/* Hide unified gradient when controls auto-hide (match media-chrome behavior) */
+media-controller[userinactive]:not([mediapaused])::after {
+    opacity: 0;
+}
+
+.error-message {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #ccc;
+    padding-top: 50px;
+    z-index: 9999;
+}
+
+bunny-stream-video {
+  position: relative; /* anchor captions overlay */
+  --captions-background: black;
+  --captions-text-color: white;
+  --captions-font-size: 18px;
+  --captions-font-family: rubik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Base cue styles with transition */
+
+/* Move captions up when controls are shown */
+media-controller:not([userinactive]) bunny-stream-video,
+media-controller[mediapaused] bunny-stream-video{
+  --captions-bottom-offset: -50px;
+}
+
+/* Move captions up more when full controls are shown */
+media-controller.has-full-controls:not([userinactive]) bunny-stream-video,
+media-controller.has-full-controls[mediapaused] bunny-stream-video{
+  --captions-bottom-offset: -100px;
+}
+
+media-controller[breakpointmd] bunny-stream-video {
+  --captions-font-size: 18px; /* Matches your small for md */
+}
+
+media-controller[breakpointlg] bunny-stream-video {
+  --captions-font-size: 23px; /* Override to large */
+}
+
+media-controller[breakpointxl] bunny-stream-video {
+  --captions-font-size: 26px; /* Override to xlarge */
+}
+
+/* Custom captions display styling */
+bunny-captions-display {
+  --captions-background: black;
+  --captions-text-color: white;
+  --captions-font-size: 20px;
+  --captions-font-family: rubik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --captions-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  --captions-text-align: center;
+  bottom: calc(10% + var(--captions-bottom-offset, 0px));
+}
+
+/* Responsive caption sizing */
+media-controller[breakpointmd] bunny-captions-display {
+  --captions-font-size: 18px;
+}
+
+media-controller[breakpointlg] bunny-captions-display {
+  --captions-font-size: 23px;
+}
+
+media-controller[breakpointxl] bunny-captions-display {
+  --captions-font-size: 26px;
+}
+
+/* Move captions up when controls are shown */
+media-controller:not([userinactive]) bunny-captions-display,
+media-controller[mediapaused] bunny-captions-display {
+  --captions-bottom-offset: 50px;
+}
+
+/* Move captions up more when full controls are shown */
+media-controller.has-full-controls:not([userinactive]) bunny-captions-display,
+media-controller.has-full-controls[mediapaused] bunny-captions-display {
+  --captions-bottom-offset: 100px;
+}
+
+media-airplay-button[mediaairplayunavailable] {
+  display: none;
+}
+
+media-cast-button[mediacastunavailable] {
+  display: none;
+}
+
+/* Hide PiP button when picture-in-picture is unsupported/unavailable
+   (e.g. Firefox, which has no programmatic requestPictureInPicture API) */
+media-pip-button[mediapipunavailable] {
+  display: none;
+}
+
+/* Hide Audio menu item when no audio tracks are available */
+media-settings-menu-item:has(media-audio-track-menu[mediaaudiotrackunavailable]),
+bunny-settings-menu-item:has(media-audio-track-menu[mediaaudiotrackunavailable]) {
+    display: none;
+}
+
+/* Hide Captions menu item when captions menu has no subtitles */
+media-settings-menu-item:has(media-captions-menu:not([mediasubtitleslist])),
+bunny-settings-menu-item:has(media-captions-menu:not([mediasubtitleslist])) {
+    display: none;
+}
+
+[part='cue-display'] {
+    transition: transform 0.3s ease;
+    
+}
+
+[part=cue] {
+    border-radius: 4px;
+}
+
+        
+        .offline-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            z-index: 1000;
+            font-family: inherit;
+            pointer-events: none;
+            padding: 16px;
+        }
+        .offline-panel {
+            position: relative;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: min(90vw, 720px);
+            padding: 10px 18px;
+            text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+        }
+        .offline-panel::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: min(82vw, 980px);
+            height: min(44vw, 460px);
+            transform: translate(-50%, -50%);
+            border-radius: 999px;
+            pointer-events: none;
+            z-index: -1;
+            background: radial-gradient(
+                ellipse at center,
+                rgba(0, 0, 0, 0.28) 0%,
+                rgba(0, 0, 0, 0.22) 28%,
+                rgba(0, 0, 0, 0.15) 44%,
+                rgba(0, 0, 0, 0.08) 58%,
+                rgba(0, 0, 0, 0.03) 70%,
+                transparent 82%
+            );
+            filter: blur(8px);
+        }
+        .offline-message {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+        media-controller[data-countdown="true"] .offline-overlay[data-overlay="countdown"] {
+            display: flex;
+        }
+        media-controller[data-status="true"] .offline-overlay[data-overlay="status"] {
+            display: flex;
+        }
+        media-controller[data-live="true"] .offline-overlay {
+            display: none;
+        }
+
+        /* Shown while a Chromecast session is active; replaces the frozen
+           local frame. Controls stay usable (they render above this layer)
+           so the viewer can pause/seek/stop the cast from the sender. */
+        media-controller[data-casting="true"] bunny-cast-overlay {
+            display: flex;
+        }
+        media-controller[data-casting="true"] bunny-poster-image,
+        media-controller[data-casting="true"] bunny-poster-video,
+        media-controller[data-casting="true"] media-play-button.large-play {
+            display: none !important;
+        }
+        /* Keep the control bar clickable and painted above the overlay so
+           the viewer can pause/seek/stop the cast from the sender. */
+        media-controller[data-casting="true"] bunny-media-control-bar,
+        media-controller[data-casting="true"] media-control-bar {
+            z-index: 3;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <media-controller autoplay lang="en" playbackrates="0.50 0.75 1.00 1.25 1.50 1.75 2.00 4.00" library-id="759" novolumepref nomutedpref class="has-controls has-full-controls" data-live="true">
+        
+        
+        <bunny-stream-video
+            slot="media"
+            
+            
+            airplay="false"
+            
+            
+            
+            
+            
+            autoplay playsinline preload="auto"
+            
+            
+            content-src="https://vz-63dcc9a5-af6.b-cdn.net/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe/playlist.m3u8"
+            cast-src="https://vz-63dcc9a5-af6.b-cdn.net/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe/playlist.m3u8"
+            
+            is-jit="false"
+            crossorigin="anonymous"
+            
+            
+            
+            
+            drm-version="0"
+            video-id="eb1c4f77-0cda-46be-b47d-1118ad7c2ffe"
+            library-id="759"
+            base-url="https://video.bunnycdn.com"
+            
+            
+            
+            
+            start-time="0"
+        >
+            
+            
+
+            
+
+            
+                <track default kind="metadata" label="thumbnails" src="/video/759/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe/thumbnails.vtt?referer=https%3A%2F%2Fictfromabc.com%2F">
+            
+
+            <bunny-captions-display></bunny-captions-display>
+        </bunny-stream-video>
+
+        
+        
+        
+        <bunny-poster-image
+            slot="poster"
+            
+            src="https://vz-63dcc9a5-af6.b-cdn.net/eb1c4f77-0cda-46be-b47d-1118ad7c2ffe/thumbnail_a5dcb377.jpg"
+            
+            alt="Second Movie"
+            
+            
+            video-width="2560"
+            video-height="1440"
+            
+        ></bunny-poster-image>
+        
+        
+        
+        
+        
+        <bunny-stream-insights
+            video-id="eb1c4f77-0cda-46be-b47d-1118ad7c2ffe"
+            video-library-id="759"
+            tracking-api-url="https://video.bunnycdn.com/.metrics/track-session"
+            iframe-domain="iframe.mediadelivery.net"
+        ></bunny-stream-insights>
+        
+        
+        <bunny-error-display slot="centered-chrome" noautohide></bunny-error-display>
+        <media-loading-indicator noautohide slot="centered-chrome"></media-loading-indicator>
+        
+
+        
+
+<!-- Settings Menu -->
+        
+        <bunny-settings-menu hidden anchor="auto" translate-key="Settings">
+            
+            <bunny-settings-menu-item translate-key="Playback rate">
+                Playback rate
+                <media-playback-rate-menu slot="submenu" hidden rates="0.50 0.75 1.00 1.25 1.50 1.75 2.00 4.00" aria-label="Playback rate">
+                    <div slot="title">Playback rate</div>
+                </media-playback-rate-menu>
+            </bunny-settings-menu-item>
+            
+            <bunny-settings-menu-item translate-key="Quality">
+                Quality
+                <bunny-rendition-menu slot="submenu" hidden aria-label="Quality">
+                    <div slot="title">Quality</div>
+                </bunny-rendition-menu>
+            </bunny-settings-menu-item>
+
+            <bunny-settings-menu-item translate-key="Captions">
+                Captions
+                <media-captions-menu slot="submenu" hidden aria-label="Captions">
+                    <div slot="title">Captions</div>
+                </media-captions-menu>
+            </bunny-settings-menu-item>
+
+            <bunny-settings-menu-item translate-key="Audio">
+                Audio
+                <media-audio-track-menu slot="submenu" hidden aria-label="Audio">
+                    <div slot="title">Audio</div>
+                </media-audio-track-menu>
+            </bunny-settings-menu-item>
+        </bunny-settings-menu>
+        
+        
+        
+        <!-- Progress bar row (default two-row layout) -->
+        <media-control-bar>
+            <bunny-media-time-range
+              
+              moments="[]"
+              
+              
+              heatmap='36854,35658,34789'
+              
+            >
+            </bunny-media-time-range>
+        </media-control-bar>
+        
+
+        
+        <!-- Control buttons control bar (responsive - hides low priority controls when space is limited) -->
+        <bunny-media-control-bar>
+            <!-- Left side buttons -->
+            <media-play-button></media-play-button>
+            <media-seek-backward-button seekoffset="10"></media-seek-backward-button>
+            <media-seek-forward-button seekoffset="10"></media-seek-forward-button>
+            
+            <!-- Spacer: always present; hidden while the inline time range is present -->
+            <div class="spacer"></div>
+            <!-- Right side buttons -->
+            <bunny-time-display showduration initialduration="17"></bunny-time-display>
+            <media-mute-button></media-mute-button>
+            <media-volume-range></media-volume-range>
+            <bunny-settings-menu-button></bunny-settings-menu-button>
+            <media-pip-button></media-pip-button>
+            <media-fullscreen-button></media-fullscreen-button>
+        </bunny-media-control-bar>
+        
+        
+    </media-controller>
+
+    <script>
+        const PLAYER_SELECTOR = 'bunny-stream-video-ads, bunny-stream-video';
+
+function getPlayerElement() {
+  return document.querySelector(PLAYER_SELECTOR) || document.querySelector('video');
+}
+
+function exposePlayerApi(playerEl) {
+  if (typeof window.createBunnyPlayerApi !== 'function') {
+    throw new Error('createBunnyPlayerApi is not available');
+  }
+
+  const playerApi = window.createBunnyPlayerApi(playerEl);
+  window.player = playerApi;
+  return playerApi;
+}
+
+function initializePlayerJsReceiver(playerEl, playerApi) {
+  if (typeof window.BunnyPlayerJsReceiver !== 'function') {
+    throw new Error('BunnyPlayerJsReceiver is not available');
+  }
+
+  const receiver = new window.BunnyPlayerJsReceiver(playerEl, playerApi);
+  receiver.connect();
+}
+
+function initializePlayer() {
+  const playerEl = getPlayerElement();
+  const controller = document.querySelector('media-controller');
+
+  if (!playerEl || !controller) {
+    console.error('Required video or media-controller elements not found');
+    return;
+  }
+
+  const playerApi = exposePlayerApi(playerEl);
+  initializePlayerJsReceiver(playerEl, playerApi);
+}
+
+// Wait for both DOM content and module script to load
+const moduleScript = document.querySelector('script[type="module"]');
+if (!moduleScript) {
+  throw new Error('Module script not found');
+}
+
+// Create a promise that resolves when the module script loads
+const moduleLoaded = new Promise((resolve, reject) => {
+  moduleScript.addEventListener('load', resolve);
+  moduleScript.addEventListener('error', reject);
+});
+
+// Create a promise that resolves when the DOM is ready
+const domReady = new Promise(resolve => {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', resolve);
+  } else {
+    resolve();
+  }
+});
+
+// Initialize when both DOM and module are ready
+Promise.all([domReady, moduleLoaded])
+  .then(() => {
+    requestAnimationFrame(initializePlayer);
+    
+    
+    // Initialize RUM (Real User Monitoring) if enabled
+    try {
+      if (window.RumJob) {
+        const rumJob = new window.RumJob();
+        rumJob.start();
+      } else {
+        console.warn('RUM tracking requested but RumJob is not available');
+      }
+    } catch (error) {
+      console.error('Failed to initialize RUM:', error);
+    }
+    
+  })
+  .catch(error => {
+    console.error('Failed to initialize player:', error);
+  });
+
+    </script>
+</body>
+</html>

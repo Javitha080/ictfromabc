@@ -1,0 +1,1 @@
+import{s as n,v as t}from"../chunks/CrD0m2hm.js";import{S as e,i as a}from"../chunks/DzXz5lJj.js";import{g as r}from"../chunks/CPkiEbDf.js";function i(o){return t(()=>{r("/admin/paper-class/revision")}),[]}class l extends e{constructor(s){super(),a(this,s,i,null,n,{})}}export{l as component};

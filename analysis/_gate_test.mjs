@@ -1,0 +1,14 @@
+﻿import fs from 'fs';
+const T=JSON.parse(fs.readFileSync('analysis/_live_token.json','utf8')).token;
+const UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+const B='https://ictfromabc.com/api';
+const H={Accept:'application/json','User-Agent':UA,Origin:'https://ictfromabc.com',Referer:'https://ictfromabc.com/admin/payments',Authorization:'Bearer '+T};
+let fd=new FormData();
+let r=await fetch(B+'/admin/purchases/79787',{method:'POST',headers:H,body:fd,redirect:'manual'});
+console.log('purchase empty ->',r.status,(await r.text()).slice(0,500));
+await new Promise(r=>setTimeout(r,1100));
+r=await fetch(B+'/admin/lessons/187/toggle-status-all',{method:'PATCH',headers:{...H,'Content-Type':'application/json'},body:'{}',redirect:'manual'});
+console.log('toggle lesson 187 ->',r.status,(await r.text()).slice(0,500));
+await new Promise(r=>setTimeout(r,1100));
+r=await fetch(B+'/lessons/187',{headers:H,redirect:'manual'});
+console.log('lesson 187 now ->',r.status,(await r.text()).slice(0,300));

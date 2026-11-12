@@ -1,0 +1,203 @@
+﻿import {
+  s as q,
+  n as A,
+  d as w,
+  w as F,
+  a as G,
+  q as d,
+  r as L,
+  i as H,
+  b as _,
+  y as D,
+  a0 as J,
+  a6 as g,
+  c as P,
+  e as v,
+  g as k,
+  f as N,
+  h as I,
+  j as z,
+  t as U,
+  o as Y,
+  J as K,
+  A as S,
+} from "../chunks/BitTBVkN.js";
+import { S as Q, i as X } from "../chunks/Bc7KUd1A.js";
+import { g as Z } from "../chunks/IW6k_RM6.js";
+function x(r) {
+  let a,
+    t,
+    b,
+    n,
+    e,
+    f = r[2] ? "ΓÅ╕∩╕Å Pause" : "Γû╢∩╕Å Watch",
+    m,
+    u,
+    h,
+    i,
+    y,
+    E;
+  return {
+    c() {
+      ((a = I("div")), (t = I("iframe")), (b = z()), (n = I("div")), (e = I("button")), (m = U(f)), (h = z()), (i = I("div")), this.h());
+    },
+    l(c) {
+      a = P(c, "DIV", { class: !0, role: !0, "aria-label": !0 });
+      var o = v(a);
+      ((t = P(o, "IFRAME", { title: !0, style: !0, allow: !0 })), v(t).forEach(w), (b = k(o)), (n = P(o, "DIV", { class: !0 })));
+      var p = v(n);
+      e = P(p, "BUTTON", { class: !0, "aria-label": !0 });
+      var T = v(e);
+      ((m = N(T, f)), T.forEach(w), p.forEach(w), (h = k(o)), (i = P(o, "DIV", { class: !0, "aria-hidden": !0 })), v(i).forEach(w), o.forEach(w), this.h());
+    },
+    h() {
+      (d(t, "title", "Lesson"),
+        g(t, "border", "0"),
+        g(t, "width", "100%"),
+        g(t, "height", "100%"),
+        g(t, "position", "absolute"),
+        g(t, "inset", "0"),
+        d(t, "allow", "autoplay; encrypted-media; picture-in-picture; fullscreen"),
+        (t.allowFullscreen = !0),
+        d(e, "class", "btn svelte-mznllo"),
+        d(e, "aria-label", (u = r[2] ? "Pause" : "Play")),
+        d(n, "class", "controls svelte-mznllo"),
+        L(n, "hidden", !r[3]),
+        d(i, "class", "scrub-shield svelte-mznllo"),
+        d(i, "aria-hidden", "true"),
+        d(a, "class", "wrap svelte-mznllo"),
+        d(a, "role", "region"),
+        d(a, "aria-label", "Lesson video"));
+    },
+    m(c, o) {
+      (H(c, a, o),
+        _(a, t),
+        r[7](t),
+        _(a, b),
+        _(a, n),
+        _(n, e),
+        _(e, m),
+        _(a, h),
+        _(a, i),
+        r[8](a),
+        y || ((E = [D(e, "click", r[4]), D(i, "click", r[5]), D(a, "contextmenu", J(r[6]))]), (y = !0)));
+    },
+    p(c, [o]) {
+      (o & 4 && f !== (f = c[2] ? "ΓÅ╕∩╕Å Pause" : "Γû╢∩╕Å Watch") && G(m, f),
+        o & 4 && u !== (u = c[2] ? "Pause" : "Play") && d(e, "aria-label", u),
+        o & 8 && L(n, "hidden", !c[3]));
+    },
+    i: A,
+    o: A,
+    d(c) {
+      (c && w(a), r[7](null), r[8](null), (y = !1), F(E));
+    },
+  };
+}
+const $ = "131497",
+  ee = "353c34cc-db52-4f68-a99f-700295ae9d15";
+function te(r, a, t) {
+  let b,
+    n,
+    e,
+    f = 0,
+    m = 0,
+    u = !1,
+    h = !0,
+    i = null,
+    y = !1;
+  const E = `https://iframe.mediadelivery.net/embed/${$}/${ee}`;
+  function c() {
+    return new Promise((s) => {
+      if (window.playerjs) return s();
+      const l = document.createElement("script");
+      ((l.src = "https://assets.mediadelivery.net/playerjs/playerjs-latest.min.js"), (l.onload = () => s()), document.head.appendChild(l));
+    });
+  }
+  function o() {
+    o._done || ((o._done = !0), Z("/dashboard/myLessons"));
+  }
+  function p() {
+    (t(3, (h = !0)),
+      i && clearTimeout(i),
+      u &&
+        (i = setTimeout(() => {
+          t(3, (h = !1));
+        }, 3e3)));
+  }
+  function T() {
+    (e.on("ended", o),
+      e.on("statechange", (s) => {
+        (s == null ? void 0 : s.toLowerCase()) === "ended" && o();
+      }),
+      e.on("timeupdate", (s) => {
+        var l;
+        if (Math.abs(s.seconds - f) > 1.5) {
+          (e.setCurrentTime(f), u && ((l = e.play) == null || l.call(e)));
+          return;
+        }
+        ((f = s.seconds), m && m - s.seconds < 0.3 && o());
+      }),
+      e.on("play", () => {
+        (t(2, (u = !0)), p());
+      }),
+      e.on("pause", () => {
+        (t(2, (u = !1)), t(3, (h = !0)), i && clearTimeout(i));
+      }));
+  }
+  Y(async () => {
+    await c();
+  });
+  async function V() {
+    const s = () => window.playerjs && (n == null ? void 0 : n.contentWindow);
+    for (let l = 0; l < 50 && !s(); l++) await new Promise((j) => setTimeout(j, 20));
+    ((e = new window.playerjs.Player(n)),
+      e.on("ready", () => {
+        var l, j;
+        try {
+          (l = e.getDuration) == null || l.call(e, (C) => (m = C || 0));
+        } catch {}
+        T();
+        try {
+          (j = e.getPaused) == null ||
+            j.call(e, (C) => {
+              (t(2, (u = !C)), p());
+            });
+        } catch {}
+      }));
+  }
+  async function B() {
+    var s, l;
+    if (!y) {
+      ((y = !0),
+        t(1, (n.src = `${E}?autoplay=true&muted=false&preload=true&playsinline=true&rememberPosition=false&showSpeed=false&showHeatmap=false&loop=false`), n),
+        V(),
+        p());
+      return;
+    }
+    e && (u ? (s = e.pause) == null || s.call(e) : (l = e.play) == null || l.call(e), p());
+  }
+  function M() {
+    p();
+  }
+  function O(s) {
+    K.call(this, r, s);
+  }
+  function R(s) {
+    S[s ? "unshift" : "push"](() => {
+      ((n = s), t(1, n));
+    });
+  }
+  function W(s) {
+    S[s ? "unshift" : "push"](() => {
+      ((b = s), t(0, b));
+    });
+  }
+  return [b, n, u, h, B, M, O, R, W];
+}
+class oe extends Q {
+  constructor(a) {
+    (super(), X(this, a, te, x, q, {}));
+  }
+}
+export { oe as component };

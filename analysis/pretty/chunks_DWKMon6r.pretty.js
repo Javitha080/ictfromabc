@@ -1,0 +1,26 @@
+﻿import { a as r, p as a } from "./gH3D-RDX.js";
+const s = {
+  getEventsOnSale: async () => await (await r("/student/events")).json(),
+  getEvent: async (e) => await (await r(`/student/events/${e}`)).json(),
+  studentPurchase: async (e, t) => await (await a(`/events/${e}/purchases`, { numberOfTickets: t }, "application/json")).json(),
+  getMyPurchases: async (e) => await (await r(`/events/${e}/my-purchases`)).json(),
+};
+async function c() {
+  try {
+    return await s.getEventsOnSale();
+  } catch (e) {
+    return (console.error("Error fetching events:", e), []);
+  }
+}
+async function i(e) {
+  return await s.getEvent(e);
+}
+async function u(e) {
+  return await s.getMyPurchases(e);
+}
+async function p(e, t) {
+  const n = await s.studentPurchase(e, t);
+  if (n && n.redirect_url) window.location.href = n.redirect_url;
+  else throw new Error(n.message || "Failed to retrieve payment redirection link.");
+}
+export { i as a, p as b, c, u as f };

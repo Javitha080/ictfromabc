@@ -1,0 +1,1 @@
+import{s,v as n}from"../chunks/CrD0m2hm.js";import{S as a,i as e}from"../chunks/DzXz5lJj.js";import{g as r}from"../chunks/CPkiEbDf.js";function i(o){return n(()=>{r("/admin/pastPapers/al")}),[]}class u extends a{constructor(t){super(),e(this,t,i,null,s,{})}}export{u as component};

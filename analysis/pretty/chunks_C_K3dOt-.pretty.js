@@ -1,0 +1,32 @@
+﻿import { s as r, n as s, d as l, i as o, q as c, c as f, B as m, h as d } from "./CrD0m2hm.js";
+import { S as h, i as u } from "./DzXz5lJj.js";
+function p(n) {
+  let t,
+    a = '<iframe title="Loading" src="https://lottie.host/embed/04931888-3856-494a-b72b-241ef57ac2fa/taUdCt382p.json"></iframe>';
+  return {
+    c() {
+      ((t = d("div")), (t.innerHTML = a), this.h());
+    },
+    l(e) {
+      ((t = f(e, "DIV", { class: !0, "data-svelte-h": !0 })), m(t) !== "svelte-ag64ne" && (t.innerHTML = a), this.h());
+    },
+    h() {
+      c(t, "class", "content w-full h-full flex justify-center items-center");
+    },
+    m(e, i) {
+      o(e, t, i);
+    },
+    p: s,
+    i: s,
+    o: s,
+    d(e) {
+      e && l(t);
+    },
+  };
+}
+class g extends h {
+  constructor(t) {
+    (super(), u(this, t, null, p, r, {}));
+  }
+}
+export { g as L };

@@ -1,0 +1,55 @@
+﻿import { a as i } from "./o83l1t9V.js";
+import { a as n } from "./B_dqzIxx.js";
+import { a } from "./BgTg2qdf.js";
+async function u(t) {
+  try {
+    const o = (await i.getAdminLessons()).map((r) => ({
+      course_id: r.course_id,
+      created_at: r.created_at,
+      description: r.description,
+      id: r.id,
+      price: r.price,
+      status: r.status,
+      title: r.title,
+      updated_at: r.updated_at,
+    }));
+    t && ((t.length = 0), t.push(...o));
+  } catch (e) {
+    console.error(e);
+  }
+}
+async function m(t) {
+  try {
+    const e = await i.getAdminVideos(t);
+    return (await a(e)).map((s) => ({
+      video_type: s.video_url.includes("youtube") ? 1 : 0,
+      id: s.id,
+      title: s.title,
+      description: s.description,
+      lesson_id: s.lesson_id,
+      video_id: s.video_id,
+      video_url: s.video_url,
+      status: s.status,
+    }));
+  } catch (e) {
+    console.error(e);
+  }
+}
+async function f() {
+  return await i.getAdmins();
+}
+async function _(t) {
+  try {
+    return await i.getStudentDetails(t);
+  } catch (e) {
+    console.error(e);
+  }
+}
+async function h() {
+  try {
+    return await n.getAdminProfile();
+  } catch (t) {
+    console.error(t);
+  }
+}
+export { m as a, f as b, _ as c, u as f, h as g };

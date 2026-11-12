@@ -1,0 +1,47 @@
+﻿import { p as r, a as n, c as p } from "./gH3D-RDX.js";
+import { b as c } from "./BgTg2qdf.js";
+const w = {
+  getLessonsByCourseId: async (s) => (await n(`/courses/${s}`)).json(),
+  getAllLessons: async () => (await n("/lessons")).json(),
+  getMyLessons: async () => (await n("/lessons/allowed")).json(),
+  getMyTutes: async () => (await n("/purchases/tutes")).json(),
+  getMyProfile: async () => (await n("/user")).json(),
+  getAdminProfile: async () => (await n("/admin/user")).json(),
+  updateMyProfile: async (s) => (await p("/user", s, "application/json")).json(),
+  getVideosByLessonId: async (s) => (await n(`/lessons/${s}`)).json(),
+  uploadPaymentSlip: async (s, e, o) => {
+    const t = new FormData();
+    return (t.append("file", e), (await (await r(`/purchases/bank-transfer/${s}`, t, "")).json()).data);
+  },
+  onlinePayment: async (s) => (await r(`/purchases/online-transfer/${s}`, null, "application/json")).json(),
+  onlinePaymentV2: async (s, e, o = [], t = {}, i = null) => {
+    const a = { redirect_url: e };
+    return (
+      o.length > 0 && (a.tute_ids = o),
+      Object.keys(t).length > 0 && (a.bands = t),
+      i && (a.freeBandType = i),
+      (await r(`/v2/purchases/online-transfer/${s}`, a, "application/json")).json()
+    );
+  },
+  deleteUser: async (s) => (await r("/user/delete", { password: s }, "application/json")).json(),
+  getZoomLink: async (s) => {
+    const e = await n(`/zoom/${s}/add-registrant`);
+    if (!e.ok) throw new Error("Could not get Zoom link");
+    return e.json();
+  },
+  getVideoLink: async (s) => {
+    const o = await (await n(`/videos/${s}`)).json();
+    return { video_url: await c(o.video_url, Number(s)) };
+  },
+  verifyEmail: async () => (await n("/email/resend")).json(),
+  uploadIDPhoto: async (s) => {
+    const e = new FormData();
+    return (e.append("file", s), (await r("/user/id", e, "")).json());
+  },
+  submitReview: async (s) => {
+    const e = await r("/reviews", s, "application/json");
+    if (!e.ok) throw new Error("Failed to submit review");
+    return e.json();
+  },
+};
+export { w as a };

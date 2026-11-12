@@ -1,0 +1,7 @@
+# Local secrets and downloads
+config/*.local.json
+downloads/
+tests/*.generated.mjs
+tests/real-login-rewrite.body.js
+node_modules/
+*.log

@@ -1,0 +1,750 @@
+{
+  "types": {
+    "tute": {
+      "status": 200,
+      "count": 14,
+      "pdfs": [
+        {
+          "id": 35,
+          "title": "LESSON 08 (DATABASE)",
+          "description": "දත්ත සමුදාය පාඩමේ සියලු සිද්ධාන්ත සටහන් අඩංගු පිටු 64 ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනය",
+          "url": "/storage/tutes/50002_2026-07-28_05-12-05.pdf"
+        },
+        {
+          "id": 45,
+          "title": "Lesson 09 - (Python) Full Tute (2026 New)",
+          "description": "විශය නිර්දේශයේ වැඩිම ලකුණු (115න් 21ක්) ලැබෙන 9 වන පාඩම, python ක්‍රමලේඛන භාශාවට අදාල සියලුම සිදධාන්ත සංකල්ප සහ පැහැදිලිකිරීම් සඳහා උදාහරණ අඩංගු නව නිබන්ධනයයි. සිංහල සහ ඉංග්‍රීසි භාශා දෙකෙන්ම කරුණු ඇතුලත් වේ. පිටු 172 කි. මුද්‍රිත නිබන්ධනයක් ගෙන්වාගත හැකි අතර අවශ්‍ය නම් pdf නොමිලේ ලබාගත හැක.",
+          "url": "/storage/tutes/50002_2026-07-28_05-12-33.pdf"
+        },
+        {
+          "id": 50,
+          "title": "LESSON 04 (LOGIC GATES-THEORY)",
+          "description": "තාර්කික ද්වාර පාඩමේ සියලු සිද්ධාන්ත අඩංගු පිටු 80ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනයකි.",
+          "url": "/storage/tutes/50036_2026-10-05_11-19-05.pdf"
+        },
+        {
+          "id": 51,
+          "title": "Teachers Guide",
+          "description": "ගුරු අත්පොත",
+          "url": "/storage/tutes/50002_2026-08-17_21-38-20.pdf"
+        },
+        {
+          "id": 119,
+          "title": "LESSON 10 (PART 01) - HTML & CSS (2026 NEW)",
+          "description": "වෙබ් අඩවි සංවර්ධනය පාඩමේ HTML සහ CSS කොටස් වලට අදාල විශය නිර්දේශයට අනුකූල සියලු සිද්ධාන්ත කොටස් සහ තනිව ලියා පුරුදු පුහුණු වීමට හැකි ආකාරයේ සියලු කේත සහිත පිටු 72 ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනයකි.\r\nA 72-page Sinhala and English medium book containing all theory sections of HTML and CSS sections in line with the syllabus recommendations related to the web development lesson, and all the code that can be written and practiced alone.",
+          "url": "/storage/tutes/50002_2026-07-28_05-13-49.pdf"
+        },
+        {
+          "id": 120,
+          "title": "LESSON 08 (PART 02) - SQL IN DATABASE (2026 NEW)",
+          "description": "විශය නිර්දේශයේ ලකුණු 115න් 15ක් ලැබෙන 8 වන පාඩම, දත්ත සමුදාය පාඩමට අදාල ලකුණු 6ක පමණ ප්‍රායෝගික යෙදීම් කොටස (SQL භාශාව භාවිතය) සම්බන්ධ සියලු සිද්ධාන්ත සංකල්ප සහ පැහැදිලිකිරීම් සඳහා  තනිව ලියා පුරුදු පුහුණු විය හැකි උදාහරණ කේත අඩංගු නව නිබන්ධනයයි. සිංහල සහ ඉංග්‍රීසි භාශා දෙකෙන්ම කරුණු ඇතුලත් වේ. පිටු 56 කි. මුද්‍රිත නිබන්ධනයක් ගෙන්වාගත හැකි අතර අවශ්‍ය නම් pdf නොමිලේ ලබාගත හැක.",
+          "url": "/storage/tutes/50002_2026-07-28_05-13-57.pdf"
+        },
+        {
+          "id": 121,
+          "title": "LESSON 01 - BASIC CONCEPTS OF ICT (2028 NEW)",
+          "description": "විශය නිර්දේශයේ පළමුවන පාඩමට අදාලව සියලු සිද්ධාන්ත සංකල්ප සාකච්ඡා කර තිබේ. දත්ත, තොරතුරු, මහා දත්ත, ජාල, පද්ධති, පරිගණකයේ කොටස්, දත්ත සැකසීමේ පියවර, විවිධ ක්ශේත්‍ර වල තොරතුරු හා සන්නිවේදන තාක්ශණයේ භාවිතය, එහි ප්‍රතිලාභ සහ ගැටලු සම්බන්ධව මෙහි ඇතුලත් වේ. සිංහල සහ ඉංග්‍රීසි භාශා දෙකෙන්ම කරුණු ඇතුලත් වේ. පිටු 96 කි.",
+          "url": "/storage/tutes/50002_2026-07-28_05-14-12.pdf"
+        },
+        {
+          "id": 129,
+          "title": "LESSON 10 (PART 02) - PHP (2026 NEW)",
+          "description": "වෙබ් අඩවි සංවර්ධනය පාඩමේ PHP කොටසට අදාල විශය නිර්දේශයට අනුකූල සියලු සිද්ධාන්ත කොටස් සහ තනිව ලියා පුරුදු පුහුණු වීමට හැකි ආකාරයේ සියලු කේත සහිත පිටු 68 ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනයකි. A 68-page Sinhala and English medium book containing all theory sections of PHP section in line with the syllabus recommendations related to the web development lesson, and all the code that can be written and practiced alone.",
+          "url": "/storage/tutes/50002_2026-07-28_05-14-24.pdf"
+        },
+        {
+          "id": 134,
+          "title": "LESSON 11 - INTERNET OF THINGS (ARDUINO)(2026 NEW)",
+          "description": "සාර්ව ද්‍රව්‍ය අන්තර්ජාලය පාඩමේ සියලු සටහන් සහිත පිටු 40ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනය",
+          "url": "/storage/tutes/50002_2026-06-07_23-14-56.pdf"
+        },
+        {
+          "id": 135,
+          "title": "LESSON 12 - E COMMERCE (2026 NEW)",
+          "description": "විද්‍යුත් වානිජ්‍ය පාඩමේ සියලු සටහන් අඩංගු පිටු 36ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනය",
+          "url": "/storage/tutes/50002_2026-06-07_23-15-23.pdf"
+        },
+        {
+          "id": 136,
+          "title": "LESSON 13 - NEW TRENDS AND FUTURE DIRECTIONS OF ICT (2026 NEW)",
+          "description": "තොරතුරු තාක්ශණයේ නව නැඹුරුව සහ අනාගත දිශානතිය පාඩමේ සියලු සටහන් අඩංගු පිටු 28ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනය",
+          "url": "/storage/tutes/50002_2026-06-07_23-15-43.pdf"
+        },
+        {
+          "id": 138,
+          "title": "LESSON 02 - EVOLUTION OF COMPUTING (2028 NEW)",
+          "description": "පරිගණකයේ ඉතිහාසය, පරිනාමය, .ආදාන ප්‍රතිදාන ගබඩා මතක උපාංග සහ සංඝටක සම්බන්ධ පාඩමේ සියලු සටහන් අඩංගු පිටු 164ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනයකි.",
+          "url": "/storage/tutes/50002_2026-07-28_05-15-04.pdf"
+        },
+        {
+          "id": 139,
+          "title": "LESSON 06 - NETWORKING (2026 NEW)",
+          "description": "විභාගයට ලකුණු 15 ක් ලැබෙන ජාලකරණය පාඩමට අදාල සියලු සටහන් සහිත පිටු 216 ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනය.",
+          "url": "/storage/tutes/50036_2026-09-22_15-02-06.pdf"
+        },
+        {
+          "id": 144,
+          "title": "LESSON 03 - NUMBER SYSTEMS (2028 NEW)",
+          "description": "විභාගයට ලකුණු 5 ක් ලැබෙන සංඛ්‍යා පද්ධති පාඩමේ සංඛ්‍යා පරිවර්තනය කිරීමේ ක්‍රම, MSD LSD, ලකුණු සහිත සහ රහිත සංඛ්‍යා (signed,unsigned), එකෙහි සහ දෙකෙහි අනුපූරක සංඛ්‍යා (1's and 2's complements), IEEE 754 සංඛ්‍යා නිරූපණය සහ BCD, ASCII, EBCDIC, Unicode, බිටු අනුසාරිත මෙහෙයුම්පි ළිඹඳව ගැන සාකච්ඡා කර තිබේ. සිංහල සහ ඉංග්‍රීසි භාශා දෙකෙන්ම කරුණු ඇතුලත් වේ. පිටු 112 ක සිංහල සහ ඉංග්‍රීසි මාධ්‍ය නිබන්ධනයකි.",
+          "url": "/storage/tutes/50002_2026-07-28_05-16-05.pdf"
+        }
+      ]
+    },
+    "lesson-pp": {
+      "status": 200,
+      "count": 9,
+      "pdfs": [
+        {
+          "id": 14,
+          "title": "LESSON 09 (PYTHON PASTPAPER QUESTIONS)",
+          "description": "2025 උසස් පෙළ පන්තිය සඳහා අගෝස්තු මාසයට අදාලව ලබාදුන් නිබන්ධනයයි. 2011 සිට 2023 උසස් පෙළ දක්වා විභාගයට python පාඩමෙන් ලැබී ඇති ප්‍රශ්ණ සියල්ල සිංහල සහ ඉංග්‍රීසි මාධ්‍යයෙන් අඩංගු වේ. පිටු 64කි.",
+          "url": "/storage/tutes/98220_2026-04-08_22-41-36.pdf"
+        },
+        {
+          "id": 30,
+          "title": "LESSON 08 (DATABASE PASTPAPER QUESTIONS)",
+          "description": "2025 උසස් පෙළ පන්තිය සඳහා ඔක්තෝබර් මාසයට අදාලව ලබාදුන් නිබන්ධනයයි. 2011 සිට 2023 උසස් පෙළ දක්වා විභාගයට database පාඩමෙන් SQL ද සමග ලැබී ඇති ප්‍රශ්ණ සියල්ල සිංහල සහ ඉංග්‍රීසි මාධ්‍යයෙන් අඩංගු වේ. පිටු 64කි.",
+          "url": "/storage/tutes/51122_2025-12-10_20-37-23.pdf"
+        },
+        {
+          "id": 61,
+          "title": "LESSON 07 (SYSTEM DEVELOPMENT - PASTPAPER QUESTIONS) NEW",
+          "description": "2025 උසස් පෙළ පන්තිය සඳහා අගෝස්තු මාසයට අදාලව ලබාදුන් නිබන්ධනයයි. 2011 සිට 2024 උසස් පෙළ දක්වා විභාගයට sysem development පාඩමෙන් ලැබී ඇති ප්‍රශ්ණ සියල්ල සිංහල සහ ඉංග්‍රීසි මාධ්‍යයෙන් අඩංගු වේ. පිටු 43කි.",
+          "url": "/storage/tutes/50036_2026-08-09_21-44-08.pdf"
+        },
+        {
+          "id": 126,
+          "title": "LESSON 1,2 (INTRODUCTION OF ICT-PASTPAPER QUESTIONS) NEW",
+          "description": "2026 උසස් පෙළ පන්තිය සඳහා අගෝස්තු මාසයට අදාලව ලබාදුන් නිබන්ධනයයි. 2011 සිට 2025 උසස් පෙළ දක්වා විභාගයට 1 සහ 2 පාඩම් වලින් ලැබී ඇති ප්‍රශ්ණ සියල්ල සිංහල සහ ඉංග්‍රීසි මාධ්‍යයෙන් අඩංගු වේ. පිටු 32කි.",
+          "url": "/storage/tutes/50002_2026-05-15_21-26-35.pdf"
+        },
+        {
+          "id": 127,
+          "title": "LESSON 10 (WEB DEVELOPMENT-PASTPAPER QUESTIONS) NEW",
+          "description": "2011 සිට 2024 උසස් පෙළ දක්වා විභාගයට 10 (HTML,CSS,PHP) පාඩම් වලින් ලැබී ඇති ප්‍රශ්ණ සියල්ල සිංහල සහ ඉංග්‍රීසි මාධ්‍යයෙන් අඩංගු වේ. පිටු 44කි.",
+          "url": "/storage/tutes/50002_2026-05-15_21-25-56.pdf"
+        },
+        {
+          "id": 128,
+          "title": "LESSON 05 (OPERATING SYSTEMS PASTPAPER QUESTIONS) NEW",
+          "description": "2011 සිට 2024 උසස් පෙළ දක්වා විභාගයට Operating Systems පාඩමෙන් ලැබී ඇති ප්‍රශ්ණ සියල්ල සිංහල සහ ඉංග්‍රීසි මාධ්‍යයෙන් අඩංගු වේ. පිටු 24 කි.",
+          "url": "/storage/tutes/50002_2026-05-15_21-29-36.pdf"
+        },
+        {
+          "id": 133,
+          "title": "LESSON 11,12,13 (INTERNET OF THINGS, E-COMMERCE, NEW-TRENDS-PASTPAPER QUESTIONS) NEW",
+          "description": "2011 සිට 2025 උසස් පෙළ දක්වා විභාගයට 11,12,13 (INTERNET OF THINGS, E-COMMERCE, NEW-TRENDS) පාඩම් වලින් ලැබී ඇති ප්‍රශ්ණ සියල්ල සිංහල සහ ඉංග්‍රීසි මාධ්‍යයෙන් අඩංගු වේ. පිටු 36කි.",
+          "url": "/storage/tutes/50002_2026-06-07_23-07-47.pdf"
+        },
+        {
+          "id": 145,
+          "title": "LESSON 3,4 (NUMBER SYSTEMS & LOGIC GATES-PASTPAPER QUESTIONS) (2028 NEW)",
+          "description": "2025 උසස් පෙළ පන්තිය සඳහා අගෝස්තු මාසයට අදාලව ලබාදුන් නිබන්ධනයකි. 2011 සිට 2026 උසස් පෙළ දක්වා විභාගයට 3 (Number Systems) සහ 4 (Logic Gates) පාඩම් වලින් ලැබී ඇති ප්‍රශ්ණ සියල්ල සිංහල සහ ඉංග්‍රීසි මාධ්‍යයෙන් අඩංගු වේ. පිටු 28 කි.",
+          "url": "/storage/tutes/50002_2026-09-19_21-11-56.pdf"
+        },
+        {
+          "id": 149,
+          "title": "LESSON 06 (NETWORKING PASTPAPER QUESTIONS) NEW",
+          "description": "2011 සිට 2026 උසස් පෙළ දක්වා විභාගයට Networking පාඩමෙන් ලැබී ඇති ප්‍රශ්ණ සියල්ල සිංහල සහ ඉංග්‍රීසි මාධ්‍යයෙන් අඩංගු වේ. පිටු 40 කි.",
+          "url": "/storage/tutes/50002_2026-09-19_21-03-04.pdf"
+        }
+      ]
+    },
+    "paper-book": {
+      "status": 200,
+      "count": 15,
+      "pdfs": [
+        {
+          "id": 15,
+          "title": "2024 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2024 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 116 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2025-07-01_10-21-56.pdf"
+        },
+        {
+          "id": 37,
+          "title": "2023  විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2023 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 133 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/51122_2025-06-25_23-40-38.pdf"
+        },
+        {
+          "id": 38,
+          "title": "2022 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2022 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 168ක නිබන්ධනයකි. මුද්‍රිත පිටපතක් ලෙස මිලදී ගත හැකි අතර pdf වශයෙන් නොමිලේ ලබාගත හැකිය.",
+          "url": "/storage/tutes/51122_2024-12-15_16-58-18.pdf"
+        },
+        {
+          "id": 44,
+          "title": "2021 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2023 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 142 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/51122_2025-06-29_14-58-29.pdf"
+        },
+        {
+          "id": 67,
+          "title": "2020 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2020 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 131 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/51122_2024-12-17_02-45-17.pdf"
+        },
+        {
+          "id": 68,
+          "title": "2019 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2019 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 121 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2025-05-23_09-32-59.pdf"
+        },
+        {
+          "id": 72,
+          "title": "2018 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2018 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 114 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/51122_2025-06-29_14-58-02.pdf"
+        },
+        {
+          "id": 84,
+          "title": "2017 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2017 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 84 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2025-05-29_08-19-15.pdf"
+        },
+        {
+          "id": 86,
+          "title": "2016 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2016 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 87 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2025-07-08_23-09-03.pdf"
+        },
+        {
+          "id": 87,
+          "title": "2015 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2015 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 91 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2025-07-08_23-20-39.pdf"
+        },
+        {
+          "id": 88,
+          "title": "2014 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2014 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 74 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2025-07-22_13-15-29.pdf"
+        },
+        {
+          "id": 89,
+          "title": "2013 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2013 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 79 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2025-07-22_13-15-23.pdf"
+        },
+        {
+          "id": 90,
+          "title": "2012 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2012 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 79 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2025-08-01_21-35-58.pdf"
+        },
+        {
+          "id": 91,
+          "title": "2011 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2011 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 85 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2025-08-01_21-36-52.pdf"
+        },
+        {
+          "id": 142,
+          "title": "2025 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+          "description": "2025 උසස් පෙළ ප්‍රශ්ණපත්‍රයේ සියලු බහුවරණ ප්‍රශ්ණ, ව්‍යුහගත ප්‍රශ්ණ සහ රචනා ප්‍රශ්ණ වලට පියවරෙන් පියවර පිළිතුරු ලියන ආකාරය සියලු විශය කරුණු සමග සිංහල සහ ඉංග්‍රීසි භාශාවෙන් විවරණය කල පිටු 93 ක නිබන්ධනයකි. මුද්‍රණ කටයුතු සිදුකර නොමැති බැවින් තවම ලබාගත හැක්කේ pdf ගොනුවක් පමණි",
+          "url": "/storage/tutes/50002_2026-07-08_01-30-02.pdf"
+        }
+      ]
+    }
+  },
+  "directStorage": [
+    {
+      "type": "tute",
+      "id": 35,
+      "title": "LESSON 08 (DATABASE)",
+      "url": "/storage/tutes/50002_2026-07-28_05-12-05.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-07-28_05-12-05.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 45,
+      "title": "Lesson 09 - (Python) Full Tute (2026 New)",
+      "url": "/storage/tutes/50002_2026-07-28_05-12-33.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-07-28_05-12-33.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 50,
+      "title": "LESSON 04 (LOGIC GATES-THEORY)",
+      "url": "/storage/tutes/50036_2026-10-05_11-19-05.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50036_2026-10-05_11-19-05.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 51,
+      "title": "Teachers Guide",
+      "url": "/storage/tutes/50002_2026-08-17_21-38-20.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-08-17_21-38-20.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 119,
+      "title": "LESSON 10 (PART 01) - HTML & CSS (2026 NEW)",
+      "url": "/storage/tutes/50002_2026-07-28_05-13-49.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-07-28_05-13-49.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 120,
+      "title": "LESSON 08 (PART 02) - SQL IN DATABASE (2026 NEW)",
+      "url": "/storage/tutes/50002_2026-07-28_05-13-57.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-07-28_05-13-57.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 121,
+      "title": "LESSON 01 - BASIC CONCEPTS OF ICT (2028 NEW)",
+      "url": "/storage/tutes/50002_2026-07-28_05-14-12.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-07-28_05-14-12.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 129,
+      "title": "LESSON 10 (PART 02) - PHP (2026 NEW)",
+      "url": "/storage/tutes/50002_2026-07-28_05-14-24.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-07-28_05-14-24.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 134,
+      "title": "LESSON 11 - INTERNET OF THINGS (ARDUINO)(2026 NEW)",
+      "url": "/storage/tutes/50002_2026-06-07_23-14-56.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-06-07_23-14-56.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 135,
+      "title": "LESSON 12 - E COMMERCE (2026 NEW)",
+      "url": "/storage/tutes/50002_2026-06-07_23-15-23.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-06-07_23-15-23.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 136,
+      "title": "LESSON 13 - NEW TRENDS AND FUTURE DIRECTIONS OF ICT (2026 NEW)",
+      "url": "/storage/tutes/50002_2026-06-07_23-15-43.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-06-07_23-15-43.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 138,
+      "title": "LESSON 02 - EVOLUTION OF COMPUTING (2028 NEW)",
+      "url": "/storage/tutes/50002_2026-07-28_05-15-04.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-07-28_05-15-04.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 139,
+      "title": "LESSON 06 - NETWORKING (2026 NEW)",
+      "url": "/storage/tutes/50036_2026-09-22_15-02-06.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50036_2026-09-22_15-02-06.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "tute",
+      "id": 144,
+      "title": "LESSON 03 - NUMBER SYSTEMS (2028 NEW)",
+      "url": "/storage/tutes/50002_2026-07-28_05-16-05.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-07-28_05-16-05.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "lesson-pp",
+      "id": 14,
+      "title": "LESSON 09 (PYTHON PASTPAPER QUESTIONS)",
+      "url": "/storage/tutes/98220_2026-04-08_22-41-36.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/98220_2026-04-08_22-41-36.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "lesson-pp",
+      "id": 30,
+      "title": "LESSON 08 (DATABASE PASTPAPER QUESTIONS)",
+      "url": "/storage/tutes/51122_2025-12-10_20-37-23.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/51122_2025-12-10_20-37-23.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "lesson-pp",
+      "id": 61,
+      "title": "LESSON 07 (SYSTEM DEVELOPMENT - PASTPAPER QUESTIONS) NEW",
+      "url": "/storage/tutes/50036_2026-08-09_21-44-08.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50036_2026-08-09_21-44-08.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "lesson-pp",
+      "id": 126,
+      "title": "LESSON 1,2 (INTRODUCTION OF ICT-PASTPAPER QUESTIONS) NEW",
+      "url": "/storage/tutes/50002_2026-05-15_21-26-35.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-05-15_21-26-35.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "lesson-pp",
+      "id": 127,
+      "title": "LESSON 10 (WEB DEVELOPMENT-PASTPAPER QUESTIONS) NEW",
+      "url": "/storage/tutes/50002_2026-05-15_21-25-56.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-05-15_21-25-56.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "lesson-pp",
+      "id": 128,
+      "title": "LESSON 05 (OPERATING SYSTEMS PASTPAPER QUESTIONS) NEW",
+      "url": "/storage/tutes/50002_2026-05-15_21-29-36.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-05-15_21-29-36.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "lesson-pp",
+      "id": 133,
+      "title": "LESSON 11,12,13 (INTERNET OF THINGS, E-COMMERCE, NEW-TRENDS-PASTPAPER QUESTIONS) NEW",
+      "url": "/storage/tutes/50002_2026-06-07_23-07-47.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-06-07_23-07-47.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "lesson-pp",
+      "id": 145,
+      "title": "LESSON 3,4 (NUMBER SYSTEMS & LOGIC GATES-PASTPAPER QUESTIONS) (2028 NEW)",
+      "url": "/storage/tutes/50002_2026-09-19_21-11-56.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-09-19_21-11-56.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "lesson-pp",
+      "id": 149,
+      "title": "LESSON 06 (NETWORKING PASTPAPER QUESTIONS) NEW",
+      "url": "/storage/tutes/50002_2026-09-19_21-03-04.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-09-19_21-03-04.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 15,
+      "title": "2024 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2025-07-01_10-21-56.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2025-07-01_10-21-56.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 37,
+      "title": "2023  විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/51122_2025-06-25_23-40-38.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/51122_2025-06-25_23-40-38.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 38,
+      "title": "2022 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/51122_2024-12-15_16-58-18.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/51122_2024-12-15_16-58-18.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 44,
+      "title": "2021 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/51122_2025-06-29_14-58-29.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/51122_2025-06-29_14-58-29.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 67,
+      "title": "2020 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/51122_2024-12-17_02-45-17.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/51122_2024-12-17_02-45-17.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 68,
+      "title": "2019 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2025-05-23_09-32-59.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2025-05-23_09-32-59.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 72,
+      "title": "2018 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/51122_2025-06-29_14-58-02.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/51122_2025-06-29_14-58-02.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 84,
+      "title": "2017 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2025-05-29_08-19-15.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2025-05-29_08-19-15.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 86,
+      "title": "2016 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2025-07-08_23-09-03.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2025-07-08_23-09-03.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 87,
+      "title": "2015 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2025-07-08_23-20-39.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2025-07-08_23-20-39.pdf",
+      "check": {
+        "status": 0,
+        "contentType": null,
+        "length": null,
+        "ok": false,
+        "error": "fetch failed"
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 88,
+      "title": "2014 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2025-07-22_13-15-29.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2025-07-22_13-15-29.pdf",
+      "check": {
+        "status": 0,
+        "contentType": null,
+        "length": null,
+        "ok": false,
+        "error": "fetch failed"
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 89,
+      "title": "2013 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2025-07-22_13-15-23.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2025-07-22_13-15-23.pdf",
+      "check": {
+        "status": 0,
+        "contentType": null,
+        "length": null,
+        "ok": false,
+        "error": "fetch failed"
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 90,
+      "title": "2012 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2025-08-01_21-35-58.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2025-08-01_21-35-58.pdf",
+      "check": {
+        "status": 0,
+        "contentType": null,
+        "length": null,
+        "ok": false,
+        "error": "fetch failed"
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 91,
+      "title": "2011 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2025-08-01_21-36-52.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2025-08-01_21-36-52.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    },
+    {
+      "type": "paper-book",
+      "id": 142,
+      "title": "2025 විභාග ප්‍රශ්ණපත්‍රය විවරණය",
+      "url": "/storage/tutes/50002_2026-07-08_01-30-02.pdf",
+      "abs": "https://ictfromabc.com/storage/tutes/50002_2026-07-08_01-30-02.pdf",
+      "check": {
+        "status": 200,
+        "contentType": "application/pdf",
+        "length": null,
+        "ok": true
+      }
+    }
+  ]
+}

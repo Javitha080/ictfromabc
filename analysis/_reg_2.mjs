@@ -1,0 +1,13 @@
+﻿const UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+const B='https://ictfromabc.com/api';
+const p='0710000000';
+async function reg(extra,label){
+ const fd=new FormData();
+ const f={firstName:'Test',lastName:'Student',birthday:'2008-01-01',school:'Test School',address:'Test Address',email:'testuser'+Date.now()+'@example.com',phoneNumber:p,whatsappNumber:p,telegramNumber:p,courseId:'2027-al',district:'Colombo',password:'TestPass123#',password_confirmation:'TestPass123#',medium:'S',nearestCity:'Colombo',instituteId:'6',...extra};
+ for(const k in f) if(f[k]!==undefined&&f[k]!==null) fd.append(k,f[k]);
+ const r=await fetch(B+'/register',{method:'POST',headers:{Accept:'application/json','User-Agent':UA,Origin:'https://ictfromabc.com',Referer:'https://ictfromabc.com/auth/register'},body:fd,redirect:'manual'});
+ console.log(label,r.status,(await r.text()).slice(0,900));
+}
+await reg({idNumber:'200812345678'},'fake nic:');
+await new Promise(r=>setTimeout(r,1100));
+await reg({},'no nic:');

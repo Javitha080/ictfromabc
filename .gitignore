@@ -1,0 +1,17 @@
+# ---- local runtime state: never commit ----
+.playwright-mcp/
+downloads/
+__pycache__/
+*.pyc
+node_modules/
+
+# ---- account/session captures: live tokens + PII stay on disk ----
+me.json
+*_live_token.json
+session-export-*.json
+*.local.json
+
+# ---- third-party tool clones (public repos, re-obtainable) ----
+tools/LinkFinder/
+tools/SecretFinder/
+CloudRecon/

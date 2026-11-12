@@ -1,0 +1,284 @@
+[
+  {
+    "m": "POST",
+    "p": "/admin/videos",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/courses",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/lessons",
+    "s": 403,
+    "b": "{\"msg\":\"Who do you Think you Are ?\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/add-admin",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/admins/role",
+    "s": 403,
+    "b": "{\"msg\":\"Who do you Think you Are ?\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/courses/order",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/tags",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/past-papers",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/papers",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/model-papers",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/practical-sessions",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/events",
+    "s": 403,
+    "b": "{\"msg\":\"Who do you Think you Are ?\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/tutes",
+    "s": 403,
+    "b": "{\"msg\":\"Who do you Think you Are ?\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/tutes/csv",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/tutes/package",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/tutes/pdf",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/tutes/transfer",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/tickets",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/ticket-categories",
+    "s": 403,
+    "b": "{\"msg\":\"Who do you Think you Are ?\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/sms/send",
+    "s": 403,
+    "b": "{\"msg\":\"Who do you Think you Are ?\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/sms/test",
+    "s": 403,
+    "b": "{\"msg\":\"Who do you Think you Are ?\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/sms/send-csv",
+    "s": 403,
+    "b": "{\"msg\":\"Who do you Think you Are ?\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/student-calls",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/call-responses",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/purchases/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/new-year-purchases/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/event-purchases/999999/resend",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/event-tickets/XXXX/check",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/zoom/",
+    "s": 403,
+    "b": "{\"msg\":\"Unauthorized\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/videos/999999/toggle-status",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/users/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/practical-sessions/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/courses/999999/toggle-status-all",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/lessons/999999/toggle-status-all",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/reviews/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/tickets/999999/status",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/call-responses/999999/toggle-status",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/papers/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PATCH",
+    "p": "/admin/tutes/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PUT",
+    "p": "/admin/tags/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "PUT",
+    "p": "/admin/call-responses/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/papers/999999",
+    "s": 405,
+    "b": "{\n    \"message\": \"The POST method is not supported for route api/admin/papers/999999. Supported methods: GET, HEAD, PUT, PATCH, DELETE.\"\n}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/model-papers/999999",
+    "s": 405,
+    "b": "{\n    \"message\": \"The POST method is not supported for route api/admin/model-papers/999999. Supported methods: GET, HEAD, PUT, PATCH, DELETE.\"\n}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/events/999999",
+    "s": 405,
+    "b": "{\n    \"message\": \"The POST method is not supported for route api/admin/events/999999. Supported methods: GET, HEAD, PUT, DELETE.\"\n}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/courses/999999",
+    "s": 404,
+    "b": "{\"msg\":\"Oops..! Something is Missing.\"}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/lessons/999999",
+    "s": 405,
+    "b": "{\n    \"message\": \"The POST method is not supported for route api/admin/lessons/999999. Supported methods: GET, HEAD, PUT, DELETE.\"\n}"
+  },
+  {
+    "m": "POST",
+    "p": "/admin/videos/999999",
+    "s": 405,
+    "b": "{\n    \"message\": \"The POST method is not supported for route api/admin/videos/999999. Supported methods: PUT, PATCH, DELETE.\"\n}"
+  }
+]

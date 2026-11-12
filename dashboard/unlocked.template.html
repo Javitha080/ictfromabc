@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ICT Unlock — Unlocked Lesson Library</title>
+<style>
+  :root{
+    --bg:#080b0f; --panel:#0d1218; --panel2:#111820; --line:#1e2833; --line2:#2a3644;
+    --text:#e6edf5; --muted:#8fa1b5; --dim:#5f7288; --red:#e11d48; --red2:#fb7185;
+    --cyan:#22d3ee; --amber:#fbbf24; --green:#34d399;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 ui-sans-serif,system-ui,"Segoe UI",Roboto,Arial,sans-serif}
+  a{color:var(--red2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px 80px}
+  header{position:sticky;top:0;z-index:20;background:rgba(8,11,15,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  .hd{display:flex;align-items:center;gap:14px;padding:16px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.08em;font-size:15px}
+  .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 14px var(--red)}
+  .stats{display:flex;gap:18px;margin-left:auto;color:var(--muted);font-size:12px;white-space:nowrap}
+  .stats b{color:var(--text);font-weight:700}
+  .hero{padding:34px 0 10px}
+  .hero h1{font-size:clamp(26px,4vw,40px);line-height:1.1;margin:0 0 10px;letter-spacing:-.02em}
+  .hero h1 span{color:var(--red2)}
+  .hero p{max-width:720px;color:var(--muted);margin:0;font-size:13px}
+  .bar{display:flex;gap:10px;margin:22px 0 8px;flex-wrap:wrap}
+  .bar input{flex:1;min-width:220px;background:var(--panel);border:1px solid var(--line2);color:var(--text);
+    border-radius:10px;padding:11px 13px;font-size:13px;outline:none}
+  .bar input:focus{border-color:var(--red)}
+  button{font:inherit}
+  .btn{border:1px solid var(--line2);background:var(--panel2);color:#c7d3e0;border-radius:10px;padding:10px 13px;
+    font-size:12px;cursor:pointer;white-space:nowrap}
+  .btn:hover{background:#18222d;color:#fff}
+  .btn.red{border-color:#7f1d1d;color:#fecdd3;background:#1a0d12}
+  .btn.red:hover{background:#26121a}
+  .course{margin:26px 0 10px;display:flex;align-items:baseline;gap:10px}
+  .course h2{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0;font-weight:700}
+  .course .cid{font-size:10px;color:#42536a;font-family:ui-monospace,Consolas,monospace}
+  .lesson{border:1px solid var(--line);background:var(--panel);border-radius:12px;margin-bottom:10px;overflow:hidden}
+  .lesson.open{border-color:#334155}
+  .lhead{display:flex;align-items:center;gap:10px;padding:12px 14px;cursor:pointer}
+  .lhead:hover{background:#0f151d}
+  .lid{font-family:ui-monospace,Consolas,monospace;font-size:11px;color:var(--dim);width:44px;flex:none}
+  .ltitle{flex:1;font-size:13px;font-weight:600;line-height:1.35}
+  .pill{font-size:10px;color:#93c5fd;background:#16202c;border:1px solid #223247;padding:2px 7px;border-radius:999px;white-space:nowrap}
+  .chev{color:var(--dim);transition:transform .15s;font-size:11px}
+  .lesson.open .chev{transform:rotate(90deg)}
+  .videos{border-top:1px solid var(--line);background:#0a0f14}
+  .vrow{display:flex;align-items:center;gap:9px;padding:10px 14px;border-bottom:1px solid #141c25}
+  .vrow:last-child{border-bottom:0}
+  .vid{font-family:ui-monospace,Consolas,monospace;font-size:10px;color:var(--dim);width:44px;flex:none}
+  .vtitle{flex:1;font-size:12px;color:#c9d5e2;line-height:1.3}
+  .kind{font-size:9px;font-weight:800;letter-spacing:.06em;padding:2px 6px;border-radius:4px;text-transform:uppercase}
+  .kind.youtube{background:#3a151b;color:#fda4af}
+  .kind.bunny{background:#0d3038;color:#67e8f9}
+  .kind.hls,.kind.mp4{background:#152538;color:#93c5fd}
+  .kind.other,.kind.none{background:#1d2733;color:#94a3b8}
+  .vbtn{border:1px solid #2a3644;background:#121a23;color:#93a4b8;border-radius:7px;padding:4px 8px;font-size:10px;cursor:pointer;white-space:nowrap}
+  .vbtn:hover{color:#fff;border-color:#475569}
+  .vbtn.play{color:#fecdd3;border-color:#7f1d1d;background:#1a0d12}
+  .lesson .footer{display:flex;gap:12px;align-items:center;padding:9px 14px;border-top:1px solid var(--line);background:#0b1117;font-size:11px;color:var(--muted)}
+  .lesson .footer a{font-size:11px}
+  .empty{color:var(--dim);text-align:center;padding:60px 20px;border:1px dashed var(--line2);border-radius:12px;margin-top:24px}
+  .note{margin-top:38px;border:1px solid var(--line);border-radius:12px;background:#0a0f14;padding:14px 16px;color:var(--muted);font-size:12px}
+  .note b{color:var(--text)}
+  code{font-family:ui-monospace,Consolas,monospace;font-size:11px;color:#fbcfe8;background:#150e16;border:1px solid #2b1a2e;border-radius:4px;padding:1px 4px}
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.86);display:none;align-items:center;justify-content:center;padding:22px;z-index:50}
+  .overlay.open{display:flex}
+  .modal{width:min(1040px,96vw);background:var(--panel);border:1px solid var(--line2);border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+  .mhd{display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--line)}
+  .mhd .t{flex:1;font-size:12px;font-weight:600}
+  .frame{aspect-ratio:16/9;background:#000}
+  .frame iframe{display:block;width:100%;height:100%;border:0}
+  .mft{display:flex;gap:14px;padding:10px 14px;font-size:11px;color:var(--muted)}
+  #toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);opacity:0;z-index:80;
+    background:#052e16;border:1px solid #166534;color:#bbf7d0;padding:9px 14px;border-radius:9px;font-size:12px;
+    transition:.2s;pointer-events:none}
+  #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  @media (max-width:640px){
+    .stats{display:none}
+    .vrow{flex-wrap:wrap}
+    .vtitle{min-width:100%}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hd">
+    <div class="logo"><span class="dot"></span>ICT UNLOCK</div>
+    <div class="stats">
+      <span><b id="s-lessons">0</b> lessons</span>
+      <span><b id="s-videos">0</b> videos</span>
+      <span><b id="s-bunny">0</b> bunny</span>
+      <span><b id="s-yt">0</b> youtube</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>Every lesson this account can <span>actually read</span>.</h1>
+    <p id="sub">Generated inventory of the entitlement gap: lessons whose detail endpoint returns 200 for the student account, beyond the 11 shown by <code>/api/lessons/allowed</code>. Playback opens the real embed; download buttons copy ready-to-run ffmpeg / yt-dlp commands.</p>
+    <div class="bar">
+      <input id="q" placeholder="Search lesson, video, course or id…">
+      <button class="btn" id="expand">Expand all</button>
+      <button class="btn red" id="manifest">Copy manifest</button>
+    </div>
+  </section>
+  <div id="list"></div>
+  <div class="note">
+    <b>Source of truth:</b> <code>GET /api/lessons/{id}</code> → 200 for 36 lessons (11 are officially allowed).
+    Bunny playback is Referer-gated, not token-gated; the site itself is the reliable player.
+    <span id="gen"></span>
+  </div>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="mhd"><div class="t" id="mtitle"></div><button class="btn" id="mclose">Close</button></div>
+    <div class="frame" id="mframe"></div>
+    <div class="mft"><a id="mopen" target="_blank" rel="noopener">Open native lesson page ↗</a><span id="mhint"></span></div>
+  </div>
+</div>
+<div id="toast"></div>
+
+<script>
+const DATA = /*__ICT_DATA__*/null;
+const COURSE_ORDER = ['2027-al','2026-al','al-videos','ol-videos','git'];
+const SITE = 'https://ictfromabc.com';
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const expanded = new Set();
+let filter = '';
+
+const lessons = (DATA && DATA.lessons) || [];
+const labels = (DATA && DATA.courseLabels) || {};
+
+function lessonUrl(id){ return SITE + '/dashboard/lessons/' + id + '/videos'; }
+function label(id){ return labels[id] || id; }
+
+function ordered(){
+  const q = filter.trim().toLowerCase();
+  let arr = lessons.slice();
+  arr.sort((a,b)=>{
+    const ai = COURSE_ORDER.indexOf(a.course_id), bi = COURSE_ORDER.indexOf(b.course_id);
+    const ao = ai < 0 ? 99 : ai, bo = bi < 0 ? 99 : bi;
+    return ao !== bo ? ao - bo : Number(b.id) - Number(a.id);
+  });
+  if(!q) return arr;
+  return arr.filter(l =>
+    String(l.title).toLowerCase().includes(q) ||
+    String(l.course_id).toLowerCase().includes(q) ||
+    String(l.id) === q ||
+    (l.videos||[]).some(v => String(v.title).toLowerCase().includes(q) || String(v.id) === q)
+  );
+}
+
+function render(){
+  const arr = ordered();
+  const list = document.getElementById('list');
+  if(!arr.length){ list.innerHTML = '<div class="empty">No lessons match that search.</div>'; return; }
+  let html = '', course = null;
+  for(const l of arr){
+    if(l.course_id !== course){
+      course = l.course_id;
+      html += '<div class="course"><h2>' + esc(label(course)) + '</h2><span class="cid">' + esc(course) + '</span></div>';
+    }
+    const open = expanded.has(Number(l.id));
+    html += '<div class="lesson' + (open?' open':'') + '">' +
+      '<div class="lhead" data-act="toggle" data-lid="' + l.id + '">' +
+        '<span class="lid">#' + l.id + '</span>' +
+        '<span class="ltitle">' + esc(l.title) + '</span>' +
+        '<span class="pill">' + (l.videos||[]).length + ' videos</span>' +
+        '<span class="chev">▶</span>' +
+      '</div>';
+    if(open){
+      html += '<div class="videos">';
+      if(!(l.videos||[]).length){
+        html += '<div class="vrow"><span class="vtitle">No video rows captured.</span></div>';
+      } else for(const v of l.videos){
+        const kind = (v.media && v.media.kind) || 'none';
+        html += '<div class="vrow">' +
+          '<span class="vid">' + v.id + '</span>' +
+          '<span class="vtitle">' + esc(v.title) + '</span>' +
+          '<span class="kind ' + esc(kind) + '">' + esc(kind) + '</span>' +
+          '<button class="vbtn play" data-act="play" data-lid="' + l.id + '" data-vid="' + v.id + '">play</button>' +
+          '<button class="vbtn" data-act="ffmpeg" data-lid="' + l.id + '" data-vid="' + v.id + '">ffmpeg</button>' +
+          '<button class="vbtn" data-act="ytdlp" data-lid="' + l.id + '" data-vid="' + v.id + '">yt-dlp</button>' +
+        '</div>';
+      }
+      html += '</div>' +
+        '<div class="footer"><a href="' + lessonUrl(l.id) + '" target="_blank" rel="noopener">Open on site ↗</a>' +
+        '<span>CLI: <code>node ict-toolkit/cli/ict.mjs download-lesson ' + l.id + ' --ffmpeg</code></span></div>';
+    }
+    html += '</div>';
+  }
+  list.innerHTML = html;
+}
+
+function stats(){
+  let v=0,b=0,y=0;
+  for(const l of lessons) for(const vid of (l.videos||[])){
+    v++;
+    if(vid.media && vid.media.kind==='bunny') b++;
+    if(vid.media && vid.media.kind==='youtube') y++;
+  }
+  document.getElementById('s-lessons').textContent = lessons.length;
+  document.getElementById('s-videos').textContent = v;
+  document.getElementById('s-bunny').textContent = b;
+  document.getElementById('s-yt').textContent = y;
+}
+
+function find(lid,vid){
+  const l = lessons.find(x=>Number(x.id)===Number(lid));
+  return l && {lesson:l, video:(l.videos||[]).find(x=>Number(x.id)===Number(vid))};
+}
+
+function tokened(v){
+  const m = v.media || {};
+  let url = v.video_url || '';
+  if(!url && m.kind==='bunny') url = 'https://iframe.mediadelivery.net/embed/' + m.libraryId + '/' + m.guid + '?preload=false';
+  if(url && v.token && m.kind==='bunny') url += (url.includes('?')?'&':'?') + 'token=' + encodeURIComponent(v.token) + '&expires=' + encodeURIComponent(v.expires||'');
+  return url;
+}
+
+function ffmpegCmd(l,v){
+  const m = v.media || {};
+  if(m.kind!=='bunny' || !m.playlist) return null;
+  return 'ffmpeg -headers $\'Referer: https://ictfromabc.com/\\r\\nOrigin: https://ictfromabc.com\' -i "' + m.playlist + '" -c copy -bsf:a aac_adtstoasc "L' + l.id + '-V' + v.id + '.mp4"';
+}
+function ytdlpCmd(l,v){
+  const m = v.media || {};
+  if(m.kind!=='youtube' || !m.videoId) return null;
+  return 'yt-dlp "https://www.youtube.com/watch?v=' + m.videoId + '" -o "L' + l.id + '-V' + v.id + '.%(ext)s"';
+}
+
+function manifest(){
+  const out = ['ICT UNLOCK MANIFEST','generated: ' + ((DATA&&DATA.generatedAt)||new Date().toISOString()),''];
+  for(const l of lessons){
+    out.push('LESSON ' + l.id + '  [' + l.course_id + ']  ' + l.title);
+    out.push('  ' + lessonUrl(l.id));
+    for(const v of (l.videos||[])){
+      out.push('  - VIDEO ' + v.id + '  ' + v.title);
+      const u = tokened(v) || (v.media && (v.media.playlist || v.media.url)) || '';
+      if(u) out.push('    ' + u);
+      const f = ffmpegCmd(l,v); if(f) out.push('    ' + f);
+      const y = ytdlpCmd(l,v); if(y) out.push('    ' + y);
+    }
+    out.push('  CLI: node ict-toolkit/cli/ict.mjs download-lesson ' + l.id + ' --ffmpeg');
+    out.push('');
+  }
+  return out.join('\n');
+}
+
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  clearTimeout(t._t); t._t = setTimeout(()=>t.classList.remove('show'),1700);
+}
+function copy(text,msg){
+  const done = ()=>toast(msg||'copied');
+  if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done,()=>fallback(text,done));
+  else fallback(text,done);
+}
+function fallback(text,done){
+  const ta=document.createElement('textarea'); ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  try{document.execCommand('copy')}catch(e){}
+  ta.remove(); done();
+}
+
+function play(l,v){
+  const src = tokened(v);
+  if(!src){ toast('no playable URL'); return; }
+  document.getElementById('mtitle').textContent = 'L' + l.id + ' · V' + v.id + ' — ' + v.title;
+  document.getElementById('mframe').innerHTML = '<iframe src="' + esc(src) + '" allow="autoplay; fullscreen; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="origin"></iframe>';
+  document.getElementById('mopen').href = lessonUrl(l.id);
+  document.getElementById('mhint').textContent = (v.media&&v.media.kind==='bunny') ? 'Bunny embed — Referer-gated on the site, not here.' : '';
+  document.getElementById('overlay').classList.add('open');
+}
+function closePlay(){
+  document.getElementById('overlay').classList.remove('open');
+  document.getElementById('mframe').innerHTML = '';
+}
+
+document.getElementById('list').addEventListener('click', e=>{
+  const a = e.target.closest('[data-act]');
+  if(!a) return;
+  const act = a.getAttribute('data-act');
+  if(act==='toggle'){
+    const id = Number(a.getAttribute('data-lid'));
+    expanded.has(id) ? expanded.delete(id) : expanded.add(id);
+    render(); return;
+  }
+  const r = find(a.getAttribute('data-lid'), a.getAttribute('data-vid'));
+  if(!r || !r.video) return;
+  if(act==='play') play(r.lesson,r.video);
+  else if(act==='ffmpeg'){ const c=ffmpegCmd(r.lesson,r.video); c?copy(c,'ffmpeg command copied'):toast('not a Bunny video'); }
+  else if(act==='ytdlp'){ const c=ytdlpCmd(r.lesson,r.video); c?copy(c,'yt-dlp command copied'):toast('not a YouTube video'); }
+});
+
+document.getElementById('q').addEventListener('input', e=>{ filter=e.target.value; render(); });
+document.getElementById('expand').addEventListener('click', ()=>{
+  const arr = ordered();
+  if(expanded.size >= arr.length){ expanded.clear(); document.getElementById('expand').textContent='Expand all'; }
+  else { for(const l of arr) expanded.add(Number(l.id)); document.getElementById('expand').textContent='Collapse all'; }
+  render();
+});
+document.getElementById('manifest').addEventListener('click', ()=>copy(manifest(),'manifest copied'));
+document.getElementById('mclose').addEventListener('click', closePlay);
+document.getElementById('overlay').addEventListener('click', e=>{ if(e.target.id==='overlay') closePlay(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closePlay(); });
+
+document.getElementById('gen').textContent = ' Data: ' + ((DATA&&DATA.generatedAt)||'unknown') + '.';
+stats();
+render();
+</script>
+</body>
+</html>

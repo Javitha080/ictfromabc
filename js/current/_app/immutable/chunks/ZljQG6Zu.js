@@ -1,0 +1,1 @@
+var r=(N=>(N[N.REJECTED=-1]="REJECTED",N[N.ONLINE=1]="ONLINE",N[N.ONLINE_PENDING=3]="ONLINE_PENDING",N))(r||{});const n=N=>{switch(N){case-1:return"Rejected";case 1:return"Confirmed";case 3:return"Pending";default:return"Unknown"}};var E=(N=>(N[N.STUDENT=1]="STUDENT",N[N.GUEST=2]="GUEST",N))(E||{});export{E,r as a,n as e};

@@ -1,0 +1,10 @@
+﻿import fs from 'fs';
+const T=JSON.parse(fs.readFileSync('analysis/_live_token.json','utf8')).token;
+const UA='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+const H={Accept:'application/json','User-Agent':UA,Authorization:'Bearer '+T};
+const g=await fetch('https://ictfromabc.com/api/lessons/allowed',{headers:H}); const allowed=await g.json();
+const ids=allowed.map(x=>x.id);
+console.log('allowed',ids.length,ids.join(','));
+const all=await (await fetch('https://ictfromabc.com/api/lessons',{headers:H})).json();
+const allIds=(Array.isArray(all)?all:all.lessons||[]).map(x=>x.id);
+console.log('all',allIds.length,'first',allIds.slice(0,5),'last',allIds.slice(-5));

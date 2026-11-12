@@ -1,0 +1,75 @@
+﻿import {
+  s as g,
+  l as x,
+  d as f,
+  a as y,
+  u as j,
+  o as w,
+  p as E,
+  i as H,
+  b as c,
+  q as _,
+  c as m,
+  e as h,
+  f as k,
+  g as q,
+  h as p,
+  t as D,
+  j as I,
+} from "./CrD0m2hm.js";
+import { S, i as V, t as C, a as T } from "./DzXz5lJj.js";
+function z(o) {
+  let t, i, r, d, n, a;
+  const u = o[2].default,
+    s = x(u, o, o[1], null);
+  return {
+    c() {
+      ((t = p("div")), (i = p("h2")), (r = D(o[0])), (d = I()), (n = p("div")), s && s.c(), this.h());
+    },
+    l(e) {
+      t = m(e, "DIV", { class: !0 });
+      var l = h(t);
+      i = m(l, "H2", { class: !0 });
+      var v = h(i);
+      ((r = k(v, o[0])), v.forEach(f), (d = q(l)), (n = m(l, "DIV", { class: !0 })));
+      var b = h(n);
+      (s && s.l(b), b.forEach(f), l.forEach(f), this.h());
+    },
+    h() {
+      (_(i, "class", "text-base md:text-2xl font-bold text-white py-2 w-full rounded-sm text-center"),
+        _(n, "class", "flex justify-end gap-x-5 items-center rounded-md"),
+        _(t, "class", "topsticky flex justify-space-between bg-black rounded-sm mb-6 px-2 svelte-6j6h6d"));
+    },
+    m(e, l) {
+      (H(e, t, l), c(t, i), c(i, r), c(t, d), c(t, n), s && s.m(n, null), (a = !0));
+    },
+    p(e, [l]) {
+      ((!a || l & 1) && y(r, e[0]), s && s.p && (!a || l & 2) && j(s, u, e, e[1], a ? E(u, e[1], l, null) : w(e[1]), null));
+    },
+    i(e) {
+      a || (T(s, e), (a = !0));
+    },
+    o(e) {
+      (C(s, e), (a = !1));
+    },
+    d(e) {
+      (e && f(t), s && s.d(e));
+    },
+  };
+}
+function A(o, t, i) {
+  let { $$slots: r = {}, $$scope: d } = t,
+    { title: n = "Title" } = t;
+  return (
+    (o.$$set = (a) => {
+      ("title" in a && i(0, (n = a.title)), "$$scope" in a && i(1, (d = a.$$scope)));
+    }),
+    [n, d, r]
+  );
+}
+class G extends S {
+  constructor(t) {
+    (super(), V(this, t, A, z, g, { title: 0 }));
+  }
+}
+export { G as H };

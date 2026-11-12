@@ -1,0 +1,8 @@
+{
+  "browser": {
+    "initScript": [
+      "D:\\Pentesting\\ictfromabc\\ict-toolkit\\userscript\\ict-suite-relogin-delta.js",
+      "D:\\Pentesting\\ictfromabc\\userpannel\\ictfromabc-bypass.user.js"
+    ]
+  }
+}

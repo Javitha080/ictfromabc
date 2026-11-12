@@ -1,0 +1,880 @@
+﻿const __vite__mapDeps = (i, m = __vite__mapDeps, d = m.f || (m.f = ["../chunks/uv04NaUW.js", "../chunks/Dl-EBvGR.js"])) => i.map((i) => d[i]);
+import {
+  s as oe,
+  d as w,
+  A as R,
+  a as ge,
+  z as $,
+  i as L,
+  b as g,
+  w as J,
+  q as h,
+  c as y,
+  e as A,
+  f as O,
+  g as F,
+  h as P,
+  t as U,
+  j as V,
+  v as be,
+  n as ae,
+  B as ee,
+  E as Q,
+  a0 as we,
+  C as Ee,
+  x as xe,
+  Y as ie,
+  _ as se,
+  S as ke,
+  a6 as ye,
+  F as Pe,
+} from "../chunks/CrD0m2hm.js";
+import { S as fe, i as ue, d as M, t as S, a as N, o as j, m as q, b as B, e as H, g as te, c as ne, h as le, p as re } from "../chunks/DzXz5lJj.js";
+import { _ as Te } from "../chunks/C1FmrZbK.js";
+import { f as W, q as z, a as X, c as De, b as Ie } from "../chunks/CKl9Rzh0.js";
+import { L as ve, H as Ne } from "../chunks/We5q9Srk.js";
+import { g as K } from "../chunks/CPkiEbDf.js";
+import { a as de } from "../chunks/CD97E9Hu.js";
+import { P as Ce } from "../chunks/DyzwMvXy.js";
+import { R as Z } from "../chunks/BbwfBUtK.js";
+import { s as ce } from "../chunks/CWqXeFnL.js";
+import { F as Ae } from "../chunks/BKeoPcEv.js";
+import { p as Se } from "../chunks/BOF9_q3h.js";
+import { U as Fe } from "../chunks/CciFzQpK.js";
+function Ve(l) {
+  let e,
+    t = "OTP has expired. Please reload the page.";
+  return {
+    c() {
+      ((e = P("span")), (e.textContent = t), this.h());
+    },
+    l(a) {
+      ((e = y(a, "SPAN", { class: !0, "data-svelte-h": !0 })), ee(e) !== "svelte-1bimj2c" && (e.textContent = t), this.h());
+    },
+    h() {
+      h(e, "class", "text-sm text-red-600");
+    },
+    m(a, o) {
+      L(a, e, o);
+    },
+    p: ae,
+    d(a) {
+      a && w(e);
+    },
+  };
+}
+function Le(l) {
+  let e, t, a, o;
+  return {
+    c() {
+      ((e = P("span")), (t = U("OTP expires in ")), (a = U(l[5])), (o = U(".")), this.h());
+    },
+    l(s) {
+      e = y(s, "SPAN", { class: !0 });
+      var i = A(e);
+      ((t = O(i, "OTP expires in ")), (a = O(i, l[5])), (o = O(i, ".")), i.forEach(w), this.h());
+    },
+    h() {
+      h(e, "class", "text-sm text-gray-700");
+    },
+    m(s, i) {
+      (L(s, e, i), g(e, t), g(e, a), g(e, o));
+    },
+    p(s, i) {
+      i & 32 && ge(a, s[5]);
+    },
+    d(s) {
+      s && w(e);
+    },
+  };
+}
+function Oe(l) {
+  let e, t, a, o, s, i, n, r, u, c, D, T, b, C;
+  u = new ve({ props: { text: "Verify OTP", onClick: l[3], isLoading: l[2] } });
+  function E(p, _) {
+    return p[4] > 0 ? Le : Ve;
+  }
+  let m = E(l),
+    x = m(l);
+  return {
+    c() {
+      ((e = P("div")),
+        (t = P("div")),
+        (a = U("Welcome, ")),
+        (o = U(l[1])),
+        (s = V()),
+        (i = P("div")),
+        (n = P("input")),
+        (r = V()),
+        H(u.$$.fragment),
+        (c = V()),
+        x.c(),
+        this.h());
+    },
+    l(p) {
+      e = y(p, "DIV", { class: !0 });
+      var _ = A(e);
+      t = y(_, "DIV", { class: !0 });
+      var d = A(t);
+      ((a = O(d, "Welcome, ")), (o = O(d, l[1])), d.forEach(w), (s = F(_)), (i = y(_, "DIV", { class: !0 })));
+      var f = A(i);
+      ((n = y(f, "INPUT", { type: !0, inputmode: !0, maxlength: !0, class: !0, placeholder: !0 })),
+        (r = F(f)),
+        B(u.$$.fragment, f),
+        (c = F(f)),
+        x.l(f),
+        f.forEach(w),
+        _.forEach(w),
+        this.h());
+    },
+    h() {
+      (h(t, "class", "text-2xl font-medium m-4"),
+        h(n, "type", "text"),
+        h(n, "inputmode", "numeric"),
+        h(n, "maxlength", "6"),
+        h(
+          n,
+          "class",
+          "w-full h-[50px] p-2.5 border-none rounded-md mb-2 box-border shadow-[0_0_5px_#0F0F0F80] text-center text-[1.4em] cursor-text focus:outline-none focus:border focus:border-[#D1D1D1] focus:shadow-[0_0_15px_#0F0F0F80] placeholder:text-center disabled:bg-gray-100 disabled:cursor-not-allowed",
+        ),
+        h(n, "placeholder", "6 Digit OTP"),
+        h(i, "class", "flex flex-col gap-2 items-center mb-4 justify-center w-full"),
+        h(e, "class", "flex flex-col items-center w-full"));
+    },
+    m(p, _) {
+      (L(p, e, _),
+        g(e, t),
+        g(t, a),
+        g(t, o),
+        g(e, s),
+        g(e, i),
+        g(i, n),
+        $(n, l[0]),
+        g(i, r),
+        q(u, i, null),
+        g(i, c),
+        x.m(i, null),
+        (T = !0),
+        b || ((C = J(n, "input", l[8])), (b = !0)));
+    },
+    p(p, [_]) {
+      ((!T || _ & 2) && ge(o, p[1]), _ & 1 && n.value !== p[0] && $(n, p[0]));
+      const d = {};
+      (_ & 8 && (d.onClick = p[3]),
+        _ & 4 && (d.isLoading = p[2]),
+        u.$set(d),
+        m === (m = E(p)) && x ? x.p(p, _) : (x.d(1), (x = m(p)), x && (x.c(), x.m(i, null))));
+    },
+    i(p) {
+      T ||
+        (N(u.$$.fragment, p),
+        p &&
+          (D ||
+            R(() => {
+              ((D = j(i, W, { duration: 300 })), D.start());
+            })),
+        (T = !0));
+    },
+    o(p) {
+      (S(u.$$.fragment, p), (T = !1));
+    },
+    d(p) {
+      (p && w(e), M(u), x.d(), (b = !1), C());
+    },
+  };
+}
+function Ue(l, e, t) {
+  let a,
+    o,
+    s,
+    { firstName: i } = e,
+    { otp: n } = e,
+    { loading: r } = e,
+    { handleSubmit: u } = e,
+    c = 2 * 60,
+    D;
+  be(
+    () => (
+      (D = setInterval(() => {
+        c > 0 ? t(4, c--, c) : clearInterval(D);
+      }, 1e3)),
+      () => clearInterval(D)
+    ),
+  );
+  function T() {
+    ((n = this.value), t(0, n));
+  }
+  return (
+    (l.$$set = (b) => {
+      ("firstName" in b && t(1, (i = b.firstName)),
+        "otp" in b && t(0, (n = b.otp)),
+        "loading" in b && t(2, (r = b.loading)),
+        "handleSubmit" in b && t(3, (u = b.handleSubmit)));
+    }),
+    (l.$$.update = () => {
+      (l.$$.dirty & 16 && t(7, (a = Math.floor(c / 60))),
+        l.$$.dirty & 16 && t(6, (o = c % 60)),
+        l.$$.dirty & 192 && t(5, (s = `${a}:${o.toString().padStart(2, "0")}`)));
+    }),
+    [n, i, r, u, c, s, o, a, T]
+  );
+}
+class Re extends fe {
+  constructor(e) {
+    (super(), ue(this, e, Ue, Oe, oe, { firstName: 1, otp: 0, loading: 2, handleSubmit: 3 }));
+  }
+}
+function je(l) {
+  let e, t, a, o;
+  function s(r) {
+    l[16](r);
+  }
+  function i(r) {
+    l[17](r);
+  }
+  let n = { firstName: l[2].first_name, handleSubmit: l[11] };
+  return (
+    l[1] !== void 0 && (n.otp = l[1]),
+    l[7] !== void 0 && (n.loading = l[7]),
+    (e = new Re({ props: n })),
+    ie.push(() => le(e, "otp", s)),
+    ie.push(() => le(e, "loading", i)),
+    {
+      c() {
+        H(e.$$.fragment);
+      },
+      l(r) {
+        B(e.$$.fragment, r);
+      },
+      m(r, u) {
+        (q(e, r, u), (o = !0));
+      },
+      p(r, u) {
+        const c = {};
+        (u & 4 && (c.firstName = r[2].first_name),
+          !t && u & 2 && ((t = !0), (c.otp = r[1]), se(() => (t = !1))),
+          !a && u & 128 && ((a = !0), (c.loading = r[7]), se(() => (a = !1))),
+          e.$set(c));
+      },
+      i(r) {
+        o || (N(e.$$.fragment, r), (o = !0));
+      },
+      o(r) {
+        (S(e.$$.fragment, r), (o = !1));
+      },
+      d(r) {
+        M(e, r);
+      },
+    }
+  );
+}
+function Me(l) {
+  let e,
+    t,
+    a = "Enter Your Phone Number",
+    o,
+    s,
+    i,
+    n,
+    r,
+    u,
+    c,
+    D = "Don't have an account?",
+    T,
+    b,
+    C,
+    E,
+    m,
+    x,
+    p,
+    _ = l[3] && me(l),
+    d = !l[3] && l[0].length > 0 && _e(l);
+  return {
+    c() {
+      ((e = P("div")),
+        (t = P("span")),
+        (t.textContent = a),
+        (o = V()),
+        (s = P("input")),
+        (i = V()),
+        _ && _.c(),
+        (n = V()),
+        d && d.c(),
+        (r = V()),
+        (u = P("div")),
+        (c = P("span")),
+        (c.textContent = D),
+        (T = V()),
+        (b = P("button")),
+        (C = U("Create Account")),
+        this.h());
+    },
+    l(f) {
+      e = y(f, "DIV", { class: !0 });
+      var v = A(e);
+      ((t = y(v, "SPAN", { class: !0, "data-svelte-h": !0 })),
+        ee(t) !== "svelte-evn55e" && (t.textContent = a),
+        (o = F(v)),
+        (s = y(v, "INPUT", { type: !0, class: !0, placeholder: !0, maxlength: !0 })),
+        (i = F(v)),
+        _ && _.l(v),
+        (n = F(v)),
+        d && d.l(v),
+        (r = F(v)),
+        (u = y(v, "DIV", { class: !0 })));
+      var k = A(u);
+      ((c = y(k, "SPAN", { class: !0, "data-svelte-h": !0 })),
+        ee(c) !== "svelte-1bgnjli" && (c.textContent = D),
+        (T = F(k)),
+        (b = y(k, "BUTTON", { type: !0, class: !0 })));
+      var I = A(b);
+      ((C = O(I, "Create Account")), I.forEach(w), k.forEach(w), v.forEach(w), this.h());
+    },
+    h() {
+      (h(t, "class", "text-2xl mb-5"),
+        h(s, "type", "tel"),
+        h(
+          s,
+          "class",
+          "w-full h-[50px] p-2.5 border-none rounded-md mb-2 box-border shadow-[0_0_5px_#0F0F0F80] text-center text-[1.4em] cursor-text focus:outline-none focus:border focus:border-[#D1D1D1] focus:shadow-[0_0_15px_#0F0F0F80] placeholder:text-center disabled:bg-gray-100 disabled:cursor-not-allowed svelte-s4gbir",
+        ),
+        h(s, "placeholder", "Phone Number"),
+        h(s, "maxlength", "10"),
+        h(c, "class", "text-gray-600"),
+        h(b, "type", "button"),
+        h(
+          b,
+          "class",
+          "bg-transparent border-none text-blue-500 font-semibold cursor-pointer hover:text-blue-700 disabled:cursor-not-allowed disabled:opacity-50",
+        ),
+        (b.disabled = l[7]),
+        h(u, "class", "text-center border-t mt-2 border-gray-300"),
+        h(e, "class", "relative top-5 flex flex-col items-center justify-center w-full"));
+    },
+    m(f, v) {
+      (L(f, e, v),
+        g(e, t),
+        g(e, o),
+        g(e, s),
+        $(s, l[0]),
+        g(e, i),
+        _ && _.m(e, null),
+        g(e, n),
+        d && d.m(e, null),
+        g(e, r),
+        g(e, u),
+        g(u, c),
+        g(u, T),
+        g(u, b),
+        g(b, C),
+        (m = !0),
+        x || ((p = [J(s, "input", l[13]), J(b, "click", l[15])]), (x = !0)));
+    },
+    p(f, v) {
+      (v & 1 && $(s, f[0]),
+        f[3]
+          ? _
+            ? (_.p(f, v), v & 8 && N(_, 1))
+            : ((_ = me(f)), _.c(), N(_, 1), _.m(e, n))
+          : _ &&
+            (te(),
+            S(_, 1, 1, () => {
+              _ = null;
+            }),
+            ne()),
+        !f[3] && f[0].length > 0
+          ? d
+            ? (d.p(f, v), v & 9 && N(d, 1))
+            : ((d = _e(f)), d.c(), N(d, 1), d.m(e, r))
+          : d &&
+            (te(),
+            S(d, 1, 1, () => {
+              d = null;
+            }),
+            ne()),
+        (!m || v & 128) && (b.disabled = f[7]));
+    },
+    i(f) {
+      m ||
+        (N(_),
+        N(d),
+        f &&
+          (E ||
+            R(() => {
+              ((E = j(u, Ie, { y: 10, duration: 400, delay: 200, easing: De })), E.start());
+            })),
+        (m = !0));
+    },
+    o(f) {
+      (S(_), S(d), (m = !1));
+    },
+    d(f) {
+      (f && w(e), _ && _.d(), d && d.d(), (x = !1), xe(p));
+    },
+  };
+}
+function me(l) {
+  let e, t, a, o, s, i, n, r, u, c, D, T;
+  function b(m) {
+    l[14](m);
+  }
+  let C = { placeholder: "Enter Password" };
+  (l[4] !== void 0 && (C.value = l[4]),
+    (t = new Ce({ props: C })),
+    ie.push(() => le(t, "value", b)),
+    (r = new ve({ props: { text: "Login", onClick: l[10], isLoading: l[7] } })));
+  let E = l[5] && pe();
+  return {
+    c() {
+      ((e = P("div")), H(t.$$.fragment), (i = V()), (n = P("div")), H(r.$$.fragment), (u = V()), E && E.c(), this.h());
+    },
+    l(m) {
+      e = y(m, "DIV", { class: !0 });
+      var x = A(e);
+      (B(t.$$.fragment, x), x.forEach(w), (i = F(m)), (n = y(m, "DIV", { class: !0 })));
+      var p = A(n);
+      (B(r.$$.fragment, p), (u = F(p)), E && E.l(p), p.forEach(w), this.h());
+    },
+    h() {
+      (h(e, "class", "w-full"), h(n, "class", "w-full"));
+    },
+    m(m, x) {
+      (L(m, e, x), q(t, e, null), L(m, i, x), L(m, n, x), q(r, n, null), g(n, u), E && E.m(n, null), (T = !0));
+    },
+    p(m, x) {
+      const p = {};
+      (!a && x & 16 && ((a = !0), (p.value = m[4]), se(() => (a = !1))), t.$set(p));
+      const _ = {};
+      (x & 128 && (_.isLoading = m[7]),
+        r.$set(_),
+        m[5]
+          ? E
+            ? x & 32 && N(E, 1)
+            : ((E = pe()), E.c(), N(E, 1), E.m(n, null))
+          : E &&
+            (te(),
+            S(E, 1, 1, () => {
+              E = null;
+            }),
+            ne()));
+    },
+    i(m) {
+      T ||
+        (N(t.$$.fragment, m),
+        m &&
+          R(() => {
+            T && (s && s.end(1), (o = j(e, X, { duration: 400, easing: z })), o.start());
+          }),
+        N(r.$$.fragment, m),
+        N(E),
+        m &&
+          R(() => {
+            T && (D && D.end(1), (c = j(n, X, { duration: 400, easing: z })), c.start());
+          }),
+        (T = !0));
+    },
+    o(m) {
+      (S(t.$$.fragment, m),
+        o && o.invalidate(),
+        m && (s = re(e, X, { duration: 400, easing: z })),
+        S(r.$$.fragment, m),
+        S(E),
+        c && c.invalidate(),
+        m && (D = re(n, X, { duration: 400, easing: z })),
+        (T = !1));
+    },
+    d(m) {
+      (m && (w(e), w(i), w(n)), M(t), m && s && s.end(), M(r), E && E.d(), m && D && D.end());
+    },
+  };
+}
+function pe(l) {
+  let e,
+    t,
+    a = "Login failed. Please try again.",
+    o,
+    s,
+    i;
+  return {
+    c() {
+      ((e = P("div")), (t = P("p")), (t.textContent = a), this.h());
+    },
+    l(n) {
+      e = y(n, "DIV", { class: !0 });
+      var r = A(e);
+      ((t = y(r, "P", { class: !0, style: !0, "data-svelte-h": !0 })), ee(t) !== "svelte-14y4irl" && (t.textContent = a), r.forEach(w), this.h());
+    },
+    h() {
+      (h(t, "class", "text-red-600 text-sm text-center font-medium"),
+        ye(t, "text-shadow", "0 0 10px rgba(239, 68, 68, 0.5)"),
+        h(e, "class", "flex items-center mt-2 justify-center"));
+    },
+    m(n, r) {
+      (L(n, e, r), g(e, t), (i = !0));
+    },
+    i(n) {
+      i ||
+        (n &&
+          R(() => {
+            i && (s && s.end(1), (o = j(t, W, { duration: 200 })), o.start());
+          }),
+        (i = !0));
+    },
+    o(n) {
+      (o && o.invalidate(), n && (s = re(t, W, { duration: 200 })), (i = !1));
+    },
+    d(n) {
+      (n && w(e), n && s && s.end());
+    },
+  };
+}
+function _e(l) {
+  let e, t, a, o, s, i;
+  return {
+    c() {
+      ((e = P("div")), (t = U("Please enter a valid phone number")), this.h());
+    },
+    l(n) {
+      e = y(n, "DIV", { class: !0 });
+      var r = A(e);
+      ((t = O(r, "Please enter a valid phone number")), r.forEach(w), this.h());
+    },
+    h() {
+      ((e.hidden = a = l[3] || l[0].length === 0), h(e, "class", "text-red-600 text-sm text-center"));
+    },
+    m(n, r) {
+      (L(n, e, r), g(e, t), (i = !0));
+    },
+    p(n, r) {
+      (!i || (r & 9 && a !== (a = n[3] || n[0].length === 0))) && (e.hidden = a);
+    },
+    i(n) {
+      i ||
+        (n &&
+          R(() => {
+            i && (s && s.end(1), (o = j(e, W, { duration: 100, easing: z })), o.start());
+          }),
+        (i = !0));
+    },
+    o(n) {
+      (o && o.invalidate(), n && (s = re(e, W, { duration: 100, easing: z })), (i = !1));
+    },
+    d(n) {
+      (n && w(e), n && s && s.end());
+    },
+  };
+}
+function he(l) {
+  let e, t, a, o, s, i;
+  return {
+    c() {
+      ((e = P("div")), (t = P("button")), (a = U("Forgot Password?")), this.h());
+    },
+    l(n) {
+      e = y(n, "DIV", { class: !0 });
+      var r = A(e);
+      t = y(r, "BUTTON", { type: !0, class: !0 });
+      var u = A(t);
+      ((a = O(u, "Forgot Password?")), u.forEach(w), r.forEach(w), this.h());
+    },
+    h() {
+      (h(t, "type", "button"),
+        h(
+          t,
+          "class",
+          "bg-transparent border-none text-blue-500 font-semibold cursor-pointer hover:text-blue-700 disabled:cursor-not-allowed disabled:opacity-50",
+        ),
+        (t.disabled = l[7]),
+        h(e, "class", "text-center mt-4"));
+    },
+    m(n, r) {
+      (L(n, e, r), g(e, t), g(t, a), s || ((i = J(t, "click", l[18])), (s = !0)));
+    },
+    p(n, r) {
+      r & 128 && (t.disabled = n[7]);
+    },
+    i(n) {
+      n &&
+        (o ||
+          R(() => {
+            ((o = j(e, W, { duration: 300 })), o.start());
+          }));
+    },
+    o: ae,
+    d(n) {
+      (n && w(e), (s = !1), i());
+    },
+  };
+}
+function qe(l) {
+  let e, t, a, o, s, i, n, r, u, c, D, T, b, C, E, m;
+  const x = [Me, je],
+    p = [];
+  function _(f, v) {
+    return f[8] === f[9].CREDENTIALS ? 0 : f[8] === f[9].OTP ? 1 : -1;
+  }
+  ~(i = _(l)) && (n = p[i] = x[i](l));
+  let d = l[6] && he(l);
+  return (
+    (c = new Ne({})),
+    (b = new Fe({})),
+    {
+      c() {
+        ((e = P("div")),
+          (t = P("div")),
+          (a = P("div")),
+          (o = P("div")),
+          (s = P("form")),
+          n && n.c(),
+          (r = V()),
+          d && d.c(),
+          (u = V()),
+          H(c.$$.fragment),
+          (T = V()),
+          H(b.$$.fragment),
+          this.h());
+      },
+      l(f) {
+        e = y(f, "DIV", { class: !0 });
+        var v = A(e);
+        t = y(v, "DIV", { class: !0 });
+        var k = A(t);
+        a = y(k, "DIV", { class: !0 });
+        var I = A(a);
+        o = y(I, "DIV", { class: !0 });
+        var G = A(o);
+        s = y(G, "FORM", { id: !0, class: !0 });
+        var Y = A(s);
+        (n && n.l(Y),
+          (r = F(Y)),
+          d && d.l(Y),
+          (u = F(Y)),
+          B(c.$$.fragment, Y),
+          Y.forEach(w),
+          G.forEach(w),
+          I.forEach(w),
+          k.forEach(w),
+          v.forEach(w),
+          (T = F(f)),
+          B(b.$$.fragment, f),
+          this.h());
+      },
+      h() {
+        (h(s, "id", "login-form"),
+          h(s, "class", "flex flex-col items-center justify-center w-[90%]"),
+          h(o, "class", "flex flex-col items-center justify-between bg-[#E6E6E6] p-2 shadow-[0_0_10px_2px_#D1D1D1] w-1/2 min-w-[350px] "),
+          Q(o, "min-h-[350px]", !l[3]),
+          Q(o, "min-h-[400px]", l[3]),
+          h(a, "class", "flex flex-col items-center justify-center w-full"),
+          h(t, "class", "absolute left-1/2 -translate-x-1/2 max-[850px]:relative max-[850px]:left-auto max-[850px]:translate-x-0"),
+          h(e, "class", "flex items-center justify-center min-h-[400px] w-full relative max-[850px]:min-h-0"));
+      },
+      m(f, v) {
+        (L(f, e, v),
+          g(e, t),
+          g(t, a),
+          g(a, o),
+          g(o, s),
+          ~i && p[i].m(s, null),
+          g(s, r),
+          d && d.m(s, null),
+          g(s, u),
+          q(c, s, null),
+          L(f, T, v),
+          q(b, f, v),
+          (C = !0),
+          E || ((m = J(s, "submit", we(l[12]))), (E = !0)));
+      },
+      p(f, [v]) {
+        let k = i;
+        ((i = _(f)),
+          i === k
+            ? ~i && p[i].p(f, v)
+            : (n &&
+                (te(),
+                S(p[k], 1, 1, () => {
+                  p[k] = null;
+                }),
+                ne()),
+              ~i ? ((n = p[i]), n ? n.p(f, v) : ((n = p[i] = x[i](f)), n.c()), N(n, 1), n.m(s, r)) : (n = null)),
+          f[6] ? (d ? (d.p(f, v), v & 64 && N(d, 1)) : ((d = he(f)), d.c(), N(d, 1), d.m(s, u))) : d && (d.d(1), (d = null)),
+          (!C || v & 8) && Q(o, "min-h-[350px]", !f[3]),
+          (!C || v & 8) && Q(o, "min-h-[400px]", f[3]));
+      },
+      i(f) {
+        C ||
+          (N(n),
+          N(d),
+          N(c.$$.fragment, f),
+          f &&
+            (D ||
+              R(() => {
+                ((D = j(o, W, { duration: 300 })), D.start());
+              })),
+          N(b.$$.fragment, f),
+          (C = !0));
+      },
+      o(f) {
+        (S(n), S(c.$$.fragment, f), S(b.$$.fragment, f), (C = !1));
+      },
+      d(f) {
+        (f && (w(e), w(T)), ~i && p[i].d(), d && d.d(), M(c), M(b, f), (E = !1), m());
+      },
+    }
+  );
+}
+function Be(l, e, t) {
+  let a = "",
+    o = "",
+    s = { first_name: "Super Admin" },
+    i = !0,
+    n = "",
+    r = !1,
+    u = !1,
+    c = !1,
+    D;
+  var T = ((k) => ((k.CREDENTIALS = "credentials"), (k.OTP = "otp"), (k.AUTHENTICATED = "authenticated"), k))(T || {});
+  let b = "credentials";
+  be(async () => {
+    D = (await Te(() => import("../chunks/uv04NaUW.js"), __vite__mapDeps([0, 1]), import.meta.url)).getFingerprint;
+    const G = Ee(Se).url.searchParams.get("phone");
+    (G && t(0, (a = G)),
+      setTimeout(() => {
+        t(6, (u = !0));
+      }, 3e4));
+  });
+  async function C() {
+    try {
+      if (i && n) {
+        t(7, (c = !0));
+        const k = await D(),
+          I = await de.login(a, n, k);
+        if (I.otp_required) {
+          (t(2, (s = I)), t(8, (b = "otp")), t(7, (c = !1)));
+          return;
+        }
+        (ce(I.token, I.role),
+          I.role === Z.STUDENT
+            ? (Ae.ENABLE_VIDEO_GATE && I.course_id == "2025-al" && I.skippable == 0) || K("/dashboard/myLessons")
+            : I.role === Z.ADMIN
+              ? K("/admin/courses")
+              : (t(5, (r = !0)),
+                t(6, (u = !0)),
+                setTimeout(() => {
+                  t(5, (r = !1));
+                }, 3e3)));
+      }
+    } catch {
+      (t(5, (r = !0)),
+        t(6, (u = !0)),
+        setTimeout(() => {
+          t(5, (r = !1));
+        }, 3e3));
+    } finally {
+      t(7, (c = !1));
+    }
+  }
+  async function E() {
+    if (c || o.length !== 6) return;
+    t(7, (c = !0));
+    const k = await D();
+    try {
+      const I = await de.loginWithOTP(a, n, o, k);
+      I && (I.role === Z.SUPER_ADMIN || I.role === Z.ADMIN)
+        ? (ce(I.token, I.role), K("/admin/courses"))
+        : (t(5, (r = !0)),
+          t(6, (u = !0)),
+          setTimeout(() => {
+            t(5, (r = !1));
+          }, 3e3));
+    } catch {
+      (t(5, (r = !0)),
+        t(6, (u = !0)),
+        setTimeout(() => {
+          t(5, (r = !1));
+        }, 3e3));
+    } finally {
+      t(7, (c = !1));
+    }
+  }
+  function m(k) {
+    ke.call(this, l, k);
+  }
+  function x() {
+    ((a = this.value), t(0, a));
+  }
+  function p(k) {
+    ((n = k), t(4, n));
+  }
+  const _ = () => K(`/auth/register?phone=${encodeURIComponent(a)}`);
+  function d(k) {
+    ((o = k), t(1, o));
+  }
+  function f(k) {
+    ((c = k), t(7, c));
+  }
+  const v = () => K(`/auth/forgot-password?phone=${encodeURIComponent(a)}`);
+  return (
+    (l.$$.update = () => {
+      l.$$.dirty & 1 && t(3, (i = a.length === 10 && /^07\d+$/.test(a)));
+    }),
+    [a, o, s, i, n, r, u, c, b, T, C, E, m, x, p, _, d, f, v]
+  );
+}
+class He extends fe {
+  constructor(e) {
+    (super(), ue(this, e, Be, qe, oe, {}));
+  }
+}
+function We(l) {
+  let e, t, a, o, s, i, n;
+  return (
+    (i = new He({})),
+    {
+      c() {
+        ((e = P("meta")), (t = P("meta")), (a = P("meta")), (o = P("link")), (s = V()), H(i.$$.fragment), this.h());
+      },
+      l(r) {
+        const u = Pe("svelte-1x355m", document.head);
+        ((e = y(u, "META", { name: !0, content: !0 })),
+          (t = y(u, "META", { name: !0, content: !0 })),
+          (a = y(u, "META", { name: !0, content: !0 })),
+          (o = y(u, "LINK", { rel: !0, href: !0 })),
+          u.forEach(w),
+          (s = F(r)),
+          B(i.$$.fragment, r),
+          this.h());
+      },
+      h() {
+        ((document.title = "Login | ictfromabc"),
+          h(e, "name", "robots"),
+          h(e, "content", "index, follow"),
+          h(t, "name", "title"),
+          h(t, "content", "ictfromabc"),
+          h(a, "name", "description"),
+          h(a, "content", "Sri Lanka's largest ICT learning platform"),
+          h(o, "rel", "canonical"),
+          h(o, "href", "https://ictfromabc.com/auth/login"));
+      },
+      m(r, u) {
+        (g(document.head, e), g(document.head, t), g(document.head, a), g(document.head, o), L(r, s, u), q(i, r, u), (n = !0));
+      },
+      p: ae,
+      i(r) {
+        n || (N(i.$$.fragment, r), (n = !0));
+      },
+      o(r) {
+        (S(i.$$.fragment, r), (n = !1));
+      },
+      d(r) {
+        (r && w(s), w(e), w(t), w(a), w(o), M(i, r));
+      },
+    }
+  );
+}
+class it extends fe {
+  constructor(e) {
+    (super(), ue(this, e, null, We, oe, {}));
+  }
+}
+export { it as component };

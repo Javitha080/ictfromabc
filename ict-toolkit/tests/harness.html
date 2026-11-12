@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ICT Suite harness</title>
+<style>
+  body { font: 14px system-ui; background: #111; color: #eee; padding: 20px; }
+  pre { background: #1b1b1b; padding: 12px; border-radius: 6px; white-space: pre-wrap; }
+  .ok { color: #4ade80; } .bad { color: #f87171; }
+</style>
+</head>
+<body>
+<h1>ICT Suite harness</h1>
+<p>Runs the userscript against a fake fetch. Results appear in <code>window.__testResults</code>.</p>
+<pre id="out">running...</pre>
+
+<script>
+(function () {
+  'use strict';
+  const gm = Object.create(null);
+  window.__gm = gm;
+  window.__requests = [];
+  window.__clipboard = [];
+  gm['ict_fp'] = 'PINNED_VISITOR_123';
+  gm['ict_conf'] = '0.97';
+  gm['ict_pin'] = true;
+  gm['ict_capture_next'] = false;
+
+  window.GM_getValue = function (k, d) { return Object.prototype.hasOwnProperty.call(gm, k) ? gm[k] : d; };
+  window.GM_setValue = function (k, v) { gm[k] = v; };
+  window.GM_setClipboard = function (v) { window.__clipboard.push(String(v)); };
+  window.GM_registerMenuCommand = function () {};
+  window.GM_xmlhttpRequest = function (opts) {
+    const url = opts.url || '';
+    if (url.indexOf('.m3u8') !== -1) {
+      const body = '#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-TARGETDURATION:4\n#EXTINF:4,\nseg0.ts\n#EXTINF:4,\nseg1.ts\n#EXT-X-ENDLIST\n';
+      setTimeout(() => opts.onload && opts.onload({ responseText: body }), 0);
+      return;
+    }
+    setTimeout(() => opts.onload && opts.onload({ response: new ArrayBuffer(8) }), 0);
+  };
+
+  // Fake transport installed before the userscript loads.
+  window.fetch = async function (input, init) {
+    const url = typeof input === 'string' ? input : (input && input.url) || '';
+    const method = (init && init.method) || (input && input.method) || 'GET';
+    let body = init && init.body;
+    if (body && typeof body !== 'string' && body instanceof FormData) body = '[FormData]';
+    window.__requests.push({ url, method, body: body == null ? null : String(body) });
+
+    if (/\/api\/login$/.test(url)) {
+      return new Response(JSON.stringify({
+        msg: 'Login Successful',
+        user: { id: 1, first_name: 'Test' },
+        token: 'test-token|secret',
+        role: 'STUDENT',
+        authenticated: true,
+        skippable: 1,
+        course_id: '2027-al'
+      }), { status: 200, headers: { 'content-type': 'application/json' } });
+    }
+    if (/\/api\/pause$/.test(url)) {
+      return new Response(JSON.stringify({ redirect_url: '/blocked' }), {
+        status: 302, headers: { 'content-type': 'application/json' }
+      });
+    }
+    if (/\/api\/pause-with-token$/.test(url)) {
+      return new Response(JSON.stringify({
+        token: 'pause-token|secret', role: 'STUDENT', user: { id: 1 }, redirect_url: '/blocked'
+      }), { status: 302, headers: { 'content-type': 'application/json' } });
+    }
+    if (/\/api\/videos\/\d+\/generate-token$/.test(url)) {
+      return new Response(JSON.stringify({ token: 'abc123', expires: 9999999999 }), {
+        status: 200, headers: { 'content-type': 'application/json' }
+      });
+    }
+    if (/\/api\/videos\/\d+$/.test(url)) {
+      return new Response(JSON.stringify({
+        video_url: 'https://iframe.mediadelivery.net/embed/415489/203d28db-13c8-4889-b005-905be3453c71?preload=false'
+      }), { status: 200, headers: { 'content-type': 'application/json' } });
+    }
+    if (/\/api\/lessons\/\d+$/.test(url)) {
+      return new Response(JSON.stringify({
+        lesson: { id: 151, title: 'Test lesson' },
+        videos: [
+          { id: 1131, title: 'Bunny sample', thumbnail_url: 'https://example.test/t.jpg' },
+          { id: 1132, title: 'YouTube sample', thumbnail_url: 'https://img.youtube.com/vi/x/0.jpg' }
+        ],
+        live: false
+      }), { status: 200, headers: { 'content-type': 'application/json' } });
+    }
+    if (/\/api\/m3u8$/.test(url)) {
+      return new Response('#EXTM3U\n#EXT-X-STREAM-INF:BANDWIDTH=1000,RESOLUTION=640x360\n360p/video.m3u8\n', {
+        status: 200, headers: { 'content-type': 'application/vnd.apple.mpegurl' }
+      });
+    }
+    return new Response(JSON.stringify({ message: 'not found' }), {
+      status: 404, headers: { 'content-type': 'application/json' }
+    });
+  };
+
+  function assert(name, cond, detail) {
+    const row = { name, ok: !!cond, detail: detail || '' };
+    window.__testResults = window.__testResults || [];
+    window.__testResults.push(row);
+    return row;
+  }
+
+  window.addEventListener('load', async () => {
+    await new Promise(r => setTimeout(r, 300));
+    try {
+      // Open the panel so renders are observable.
+      const fab = document.querySelector('#ict-fab');
+      if (fab) fab.click();
+      await new Promise(r => setTimeout(r, 100));
+
+      // 1. Login body rewrite.
+      const loginRes = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ phoneNumber: '0770000000', password: 'x', visitorId: 'ORIGINAL_DEVICE', confidenceScore: 0.12 })
+      });
+      const loginReq = window.__requests.find(r => /\/api\/login$/.test(r.url));
+      let loginBody = null;
+      try { loginBody = JSON.parse(loginReq.body); } catch (e) {}
+      assert('login returns 200', loginRes.status === 200, String(loginRes.status));
+      assert('login body rewritten to pinned visitorId', loginBody && loginBody.visitorId === 'PINNED_VISITOR_123', loginBody && loginBody.visitorId);
+      assert('confidence rewritten', loginBody && loginBody.confidenceScore === 0.97, loginBody && String(loginBody.confidenceScore));
+      assert('token stored', localStorage.getItem('token') === 'test-token|secret', localStorage.getItem('token'));
+      assert('role stored', localStorage.getItem('role') === 'STUDENT', localStorage.getItem('role'));
+      assert('token backup stored', !!gm['ict_token_backup'], String(gm['ict_token_backup']).slice(0, 40));
+
+      // 2. Pause without token: stays 302 and flags pause.
+      const pause = await fetch('/api/pause');
+      assert('pause without token stays 302', pause.status === 302, String(pause.status));
+      await new Promise(r => setTimeout(r, 100));
+      assert('pause flag in panel state', document.querySelector('#ict-pause') && document.querySelector('#ict-pause').textContent.indexOf('PAUSED') === 0, document.querySelector('#ict-pause') && document.querySelector('#ict-pause').textContent);
+
+      // 3. Pause with token: converted to 200 and token stored.
+      const pt = await fetch('/api/pause-with-token');
+      assert('pause with token converted to 200', pt.status === 200, String(pt.status));
+      assert('pause token stored', localStorage.getItem('token') === 'pause-token|secret', localStorage.getItem('token'));
+
+      // 4. /blocked navigation guard.
+      history.pushState({}, '', '/blocked');
+      assert('blocked navigation stopped', location.pathname !== '/blocked', location.pathname);
+
+      // 5. API map records paths, not values.
+      assert('api log has login path', window.__requests.some(r => /\/api\/login$/.test(r.url)), 'request count=' + window.__requests.length);
+
+      // 6. Video resolution through the API (lesson scan).
+      //    The suite adds resolved entries from the lesson/video JSON handlers.
+      await fetch('/api/lessons/151');
+      await fetch('/api/videos/1131/generate-token');
+      await fetch('/api/videos/1131');
+      await new Promise(r => setTimeout(r, 100));
+      const vtext = (document.querySelector('#ict-videos') || {}).textContent || '';
+      assert('lesson videos listed in panel', vtext.indexOf('Bunny sample') !== -1 || vtext.indexOf('1131') !== -1, vtext.slice(0, 120));
+
+      // 7. Panel exists.
+      assert('panel built', !!document.querySelector('#ict-panel'), 'panel=' + !!document.querySelector('#ict-panel'));
+      assert('fab built', !!document.querySelector('#ict-fab'), 'fab=' + !!document.querySelector('#ict-fab'));
+    } catch (e) {
+      assert('harness exception', false, e && (e.stack || e.message));
+    }
+    const out = document.querySelector('#out');
+    out.innerHTML = window.__testResults.map(r =>
+      '<span class="' + (r.ok ? 'ok' : 'bad') + '">' + (r.ok ? 'PASS' : 'FAIL') + '</span>  ' +
+      r.name + (r.detail ? '  [' + String(r.detail).replace(/[<>&]/g, '') + ']' : '')
+    ).join('\n');
+  });
+})();
+</script>
+<script src="../userscript/ict-suite.user.js"></script>
+</body>
+</html>

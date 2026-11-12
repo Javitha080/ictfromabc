@@ -1,0 +1,1 @@
+import{s as n,o as s}from"../chunks/BitTBVkN.js";import{S as e,i as a}from"../chunks/Bc7KUd1A.js";import{g as r}from"../chunks/IW6k_RM6.js";function i(o){return s(()=>{r("/admin/reviews/all")}),[]}class u extends e{constructor(t){super(),a(this,t,i,null,n,{})}}export{u as component};

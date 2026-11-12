@@ -1,0 +1,1 @@
+function a(t){if(!t||!/^\d{4}-\d{2}-\d{2}$/.test(t))return"";const[r,o,e]=t.split("-");return`${r}/${o}/${e}`}function s(t){const n=Math.floor(t/60),r=t%60;return`${n}:${r.toString().padStart(2,"0")}`}export{a,s as f};

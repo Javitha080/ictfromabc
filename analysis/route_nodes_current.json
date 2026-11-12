@@ -1,0 +1,1504 @@
+{
+  "generatedAt": "2026-11-12T04:22:09.185Z",
+  "buildVersion": "1793372044457",
+  "note": "nodeIds and htmlModules come from the SSR shell; importsByModule is direct static/dynamic imports parsed from each node module.",
+  "routes": {
+    "/admin/add-admin": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/": {
+      "status": 200,
+      "nodeIds": [
+        0,
+        13
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/admins": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/admins/role": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/all-admins": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/allAdmins": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/call-responses": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/call-responses/active": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/courses": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/courses/order": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/dashboard": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/ids/unverified": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/lessons": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/model-papers": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/model-papers/marked": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/model-papers/unmarked": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/new-year-purchases": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/new-year-purchases/ticket-check": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/past-papers": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/payments": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/pastPapers": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/payments/accepted": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/payments/pending": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/payments/requests": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/pendingNICs": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/practical-sessions": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/profile": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/purchases/accepted": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/purchases/online": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/reviews": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/sms": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/reviews/all": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/student-calls": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/students": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/students/calls": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/students/calls/responses": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tags": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/ticket-categories": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tickets": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tute-packing": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tute-packing/packed": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tutes": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tutes/csv": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tutes/inventory": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tutes/package": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tutes/packed": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tutes/pdf": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tutes/transfer": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/tutes/unpacked": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/user": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/users/blocked": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/users/pending-student-calls": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/users/unverified-email": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/users/unverified-nic": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/videos": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admin/zoom": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/admins/students": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/auth/forgot-password": {
+      "status": 200,
+      "nodeIds": [
+        0,
+        7,
+        57
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/chunks/CPkiEbDf.js",
+        "/_app/immutable/chunks/CrD0m2hm.js",
+        "/_app/immutable/chunks/-UyI9lYi.js",
+        "/_app/immutable/chunks/BeM-f5b2.js",
+        "/_app/immutable/chunks/GlnUY2EM.js",
+        "/_app/immutable/chunks/B0XwC4Ot.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js",
+        "/_app/immutable/chunks/C1FmrZbK.js",
+        "/_app/immutable/chunks/DzXz5lJj.js",
+        "/_app/immutable/nodes/0.B8nZ3qj8.js",
+        "/_app/immutable/chunks/ICWD8bEM.js",
+        "/_app/immutable/chunks/JxsDUlI0.js",
+        "/_app/immutable/chunks/-oWtatLM.js",
+        "/_app/immutable/chunks/CKl9Rzh0.js",
+        "/_app/immutable/chunks/D1AYwQSK.js",
+        "/_app/immutable/chunks/CWqXeFnL.js",
+        "/_app/immutable/chunks/BbwfBUtK.js",
+        "/_app/immutable/nodes/7.DPwf15b4.js",
+        "/_app/immutable/chunks/gH3D-RDX.js",
+        "/_app/immutable/chunks/CR18yOJo.js",
+        "/_app/immutable/chunks/BuvdwmeH.js",
+        "/_app/immutable/nodes/57.CamxNMO1.js",
+        "/_app/immutable/chunks/BOF9_q3h.js",
+        "/_app/immutable/chunks/We5q9Srk.js",
+        "/_app/immutable/chunks/CD97E9Hu.js",
+        "/_app/immutable/chunks/-RLlV77c.js",
+        "/_app/immutable/chunks/DyzwMvXy.js"
+      ],
+      "nodeModules": [
+        "/_app/immutable/nodes/0.B8nZ3qj8.js",
+        "/_app/immutable/nodes/7.DPwf15b4.js",
+        "/_app/immutable/nodes/57.CamxNMO1.js"
+      ],
+      "importsByModule": {
+        "/_app/immutable/nodes/0.B8nZ3qj8.js": [
+          "/_app/immutable/chunks/CrD0m2hm.js",
+          "/_app/immutable/chunks/DzXz5lJj.js",
+          "/_app/immutable/chunks/ICWD8bEM.js",
+          "/_app/immutable/chunks/JxsDUlI0.js",
+          "/_app/immutable/chunks/CWqXeFnL.js"
+        ],
+        "/_app/immutable/nodes/7.DPwf15b4.js": [
+          "/_app/immutable/chunks/CrD0m2hm.js",
+          "/_app/immutable/chunks/DzXz5lJj.js",
+          "/_app/immutable/chunks/gH3D-RDX.js",
+          "/_app/immutable/chunks/CPkiEbDf.js",
+          "/_app/immutable/chunks/BuvdwmeH.js",
+          "/_app/immutable/chunks/BbwfBUtK.js"
+        ],
+        "/_app/immutable/nodes/57.CamxNMO1.js": [
+          "/_app/immutable/chunks/CrD0m2hm.js",
+          "/_app/immutable/chunks/DzXz5lJj.js",
+          "/_app/immutable/chunks/CPkiEbDf.js",
+          "/_app/immutable/chunks/BOF9_q3h.js",
+          "/_app/immutable/chunks/GlnUY2EM.js",
+          "/_app/immutable/chunks/We5q9Srk.js",
+          "/_app/immutable/chunks/CD97E9Hu.js",
+          "/_app/immutable/chunks/ICWD8bEM.js",
+          "/_app/immutable/chunks/-RLlV77c.js",
+          "/_app/immutable/chunks/CKl9Rzh0.js",
+          "/_app/immutable/chunks/DyzwMvXy.js"
+        ]
+      }
+    },
+    "/auth/login": {
+      "status": 200,
+      "nodeIds": [
+        0,
+        7,
+        58
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/chunks/CPkiEbDf.js",
+        "/_app/immutable/chunks/CrD0m2hm.js",
+        "/_app/immutable/chunks/-UyI9lYi.js",
+        "/_app/immutable/chunks/BeM-f5b2.js",
+        "/_app/immutable/chunks/GlnUY2EM.js",
+        "/_app/immutable/chunks/B0XwC4Ot.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js",
+        "/_app/immutable/chunks/C1FmrZbK.js",
+        "/_app/immutable/chunks/DzXz5lJj.js",
+        "/_app/immutable/nodes/0.B8nZ3qj8.js",
+        "/_app/immutable/chunks/ICWD8bEM.js",
+        "/_app/immutable/chunks/JxsDUlI0.js",
+        "/_app/immutable/chunks/-oWtatLM.js",
+        "/_app/immutable/chunks/CKl9Rzh0.js",
+        "/_app/immutable/chunks/D1AYwQSK.js",
+        "/_app/immutable/chunks/CWqXeFnL.js",
+        "/_app/immutable/chunks/BbwfBUtK.js",
+        "/_app/immutable/nodes/7.DPwf15b4.js",
+        "/_app/immutable/chunks/gH3D-RDX.js",
+        "/_app/immutable/chunks/CR18yOJo.js",
+        "/_app/immutable/chunks/BuvdwmeH.js",
+        "/_app/immutable/nodes/58.Pv9o42ea.js",
+        "/_app/immutable/chunks/We5q9Srk.js",
+        "/_app/immutable/chunks/CD97E9Hu.js",
+        "/_app/immutable/chunks/DyzwMvXy.js",
+        "/_app/immutable/chunks/BKeoPcEv.js",
+        "/_app/immutable/chunks/BOF9_q3h.js",
+        "/_app/immutable/chunks/CciFzQpK.js",
+        "/_app/immutable/chunks/CzfSrzb2.js",
+        "/_app/immutable/chunks/B2tJE5Bg.js",
+        "/_app/immutable/chunks/DHIEkwzJ.js",
+        "/_app/immutable/chunks/CgU5AtxT.js",
+        "/_app/immutable/chunks/Z2yx8cmC.js"
+      ],
+      "nodeModules": [
+        "/_app/immutable/nodes/0.B8nZ3qj8.js",
+        "/_app/immutable/nodes/7.DPwf15b4.js",
+        "/_app/immutable/nodes/58.Pv9o42ea.js"
+      ],
+      "importsByModule": {
+        "/_app/immutable/nodes/0.B8nZ3qj8.js": [
+          "/_app/immutable/chunks/CrD0m2hm.js",
+          "/_app/immutable/chunks/DzXz5lJj.js",
+          "/_app/immutable/chunks/ICWD8bEM.js",
+          "/_app/immutable/chunks/JxsDUlI0.js",
+          "/_app/immutable/chunks/CWqXeFnL.js"
+        ],
+        "/_app/immutable/nodes/7.DPwf15b4.js": [
+          "/_app/immutable/chunks/CrD0m2hm.js",
+          "/_app/immutable/chunks/DzXz5lJj.js",
+          "/_app/immutable/chunks/gH3D-RDX.js",
+          "/_app/immutable/chunks/CPkiEbDf.js",
+          "/_app/immutable/chunks/BuvdwmeH.js",
+          "/_app/immutable/chunks/BbwfBUtK.js"
+        ],
+        "/_app/immutable/nodes/58.Pv9o42ea.js": [
+          "/_app/immutable/chunks/CrD0m2hm.js",
+          "/_app/immutable/chunks/DzXz5lJj.js",
+          "/_app/immutable/chunks/C1FmrZbK.js",
+          "/_app/immutable/chunks/CKl9Rzh0.js",
+          "/_app/immutable/chunks/We5q9Srk.js",
+          "/_app/immutable/chunks/CPkiEbDf.js",
+          "/_app/immutable/chunks/CD97E9Hu.js",
+          "/_app/immutable/chunks/DyzwMvXy.js",
+          "/_app/immutable/chunks/BbwfBUtK.js",
+          "/_app/immutable/chunks/CWqXeFnL.js",
+          "/_app/immutable/chunks/BKeoPcEv.js",
+          "/_app/immutable/chunks/BOF9_q3h.js",
+          "/_app/immutable/chunks/CciFzQpK.js",
+          "/_app/immutable/chunks/uv04NaUW.js"
+        ]
+      }
+    },
+    "/auth/register": {
+      "status": 200,
+      "nodeIds": [
+        0,
+        7,
+        59
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/chunks/CPkiEbDf.js",
+        "/_app/immutable/chunks/CrD0m2hm.js",
+        "/_app/immutable/chunks/-UyI9lYi.js",
+        "/_app/immutable/chunks/BeM-f5b2.js",
+        "/_app/immutable/chunks/GlnUY2EM.js",
+        "/_app/immutable/chunks/B0XwC4Ot.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js",
+        "/_app/immutable/chunks/C1FmrZbK.js",
+        "/_app/immutable/chunks/DzXz5lJj.js",
+        "/_app/immutable/nodes/0.B8nZ3qj8.js",
+        "/_app/immutable/chunks/ICWD8bEM.js",
+        "/_app/immutable/chunks/JxsDUlI0.js",
+        "/_app/immutable/chunks/-oWtatLM.js",
+        "/_app/immutable/chunks/CKl9Rzh0.js",
+        "/_app/immutable/chunks/D1AYwQSK.js",
+        "/_app/immutable/chunks/CWqXeFnL.js",
+        "/_app/immutable/chunks/BbwfBUtK.js",
+        "/_app/immutable/nodes/7.DPwf15b4.js",
+        "/_app/immutable/chunks/gH3D-RDX.js",
+        "/_app/immutable/chunks/CR18yOJo.js",
+        "/_app/immutable/chunks/BuvdwmeH.js",
+        "/_app/immutable/nodes/59.J3VPFEjb.js",
+        "/_app/immutable/chunks/We5q9Srk.js",
+        "/_app/immutable/chunks/CD97E9Hu.js",
+        "/_app/immutable/chunks/CzfSrzb2.js",
+        "/_app/immutable/chunks/-RLlV77c.js",
+        "/_app/immutable/chunks/BOF9_q3h.js",
+        "/_app/immutable/chunks/CgU5AtxT.js",
+        "/_app/immutable/chunks/Dl-EBvGR.js",
+        "/_app/immutable/chunks/D0QH3NT1.js",
+        "/_app/immutable/chunks/DBxBeR1G.js",
+        "/_app/immutable/chunks/D7VqVGGl.js",
+        "/_app/immutable/chunks/Bq6clSCD.js",
+        "/_app/immutable/chunks/DZ5ThLkW.js",
+        "/_app/immutable/chunks/B471A0cb.js",
+        "/_app/immutable/chunks/BEPiIRYz.js",
+        "/_app/immutable/chunks/CciFzQpK.js",
+        "/_app/immutable/chunks/B2tJE5Bg.js",
+        "/_app/immutable/chunks/DHIEkwzJ.js",
+        "/_app/immutable/chunks/Z2yx8cmC.js"
+      ],
+      "nodeModules": [
+        "/_app/immutable/nodes/0.B8nZ3qj8.js",
+        "/_app/immutable/nodes/7.DPwf15b4.js",
+        "/_app/immutable/nodes/59.J3VPFEjb.js"
+      ],
+      "importsByModule": {
+        "/_app/immutable/nodes/0.B8nZ3qj8.js": [
+          "/_app/immutable/chunks/CrD0m2hm.js",
+          "/_app/immutable/chunks/DzXz5lJj.js",
+          "/_app/immutable/chunks/ICWD8bEM.js",
+          "/_app/immutable/chunks/JxsDUlI0.js",
+          "/_app/immutable/chunks/CWqXeFnL.js"
+        ],
+        "/_app/immutable/nodes/7.DPwf15b4.js": [
+          "/_app/immutable/chunks/CrD0m2hm.js",
+          "/_app/immutable/chunks/DzXz5lJj.js",
+          "/_app/immutable/chunks/gH3D-RDX.js",
+          "/_app/immutable/chunks/CPkiEbDf.js",
+          "/_app/immutable/chunks/BuvdwmeH.js",
+          "/_app/immutable/chunks/BbwfBUtK.js"
+        ],
+        "/_app/immutable/nodes/59.J3VPFEjb.js": [
+          "/_app/immutable/chunks/CrD0m2hm.js",
+          "/_app/immutable/chunks/DzXz5lJj.js",
+          "/_app/immutable/chunks/CKl9Rzh0.js",
+          "/_app/immutable/chunks/We5q9Srk.js",
+          "/_app/immutable/chunks/CPkiEbDf.js",
+          "/_app/immutable/chunks/CD97E9Hu.js",
+          "/_app/immutable/chunks/CzfSrzb2.js",
+          "/_app/immutable/chunks/ICWD8bEM.js",
+          "/_app/immutable/chunks/BbwfBUtK.js",
+          "/_app/immutable/chunks/-RLlV77c.js",
+          "/_app/immutable/chunks/BOF9_q3h.js",
+          "/_app/immutable/chunks/GlnUY2EM.js",
+          "/_app/immutable/chunks/D1AYwQSK.js",
+          "/_app/immutable/chunks/CgU5AtxT.js",
+          "/_app/immutable/chunks/Dl-EBvGR.js",
+          "/_app/immutable/chunks/D0QH3NT1.js",
+          "/_app/immutable/chunks/DBxBeR1G.js",
+          "/_app/immutable/chunks/D7VqVGGl.js",
+          "/_app/immutable/chunks/DZ5ThLkW.js",
+          "/_app/immutable/chunks/Bq6clSCD.js",
+          "/_app/immutable/chunks/CciFzQpK.js"
+        ]
+      }
+    },
+    "/bands/White": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/contact": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/contact-us": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/courses/grades": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/courses/ol-lessons": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/documentation": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/all-lessons": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/model-papers": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/myLessons": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/ol": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/pastPapers": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/practical-sessions": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/profile": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/reviews": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/rusiri": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/saga": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/tutes": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/dashboard/tutes/my-tutes": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/email/resend": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/forgot-password/request-otp/email": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/forgot-password/reset/email": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/forgot-password/validate-otp/email": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/lessons/allowed": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/model-papers/availability": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/notifications/delete-all": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/notifications/read-all": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/practical-sessions/availability": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/about-us": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/contact-us": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/ol": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/our-team": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/papers": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/papers/al": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/privacy": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/rusiri": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/saga": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public-dashboard/tutes": {
+      "status": 200,
+      "nodeIds": [],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public/courses/ol-lessons": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/public/tutes": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/purchases/bands/free-eligibility": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/purchases/tutes": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/tutes/delivery-fee": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    },
+    "/user/delete": {
+      "status": 404,
+      "nodeIds": [
+        0,
+        1
+      ],
+      "sveltekit": "__sveltekit_164chax",
+      "htmlModules": [
+        "/_app/immutable/entry/start.CLK7HWSY.js",
+        "/_app/immutable/entry/app.DV6xw9c8.js"
+      ],
+      "nodeModules": [],
+      "importsByModule": {}
+    }
+  }
+}

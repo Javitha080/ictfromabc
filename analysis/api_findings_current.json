@@ -1,0 +1,7349 @@
+{
+  "generatedAt": "2026-11-12T04:24:58.259Z",
+  "current": {
+    "files": 241,
+    "wrapper": {
+      "file": "js/current/_app/immutable/chunks/gH3D-RDX.js",
+      "base": "https://ictfromabc.com/api",
+      "methods": {
+        "j": "GET",
+        "T": "DELETE",
+        "O": "POST",
+        "P": "PUT",
+        "$": "PATCH"
+      },
+      "exportMap": {
+        "a": "j",
+        "b": "$",
+        "c": "P",
+        "d": "T",
+        "e": "p",
+        "g": "A",
+        "p": "O"
+      },
+      "byExport": {
+        "a": "GET",
+        "b": "PATCH",
+        "c": "PUT",
+        "d": "DELETE",
+        "p": "POST"
+      },
+      "rawGetExports": [
+        "a"
+      ]
+    },
+    "callCount": 206,
+    "directCount": 3,
+    "calls": [
+      {
+        "file": "js/current/_app/immutable/chunks/3C00S3wM.js",
+        "method": "POST",
+        "path": "/admin/courses/order",
+        "rawPath": "\"/admin/courses/order\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/courses/order\",s,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/3C00S3wM.js",
+        "method": "GET",
+        "path": "/admin/courses",
+        "rawPath": "\"/admin/courses\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/courses\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/3C00S3wM.js",
+        "method": "GET",
+        "path": "/admin/courses/{param}",
+        "rawPath": "`/admin/courses/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/courses/${s}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/3C00S3wM.js",
+        "method": "GET",
+        "path": "/admin/courses/{param}/students",
+        "rawPath": "`/admin/courses/${s}/students`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/courses/${s}/students`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B6SKNgqH.js",
+        "method": "POST",
+        "path": "/admin/events",
+        "rawPath": "\"/admin/events\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "q(s)",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "\"/admin/events\",q(s),\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B6SKNgqH.js",
+        "method": "POST",
+        "path": "/admin/events/{param}",
+        "rawPath": "`/admin/events/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "`/admin/events/${s}`,t,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B6SKNgqH.js",
+        "method": "POST",
+        "path": "/admin/event-purchases/{param}/resend",
+        "rawPath": "`/admin/event-purchases/${s}/resend`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "{email:e}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email"
+        ],
+        "formFields": [],
+        "call": "`/admin/event-purchases/${s}/resend`,{email:e},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B6SKNgqH.js",
+        "method": "POST",
+        "path": "/admin/event-tickets/{param}/check",
+        "rawPath": "`/admin/event-tickets/${encodeURIComponent(s)}/check`",
+        "pathKind": "template",
+        "pathParams": [
+          "encodeURIComponent(s)"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "`/admin/event-tickets/${encodeURIComponent(s)}/check`,null,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B6SKNgqH.js",
+        "method": "GET",
+        "path": "/admin/events",
+        "rawPath": "\"/admin/events\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{archived:s?1:void 0}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "archived"
+        ],
+        "formFields": [],
+        "call": "\"/admin/events\",{archived:s?1:void 0}",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B6SKNgqH.js",
+        "method": "GET",
+        "path": "/admin/events/{param}",
+        "rawPath": "`/admin/events/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/events/${s}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B6SKNgqH.js",
+        "method": "GET",
+        "path": "/admin/events/{param}/purchases",
+        "rawPath": "`/admin/events/${s}/purchases`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/events/${s}/purchases`,e",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B6SKNgqH.js",
+        "method": "DELETE",
+        "path": "/admin/events/{param}",
+        "rawPath": "`/admin/events/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/events/${s}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BGBlHn-P.js",
+        "method": "POST",
+        "path": "/admin/purchases/{param}",
+        "rawPath": "`/admin/purchases/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "items[]"
+        ],
+        "call": "`/admin/purchases/${t}`,a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BGBlHn-P.js",
+        "method": "GET",
+        "path": "/admin/purchases/accepted",
+        "rawPath": "\"/admin/purchases/accepted\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/purchases/accepted\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BGBlHn-P.js",
+        "method": "GET",
+        "path": "/admin/purchases/online",
+        "rawPath": "\"/admin/purchases/online\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/purchases/online\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BGBlHn-P.js",
+        "method": "GET",
+        "path": "/admin/slips/{param}",
+        "rawPath": "`/admin/slips/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/slips/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BGBlHn-P.js",
+        "method": "GET",
+        "path": "/admin/purchases/{param}",
+        "rawPath": "`/admin/purchases/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/purchases/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BN2KxrB7.js",
+        "method": "POST",
+        "path": "/admin/student-calls",
+        "rawPath": "\"/admin/student-calls\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/student-calls\",s,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BN2KxrB7.js",
+        "method": "GET",
+        "path": "/admin/users/pending-student-calls",
+        "rawPath": "\"/admin/users/pending-student-calls\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/users/pending-student-calls\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BoaDJuae.js",
+        "method": "GET",
+        "path": "/videos/{param}/generate-token",
+        "rawPath": "`/videos/${t}/generate-token`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/videos/${t}/generate-token`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/Bso1vT72.js",
+        "method": "GET",
+        "path": "/papers",
+        "rawPath": "\"/papers\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/papers\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/Bso1vT72.js",
+        "method": "GET",
+        "path": "/papers/leaderboard/{param}",
+        "rawPath": "`/papers/leaderboard/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/papers/leaderboard/${a}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/Bso1vT72.js",
+        "method": "POST",
+        "path": "/papers/upload/{param}",
+        "rawPath": "`/papers/upload/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "file"
+        ],
+        "call": "`/papers/upload/${a}`,e,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BuvdwmeH.js",
+        "method": "GET",
+        "path": "/events",
+        "rawPath": "\"/events\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/events\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BuvdwmeH.js",
+        "method": "GET",
+        "path": "/events/{param}",
+        "rawPath": "`/events/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/events/${e}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BuvdwmeH.js",
+        "method": "GET",
+        "path": "/events/{param}/purchases/{param}/status",
+        "rawPath": "`/events/${e}/purchases/${t}/status`",
+        "pathKind": "template",
+        "pathParams": [
+          "e",
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/events/${e}/purchases/${t}/status`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/BuvdwmeH.js",
+        "method": "POST",
+        "path": "/events/{param}/purchases/guest",
+        "rawPath": "`/events/${e}/purchases/guest`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/events/${e}/purchases/guest`,t,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "POST",
+        "path": "/purchases/bank-transfer/{param}",
+        "rawPath": "`/purchases/bank-transfer/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "file"
+        ],
+        "call": "`/purchases/bank-transfer/${s}`,t,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "POST",
+        "path": "/purchases/online-transfer/{param}",
+        "rawPath": "`/purchases/online-transfer/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/purchases/online-transfer/${s}`,null,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "POST",
+        "path": "/v2/purchases/online-transfer/{param}",
+        "rawPath": "`/v2/purchases/online-transfer/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/v2/purchases/online-transfer/${s}`,a,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "POST",
+        "path": "/user/delete",
+        "rawPath": "\"/user/delete\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{password:s}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "password"
+        ],
+        "formFields": [],
+        "call": "\"/user/delete\",{password:s},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "POST",
+        "path": "/user/id",
+        "rawPath": "\"/user/id\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "file"
+        ],
+        "call": "\"/user/id\",e,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "POST",
+        "path": "/reviews",
+        "rawPath": "\"/reviews\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/reviews\",s,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/courses/{param}",
+        "rawPath": "`/courses/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/courses/${s}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/lessons",
+        "rawPath": "\"/lessons\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/lessons\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/lessons/allowed",
+        "rawPath": "\"/lessons/allowed\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/lessons/allowed\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/purchases/tutes",
+        "rawPath": "\"/purchases/tutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/purchases/tutes\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/user",
+        "rawPath": "\"/user\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/user\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/admin/user",
+        "rawPath": "\"/admin/user\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/user\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/lessons/{param}",
+        "rawPath": "`/lessons/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/lessons/${s}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/zoom/{param}/add-registrant",
+        "rawPath": "`/zoom/${s}/add-registrant`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/zoom/${s}/add-registrant`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/videos/{param}",
+        "rawPath": "`/videos/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/videos/${s}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "GET",
+        "path": "/email/resend",
+        "rawPath": "\"/email/resend\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/email/resend\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "method": "PUT",
+        "path": "/user",
+        "rawPath": "\"/user\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/user\",s,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CczqVMpR.js",
+        "method": "PATCH",
+        "path": "/admin/call-responses/{param}/toggle-status",
+        "rawPath": "`/admin/call-responses/${s}/toggle-status`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "{}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/call-responses/${s}/toggle-status`,{},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CczqVMpR.js",
+        "method": "GET",
+        "path": "/admin/call-responses",
+        "rawPath": "\"/admin/call-responses\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/call-responses\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CczqVMpR.js",
+        "method": "GET",
+        "path": "/admin/call-responses/active",
+        "rawPath": "\"/admin/call-responses/active\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/call-responses/active\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CczqVMpR.js",
+        "method": "GET",
+        "path": "/admin/call-responses/{param}",
+        "rawPath": "`/admin/call-responses/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/call-responses/${s}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CczqVMpR.js",
+        "method": "GET",
+        "path": "/admin/call-responses/{param}/students",
+        "rawPath": "`/admin/call-responses/${s}/students`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/call-responses/${s}/students`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CczqVMpR.js",
+        "method": "PUT",
+        "path": "/admin/call-responses/{param}",
+        "rawPath": "`/admin/call-responses/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/call-responses/${s}`,e,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CczqVMpR.js",
+        "method": "POST",
+        "path": "/admin/call-responses",
+        "rawPath": "\"/admin/call-responses\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/call-responses\",s,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/validate-otp-v2/{param}",
+        "rawPath": "`/validate-otp-v2/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "{otp:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "otp"
+        ],
+        "formFields": [],
+        "call": "`/validate-otp-v2/${o}`,{otp:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/request-otp-v2/{param}",
+        "rawPath": "`/request-otp-v2/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/request-otp-v2/${o}`,null,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/login",
+        "rawPath": "\"/login\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{phoneNumber:o,password:a,visitorId:n,confidenceScore:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "phoneNumber",
+          "password",
+          "visitorId",
+          "confidenceScore"
+        ],
+        "formFields": [],
+        "call": "\"/login\",{phoneNumber:o,password:a,visitorId:n,confidenceScore:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/login/otp",
+        "rawPath": "\"/login/otp\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{phoneNumber:o,password:a,otp:s,visitorId:t,confidenceScore:e}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "phoneNumber",
+          "password",
+          "otp",
+          "visitorId",
+          "confidenceScore"
+        ],
+        "formFields": [],
+        "call": "\"/login/otp\",{phoneNumber:o,password:a,otp:s,visitorId:t,confidenceScore:e},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/register",
+        "rawPath": "\"/register\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/register\",a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/logout",
+        "rawPath": "\"/logout\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/logout\",{},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/user",
+        "rawPath": "\"/user\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/user\",a,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/forgot-password/request-otp/phone/{param}",
+        "rawPath": "`/forgot-password/request-otp/phone/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/forgot-password/request-otp/phone/${o}`,null,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/forgot-password/validate-otp/phone/{param}",
+        "rawPath": "`/forgot-password/validate-otp/phone/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "{otp:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "otp"
+        ],
+        "formFields": [],
+        "call": "`/forgot-password/validate-otp/phone/${o}`,{otp:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/forgot-password/reset/phone/{param}",
+        "rawPath": "`/forgot-password/reset/phone/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "{otp:a,password:s,password_confirmation:n}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "otp",
+          "password",
+          "password_confirmation"
+        ],
+        "formFields": [],
+        "call": "`/forgot-password/reset/phone/${o}`,{otp:a,password:s,password_confirmation:n},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/forgot-password/request-otp/email",
+        "rawPath": "\"/forgot-password/request-otp/email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{email:o}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email"
+        ],
+        "formFields": [],
+        "call": "\"/forgot-password/request-otp/email\",{email:o},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/forgot-password/validate-otp/email",
+        "rawPath": "\"/forgot-password/validate-otp/email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{email:o,otp:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email",
+          "otp"
+        ],
+        "formFields": [],
+        "call": "\"/forgot-password/validate-otp/email\",{email:o,otp:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "POST",
+        "path": "/forgot-password/reset/email",
+        "rawPath": "\"/forgot-password/reset/email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{email:o,otp:a,password:s,password_confirmation:n}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email",
+          "otp",
+          "password",
+          "password_confirmation"
+        ],
+        "formFields": [],
+        "call": "\"/forgot-password/reset/email\",{email:o,otp:a,password:s,password_confirmation:n},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CD97E9Hu.js",
+        "method": "GET",
+        "path": "/validate-phone-number/{param}",
+        "rawPath": "`/validate-phone-number/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/validate-phone-number/${o}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdMOgjNl.js",
+        "method": "GET",
+        "path": "/purchases/bands/free-eligibility",
+        "rawPath": "\"/purchases/bands/free-eligibility\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/purchases/bands/free-eligibility\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdMOgjNl.js",
+        "method": "POST",
+        "path": "/purchases/bands/{param}",
+        "rawPath": "`/purchases/bands/${l}`",
+        "pathKind": "template",
+        "pathParams": [
+          "l"
+        ],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/purchases/bands/${l}`,s,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "POST",
+        "path": "/admin/tutes/{param}",
+        "rawPath": "`/admin/tutes/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tutes/${a}`,e,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "POST",
+        "path": "/admin/tutes",
+        "rawPath": "\"/admin/tutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "items[]"
+        ],
+        "call": "\"/admin/tutes\",t,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "POST",
+        "path": "/admin/tutes/transfer",
+        "rawPath": "\"/admin/tutes/transfer\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "items[]"
+        ],
+        "call": "\"/admin/tutes/transfer\",t,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "POST",
+        "path": "/admin/tutes/pdf",
+        "rawPath": "\"/admin/tutes/pdf\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "items[]"
+        ],
+        "call": "\"/admin/tutes/pdf\",a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "POST",
+        "path": "/admin/tutes/csv",
+        "rawPath": "\"/admin/tutes/csv\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "items[]"
+        ],
+        "call": "\"/admin/tutes/csv\",a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "POST",
+        "path": "/admin/tutes/package",
+        "rawPath": "\"/admin/tutes/package\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "items[]"
+        ],
+        "call": "\"/admin/tutes/package\",a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "GET",
+        "path": "/admin/tutes",
+        "rawPath": "\"/admin/tutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/tutes\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "GET",
+        "path": "/admin/tutes/inventory/{param}",
+        "rawPath": "`/admin/tutes/inventory/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tutes/inventory/${a}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "GET",
+        "path": "/admin/tutes/inventory",
+        "rawPath": "\"/admin/tutes/inventory\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/tutes/inventory\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "GET",
+        "path": "/admin/tutes/{param}/students",
+        "rawPath": "`/admin/tutes/${a}/students`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tutes/${a}/students`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "GET",
+        "path": "/admin/tutes/{param}",
+        "rawPath": "`/admin/tutes/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tutes/${a}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "GET",
+        "path": "/admin/tutes/unpacked",
+        "rawPath": "\"/admin/tutes/unpacked\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/tutes/unpacked\",a",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "GET",
+        "path": "/admin/tutes/packed",
+        "rawPath": "\"/admin/tutes/packed\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/tutes/packed\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "DELETE",
+        "path": "/admin/tutes/{param}",
+        "rawPath": "`/admin/tutes/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tutes/${a}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CdvttfmZ.js",
+        "method": "PATCH",
+        "path": "/admin/tutes/{param}",
+        "rawPath": "`/admin/tutes/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": "PATCH",
+        "body": "{_method:\"PATCH\"}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "_method"
+        ],
+        "formFields": [],
+        "call": "`/admin/tutes/${a}`,{_method:\"PATCH\"},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CgEnrGJP.js",
+        "method": "DELETE",
+        "path": "/admin/model-papers/{param}",
+        "rawPath": "`/admin/model-papers/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/model-papers/${e}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CgEnrGJP.js",
+        "method": "DELETE",
+        "path": "/admin/model-papers/answered/{param}",
+        "rawPath": "`/admin/model-papers/answered/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/model-papers/answered/${e}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CgEnrGJP.js",
+        "method": "POST",
+        "path": "/admin/model-papers",
+        "rawPath": "\"/admin/model-papers\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "title",
+          "course_id",
+          "file",
+          "_method"
+        ],
+        "call": "\"/admin/model-papers\",e,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CgEnrGJP.js",
+        "method": "POST",
+        "path": "/admin/model-papers/upload/{param}",
+        "rawPath": "`/admin/model-papers/upload/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "title",
+          "course_id",
+          "file",
+          "_method"
+        ],
+        "call": "`/admin/model-papers/upload/${e}`,a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CgEnrGJP.js",
+        "method": "POST",
+        "path": "/admin/model-papers/{param}",
+        "rawPath": "`/admin/model-papers/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "title",
+          "course_id",
+          "file",
+          "_method"
+        ],
+        "call": "`/admin/model-papers/${e}`,a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CgEnrGJP.js",
+        "method": "POST",
+        "path": "/admin/model-papers/{param}",
+        "rawPath": "`/admin/model-papers/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "title",
+          "course_id",
+          "file",
+          "_method"
+        ],
+        "call": "`/admin/model-papers/${e}`,a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CgEnrGJP.js",
+        "method": "GET",
+        "path": "/admin/model-papers/unmarked",
+        "rawPath": "\"/admin/model-papers/unmarked\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/model-papers/unmarked\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CgEnrGJP.js",
+        "method": "GET",
+        "path": "/admin/model-papers/marked",
+        "rawPath": "\"/admin/model-papers/marked\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/model-papers/marked\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CgEnrGJP.js",
+        "method": "GET",
+        "path": "/admin/model-papers/user/{param}",
+        "rawPath": "`/admin/model-papers/user/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/model-papers/user/${e}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/Csyafj-i.js",
+        "method": "POST",
+        "path": "/admin/new-year-purchases/{param}",
+        "rawPath": "`/admin/new-year-purchases/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/new-year-purchases/${e}`,null,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/Csyafj-i.js",
+        "method": "POST",
+        "path": "/admin/new-year-purchases/resend/{param}",
+        "rawPath": "`/admin/new-year-purchases/resend/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": "{email:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email"
+        ],
+        "formFields": [],
+        "call": "`/admin/new-year-purchases/resend/${e}`,{email:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/Csyafj-i.js",
+        "method": "GET",
+        "path": "/admin/new-year-purchases",
+        "rawPath": "\"/admin/new-year-purchases\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/new-year-purchases\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/public/tutes",
+        "rawPath": "\"/public/tutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/public/tutes\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/public/courses/ol-lessons",
+        "rawPath": "\"/public/courses/ol-lessons\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/public/courses/ol-lessons\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/public/courses/{param}",
+        "rawPath": "`/public/courses/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/public/courses/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/courses",
+        "rawPath": "\"/courses\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/courses\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/institutes",
+        "rawPath": "\"/institutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/institutes\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/institutes",
+        "rawPath": "\"/institutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/institutes\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/courses/grades",
+        "rawPath": "\"/courses/grades\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/courses/grades\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/admins",
+        "rawPath": "\"/admins\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admins\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/telegram",
+        "rawPath": "\"/telegram\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/telegram\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/CzfSrzb2.js",
+        "method": "GET",
+        "path": "/public-reviews",
+        "rawPath": "\"/public-reviews\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/public-reviews\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/D8xuGZSL.js",
+        "method": "GET",
+        "path": "/practical-sessions",
+        "rawPath": "\"/practical-sessions\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/practical-sessions\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/D8xuGZSL.js",
+        "method": "GET",
+        "path": "/practical-sessions/availability",
+        "rawPath": "\"/practical-sessions/availability\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/practical-sessions/availability\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/D8xuGZSL.js",
+        "method": "POST",
+        "path": "/practical-sessions/{param}",
+        "rawPath": "`/practical-sessions/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/practical-sessions/${a}`,null,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/D8xuGZSL.js",
+        "method": "DELETE",
+        "path": "/practical-sessions/{param}",
+        "rawPath": "`/practical-sessions/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/practical-sessions/${a}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DEHBxsXW.js",
+        "method": "GET",
+        "path": "/courses/{param}",
+        "rawPath": "`/courses/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/courses/${s}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DEHBxsXW.js",
+        "method": "GET",
+        "path": "/courses/ol-lessons",
+        "rawPath": "\"/courses/ol-lessons\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/courses/ol-lessons\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DEHBxsXW.js",
+        "method": "GET",
+        "path": "/pdfs/{param}",
+        "rawPath": "`/pdfs/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/pdfs/${s}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DQn851FC.js",
+        "method": "GET",
+        "path": "/files/secure/{param}/{param}",
+        "rawPath": "`/files/secure/${t}/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t",
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/files/secure/${t}/${o}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DtAuM1Kv.js",
+        "method": "GET",
+        "path": "/admin/lessons/{param}/students",
+        "rawPath": "`/admin/lessons/${t}/students`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/lessons/${t}/students`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DtAuM1Kv.js",
+        "method": "GET",
+        "path": "/admin/lessons",
+        "rawPath": "\"/admin/lessons\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/lessons\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DtUzyJrk.js",
+        "method": "GET",
+        "path": "/admin/ids/unverified",
+        "rawPath": "\"/admin/ids/unverified\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/ids/unverified\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DtUzyJrk.js",
+        "method": "GET",
+        "path": "/admin/dashboard",
+        "rawPath": "\"/admin/dashboard\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/dashboard\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DWKMon6r.js",
+        "method": "GET",
+        "path": "/student/events",
+        "rawPath": "\"/student/events\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/student/events\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DWKMon6r.js",
+        "method": "GET",
+        "path": "/student/events/{param}",
+        "rawPath": "`/student/events/${e}`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/student/events/${e}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DWKMon6r.js",
+        "method": "GET",
+        "path": "/events/{param}/my-purchases",
+        "rawPath": "`/events/${e}/my-purchases`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/events/${e}/my-purchases`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DWKMon6r.js",
+        "method": "POST",
+        "path": "/events/{param}/purchases",
+        "rawPath": "`/events/${e}/purchases`",
+        "pathKind": "template",
+        "pathParams": [
+          "e"
+        ],
+        "spoofedFrom": null,
+        "body": "{numberOfTickets:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "numberOfTickets"
+        ],
+        "formFields": [],
+        "call": "`/events/${e}/purchases`,{numberOfTickets:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DXhKq_RN.js",
+        "method": "GET",
+        "path": "/admin/tags",
+        "rawPath": "\"/admin/tags\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/tags\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DXhKq_RN.js",
+        "method": "GET",
+        "path": "/admin/tags/{param}",
+        "rawPath": "`/admin/tags/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tags/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DXhKq_RN.js",
+        "method": "GET",
+        "path": "/admin/tags/student/{param}",
+        "rawPath": "`/admin/tags/student/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tags/student/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DXhKq_RN.js",
+        "method": "POST",
+        "path": "/admin/tags",
+        "rawPath": "\"/admin/tags\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/tags\",t,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DXhKq_RN.js",
+        "method": "POST",
+        "path": "/admin/tags/{param}",
+        "rawPath": "`/admin/tags/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tags/${t}`,e,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DXhKq_RN.js",
+        "method": "DELETE",
+        "path": "/admin/tags/{param}",
+        "rawPath": "`/admin/tags/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tags/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DXhKq_RN.js",
+        "method": "PUT",
+        "path": "/admin/tags/{param}",
+        "rawPath": "`/admin/tags/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tags/${t}`,e,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DzAMTzGs.js",
+        "method": "GET",
+        "path": "/notifications",
+        "rawPath": "\"/notifications\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/notifications\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DzAMTzGs.js",
+        "method": "POST",
+        "path": "/notifications/{param}",
+        "rawPath": "`/notifications/${i}`",
+        "pathKind": "template",
+        "pathParams": [
+          "i"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/notifications/${i}`,null,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DzAMTzGs.js",
+        "method": "POST",
+        "path": "/notifications/read-all",
+        "rawPath": "\"/notifications/read-all\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/notifications/read-all\",null,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/DzAMTzGs.js",
+        "method": "DELETE",
+        "path": "/notifications/delete-all",
+        "rawPath": "\"/notifications/delete-all\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/notifications/delete-all\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/FiLe4k14.js",
+        "method": "POST",
+        "path": "/model-papers/upload/{param}",
+        "rawPath": "`/model-papers/upload/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": "o",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "file"
+        ],
+        "call": "`/model-papers/upload/${a}`,o,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/FiLe4k14.js",
+        "method": "GET",
+        "path": "/model-papers/availability",
+        "rawPath": "\"/model-papers/availability\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/model-papers/availability\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/FiLe4k14.js",
+        "method": "GET",
+        "path": "/model-papers",
+        "rawPath": "\"/model-papers\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/model-papers\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "PATCH",
+        "path": "/admin/lessons/{param}/toggle-status-all",
+        "rawPath": "`/admin/lessons/${t}/toggle-status-all`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "{}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/lessons/${t}/toggle-status-all`,{},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "PATCH",
+        "path": "/admin/courses/{param}/toggle-status-all",
+        "rawPath": "`/admin/courses/${t}/toggle-status-all`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "{}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/courses/${t}/toggle-status-all`,{},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "PATCH",
+        "path": "/admin/videos/{param}/toggle-status",
+        "rawPath": "`/admin/videos/${t}/toggle-status`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "{}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/videos/${t}/toggle-status`,{},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "PATCH",
+        "path": "/admin/users/{param}",
+        "rawPath": "`/admin/users/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "{}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/users/${t}`,{},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "PATCH",
+        "path": "/admin/users/{param}/reset-password",
+        "rawPath": "`/admin/users/${t}/reset-password`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "{}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/users/${t}/reset-password`,{},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "PATCH",
+        "path": "/admin/reviews/{param}",
+        "rawPath": "`/admin/reviews/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "{status:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "status"
+        ],
+        "formFields": [],
+        "call": "`/admin/reviews/${t}`,{status:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "GET",
+        "path": "/admin/lessons",
+        "rawPath": "\"/admin/lessons\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/lessons\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "GET",
+        "path": "/admin/zoom",
+        "rawPath": "\"/admin/zoom\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/zoom\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "GET",
+        "path": "/admin/lessons/{param}",
+        "rawPath": "`/admin/lessons/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/lessons/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "GET",
+        "path": "/admin/admins",
+        "rawPath": "\"/admin/admins\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/admins\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "GET",
+        "path": "/admin/users/{param}",
+        "rawPath": "`/admin/users/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/users/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "GET",
+        "path": "/admin/check/{param}",
+        "rawPath": "`/admin/check/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/check/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "GET",
+        "path": "/admin/reviews?{param}",
+        "rawPath": "`/admin/reviews?${a.toString()}`",
+        "pathKind": "template",
+        "pathParams": [
+          "a.toString()"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/reviews?${a.toString()}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/id/{param}/{param}",
+        "rawPath": "`/admin/id/${t}/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t",
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": "{comments:\"\"}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "comments"
+        ],
+        "formFields": [],
+        "call": "`/admin/id/${t}/${a}`,{comments:\"\"},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/check/{param}/{param}",
+        "rawPath": "`/admin/check/${t}/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t",
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": "{comments:\"\"}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "comments"
+        ],
+        "formFields": [],
+        "call": "`/admin/check/${t}/${a}`,{comments:\"\"},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/applied/{param}/{param}",
+        "rawPath": "`/admin/applied/${t}/${a}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t",
+          "a"
+        ],
+        "spoofedFrom": null,
+        "body": "{comments:\"\"}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "comments"
+        ],
+        "formFields": [],
+        "call": "`/admin/applied/${t}/${a}`,{comments:\"\"},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/courses",
+        "rawPath": "\"/admin/courses\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/courses\",t,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/lessons",
+        "rawPath": "\"/admin/lessons\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/lessons\",t,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/lessons/{param}",
+        "rawPath": "`/admin/lessons/${t.id}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t.id"
+        ],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/lessons/${t.id}`,t,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/zoom/",
+        "rawPath": "\"/admin/zoom/\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/zoom/\",a,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/admins/role",
+        "rawPath": "\"/admin/admins/role\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{title:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "title"
+        ],
+        "formFields": [],
+        "call": "\"/admin/admins/role\",{title:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/videos",
+        "rawPath": "\"/admin/videos\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/videos\",t,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/videos/{param}",
+        "rawPath": "`/admin/videos/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/videos/${t}`,a,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/add-admin",
+        "rawPath": "\"/admin/add-admin\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "\"/admin/add-admin\",a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/admins/{param}",
+        "rawPath": "`/admin/admins/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "o",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "`/admin/admins/${t}`,o,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "POST",
+        "path": "/admin/courses/{param}",
+        "rawPath": "`/admin/courses/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/courses/${t}`,a,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "DELETE",
+        "path": "/admin/lessons/{param}",
+        "rawPath": "`/admin/lessons/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/lessons/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "DELETE",
+        "path": "/admin/admins/{param}",
+        "rawPath": "`/admin/admins/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/admins/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "DELETE",
+        "path": "/admin/zoom/{param}",
+        "rawPath": "`/admin/zoom/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/zoom/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "DELETE",
+        "path": "/admin/videos/{param}",
+        "rawPath": "`/admin/videos/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/videos/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/o83l1t9V.js",
+        "method": "DELETE",
+        "path": "/admin/courses/{param}",
+        "rawPath": "`/admin/courses/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/courses/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/OgaeRCbo.js",
+        "method": "GET",
+        "path": "/admin/users/search/{param}",
+        "rawPath": "`/admin/users/search/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/users/search/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/OgaeRCbo.js",
+        "method": "GET",
+        "path": "/admin/users/blocked",
+        "rawPath": "\"/admin/users/blocked\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/users/blocked\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/OgaeRCbo.js",
+        "method": "GET",
+        "path": "/admin/users/unverified-nic",
+        "rawPath": "\"/admin/users/unverified-nic\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/users/unverified-nic\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/OgaeRCbo.js",
+        "method": "GET",
+        "path": "/admin/users/unverified-email",
+        "rawPath": "\"/admin/users/unverified-email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/users/unverified-email\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/OgaeRCbo.js",
+        "method": "GET",
+        "path": "/admin/admins/{param}",
+        "rawPath": "`/admin/admins/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/admins/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/OgaeRCbo.js",
+        "method": "GET",
+        "path": "/admin/all-admins",
+        "rawPath": "\"/admin/all-admins\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/all-admins\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/RB4MXAIS.js",
+        "method": "GET",
+        "path": "/admin/papers",
+        "rawPath": "\"/admin/papers\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/papers\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/RB4MXAIS.js",
+        "method": "GET",
+        "path": "/admin/papers/{param}/unmarked-submissions",
+        "rawPath": "`/admin/papers/${t}/unmarked-submissions`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/papers/${t}/unmarked-submissions`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/RB4MXAIS.js",
+        "method": "GET",
+        "path": "/admin/papers/{param}/marked-submissions",
+        "rawPath": "`/admin/papers/${t}/marked-submissions`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/papers/${t}/marked-submissions`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/RB4MXAIS.js",
+        "method": "POST",
+        "path": "/admin/papers",
+        "rawPath": "\"/admin/papers\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "t",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method",
+          "title",
+          "type",
+          "total_marks",
+          "file",
+          "answer_script_file",
+          "marks",
+          "notes",
+          "additional_file"
+        ],
+        "call": "\"/admin/papers\",t,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/RB4MXAIS.js",
+        "method": "POST",
+        "path": "/admin/papers/{param}",
+        "rawPath": "`/admin/papers/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method",
+          "title",
+          "type",
+          "total_marks",
+          "file",
+          "answer_script_file",
+          "marks",
+          "notes",
+          "additional_file"
+        ],
+        "call": "`/admin/papers/${t}`,a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/RB4MXAIS.js",
+        "method": "POST",
+        "path": "/admin/papers/upload/{param}",
+        "rawPath": "`/admin/papers/upload/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method",
+          "title",
+          "type",
+          "total_marks",
+          "file",
+          "answer_script_file",
+          "marks",
+          "notes",
+          "additional_file"
+        ],
+        "call": "`/admin/papers/upload/${t}`,a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/RB4MXAIS.js",
+        "method": "PATCH",
+        "path": "/admin/papers/{param}",
+        "rawPath": "`/admin/papers/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/papers/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/RB4MXAIS.js",
+        "method": "PATCH",
+        "path": "/admin/papers/{param}/toggle-answer-script",
+        "rawPath": "`/admin/papers/${t}/toggle-answer-script`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/papers/${t}/toggle-answer-script`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/RB4MXAIS.js",
+        "method": "DELETE",
+        "path": "/admin/papers/{param}",
+        "rawPath": "`/admin/papers/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/papers/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/wkVuIK41.js",
+        "method": "GET",
+        "path": "/tutes",
+        "rawPath": "\"/tutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/tutes\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/wkVuIK41.js",
+        "method": "GET",
+        "path": "/tutes/purchased?page={param}",
+        "rawPath": "`/tutes/purchased?page=${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/tutes/purchased?page=${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/wkVuIK41.js",
+        "method": "POST",
+        "path": "/purchases/bank-transfer/0",
+        "rawPath": "\"/purchases/bank-transfer/0\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "file",
+          "tute_ids[]"
+        ],
+        "call": "\"/purchases/bank-transfer/0\",s,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/chunks/wkVuIK41.js",
+        "method": "POST",
+        "path": "/tutes/delivery-fee",
+        "rawPath": "\"/tutes/delivery-fee\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "file",
+          "tute_ids[]"
+        ],
+        "call": "\"/tutes/delivery-fee\",e,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/24.BngnQm9E.js",
+        "method": "GET",
+        "path": "/admin/insights",
+        "rawPath": "\"/admin/insights\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{course:s,refresh:t?1:null}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "course",
+          "refresh"
+        ],
+        "formFields": [],
+        "call": "\"/admin/insights\",{course:s,refresh:t?1:null}",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/24.BngnQm9E.js",
+        "method": "GET",
+        "path": "/admin/insights/lapsed-export",
+        "rawPath": "\"/admin/insights/lapsed-export\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{course:s}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "course"
+        ],
+        "formFields": [],
+        "call": "\"/admin/insights/lapsed-export\",{course:s}",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/31.CATFgJg0.js",
+        "method": "GET",
+        "path": "/admin/past-papers/{param}",
+        "rawPath": "`/admin/past-papers/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/past-papers/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/31.CATFgJg0.js",
+        "method": "POST",
+        "path": "/admin/past-papers",
+        "rawPath": "\"/admin/past-papers\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "past_paper",
+          "medium",
+          "year",
+          "type"
+        ],
+        "call": "\"/admin/past-papers\",e,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/31.CATFgJg0.js",
+        "method": "DELETE",
+        "path": "/admin/past-papers/{param}",
+        "rawPath": "`/admin/past-papers/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/past-papers/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/35.DZfPrn4b.js",
+        "method": "GET",
+        "path": "/admin/practical-sessions",
+        "rawPath": "\"/admin/practical-sessions\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/practical-sessions\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/35.DZfPrn4b.js",
+        "method": "GET",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/practical-sessions/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/35.DZfPrn4b.js",
+        "method": "GET",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/practical-sessions/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/35.DZfPrn4b.js",
+        "method": "DELETE",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/practical-sessions/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/35.DZfPrn4b.js",
+        "method": "PATCH",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "`/admin/practical-sessions/${n}`,null,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/35.DZfPrn4b.js",
+        "method": "POST",
+        "path": "/admin/practical-sessions",
+        "rawPath": "\"/admin/practical-sessions\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "n",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "\"/admin/practical-sessions\",n,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/35.DZfPrn4b.js",
+        "method": "POST",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "`/admin/practical-sessions/${n}`,e,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/39.BH6yHBpy.js",
+        "method": "POST",
+        "path": "/admin/sms/send",
+        "rawPath": "\"/admin/sms/send\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{message:l,courseIds:e,sender:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "message",
+          "courseIds",
+          "sender"
+        ],
+        "formFields": [],
+        "call": "\"/admin/sms/send\",{message:l,courseIds:e,sender:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/39.BH6yHBpy.js",
+        "method": "POST",
+        "path": "/admin/sms/test",
+        "rawPath": "\"/admin/sms/test\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{message:l,courseIds:e,sender:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "message",
+          "courseIds",
+          "sender"
+        ],
+        "formFields": [],
+        "call": "\"/admin/sms/test\",{message:l,courseIds:e,sender:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/39.BH6yHBpy.js",
+        "method": "POST",
+        "path": "/admin/sms/send-csv",
+        "rawPath": "\"/admin/sms/send-csv\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{message:l,recipients:e,sender:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "message",
+          "recipients",
+          "sender"
+        ],
+        "formFields": [],
+        "call": "\"/admin/sms/send-csv\",{message:l,recipients:e,sender:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/39.BH6yHBpy.js",
+        "method": "GET",
+        "path": "/admin/sms/sender-options",
+        "rawPath": "\"/admin/sms/sender-options\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/sms/sender-options\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "method": "PATCH",
+        "path": "/admin/tickets/{param}/status",
+        "rawPath": "`/admin/tickets/${s}/status`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tickets/${s}/status`,e,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "method": "POST",
+        "path": "/admin/ticket-categories",
+        "rawPath": "\"/admin/ticket-categories\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/ticket-categories\",s,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "method": "POST",
+        "path": "/admin/tickets",
+        "rawPath": "\"/admin/tickets\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/tickets\",s,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "method": "GET",
+        "path": "/admin/ticket-categories",
+        "rawPath": "\"/admin/ticket-categories\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/ticket-categories\"",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "method": "GET",
+        "path": "/admin/tickets{param}",
+        "rawPath": "`/admin/tickets${t?`?${t}`:\"\"}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t?`?${t}`:\"\""
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tickets${t?`?${t}`:\"\"}`",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "method": "GET",
+        "path": "/admin/tickets/{param}",
+        "rawPath": "`/admin/tickets/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tickets/${s}`",
+        "line": 1
+      }
+    ],
+    "direct": [
+      {
+        "file": "js/current/_app/immutable/chunks/BeM-f5b2.js",
+        "method": "GET",
+        "path": "/_app/version.json",
+        "raw": "`${V}/_app/version.json`",
+        "call": "`${V}/_app/version.json`,{headers:{pragma:\"no-cache\",\"cache-control\":\"no-cache\"}}",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/73.BbuEYMhF.js",
+        "method": "GET",
+        "path": "/past-papers/{param}",
+        "raw": "`${s}/past-papers/${p.toLowerCase()}`",
+        "call": "`${s}/past-papers/${p.toLowerCase()}`,{method:\"GET\",headers:{Accept:\"application/json\"}}",
+        "line": 1
+      },
+      {
+        "file": "js/current/_app/immutable/nodes/89.DpthjYV6.js",
+        "method": "GET",
+        "path": "/past-papers/{param}",
+        "raw": "`${m}/past-papers/${s.params.slug.toLowerCase()}`",
+        "call": "`${m}/past-papers/${s.params.slug.toLowerCase()}`,{method:\"GET\",headers:{Accept:\"application/json\"}}",
+        "line": 7
+      }
+    ],
+    "dynamicFirstArg": [
+      {
+        "file": "js/current/_app/immutable/chunks/Csyafj-i.js",
+        "method": "GET",
+        "path": null,
+        "dynamicFirstArg": "e",
+        "call": "(e)",
+        "line": 1
+      }
+    ],
+    "perFile": {
+      "js/current/_app/immutable/chunks/3C00S3wM.js": {
+        "calls": 4,
+        "direct": 0,
+        "aliases": {
+          "c": "POST",
+          "d": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/B6SKNgqH.js": {
+        "calls": 8,
+        "direct": 0,
+        "aliases": {
+          "M": "POST",
+          "H": "GET",
+          "he": "DELETE"
+        }
+      },
+      "js/current/_app/immutable/chunks/BeM-f5b2.js": {
+        "calls": 0,
+        "direct": 1
+      },
+      "js/current/_app/immutable/chunks/BGBlHn-P.js": {
+        "calls": 5,
+        "direct": 0,
+        "aliases": {
+          "p": "POST",
+          "o": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/BN2KxrB7.js": {
+        "calls": 2,
+        "direct": 0,
+        "aliases": {
+          "We": "POST",
+          "Xe": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/BoaDJuae.js": {
+        "calls": 1,
+        "direct": 0,
+        "aliases": {
+          "r": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/Bso1vT72.js": {
+        "calls": 3,
+        "direct": 0,
+        "aliases": {
+          "t": "GET",
+          "s": "POST"
+        }
+      },
+      "js/current/_app/immutable/chunks/BuvdwmeH.js": {
+        "calls": 4,
+        "direct": 0,
+        "aliases": {
+          "a": "GET",
+          "r": "POST"
+        }
+      },
+      "js/current/_app/immutable/chunks/B_dqzIxx.js": {
+        "calls": 17,
+        "direct": 0,
+        "aliases": {
+          "r": "POST",
+          "n": "GET",
+          "p": "PUT"
+        }
+      },
+      "js/current/_app/immutable/chunks/CczqVMpR.js": {
+        "calls": 7,
+        "direct": 0,
+        "aliases": {
+          "t": "PATCH",
+          "a": "GET",
+          "n": "PUT",
+          "r": "POST"
+        }
+      },
+      "js/current/_app/immutable/chunks/CD97E9Hu.js": {
+        "calls": 14,
+        "direct": 0,
+        "aliases": {
+          "r": "POST",
+          "d": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/CdMOgjNl.js": {
+        "calls": 2,
+        "direct": 0,
+        "aliases": {
+          "Ke": "GET",
+          "Qe": "POST"
+        }
+      },
+      "js/current/_app/immutable/chunks/CdvttfmZ.js": {
+        "calls": 15,
+        "direct": 0,
+        "aliases": {
+          "c": "POST",
+          "r": "GET",
+          "i": "DELETE",
+          "w": "PATCH"
+        }
+      },
+      "js/current/_app/immutable/chunks/CgEnrGJP.js": {
+        "calls": 9,
+        "direct": 0,
+        "aliases": {
+          "d": "DELETE",
+          "t": "POST",
+          "n": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/Csyafj-i.js": {
+        "calls": 4,
+        "direct": 0,
+        "aliases": {
+          "t": "POST",
+          "r": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/CzfSrzb2.js": {
+        "calls": 10,
+        "direct": 0,
+        "aliases": {
+          "e": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/D8xuGZSL.js": {
+        "calls": 4,
+        "direct": 0,
+        "aliases": {
+          "i": "GET",
+          "t": "POST",
+          "n": "DELETE"
+        }
+      },
+      "js/current/_app/immutable/chunks/DEHBxsXW.js": {
+        "calls": 3,
+        "direct": 0,
+        "aliases": {
+          "e": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/DQn851FC.js": {
+        "calls": 1,
+        "direct": 0,
+        "aliases": {
+          "l": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/DtAuM1Kv.js": {
+        "calls": 2,
+        "direct": 0,
+        "aliases": {
+          "n": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/DtUzyJrk.js": {
+        "calls": 2,
+        "direct": 0,
+        "aliases": {
+          "b": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/DWKMon6r.js": {
+        "calls": 4,
+        "direct": 0,
+        "aliases": {
+          "r": "GET",
+          "a": "POST"
+        }
+      },
+      "js/current/_app/immutable/chunks/DXhKq_RN.js": {
+        "calls": 7,
+        "direct": 0,
+        "aliases": {
+          "Be": "GET",
+          "Ue": "POST",
+          "Je": "DELETE",
+          "Ke": "PUT"
+        }
+      },
+      "js/current/_app/immutable/chunks/DzAMTzGs.js": {
+        "calls": 4,
+        "direct": 0,
+        "aliases": {
+          "nt": "GET",
+          "Ze": "POST",
+          "ot": "DELETE"
+        }
+      },
+      "js/current/_app/immutable/chunks/FiLe4k14.js": {
+        "calls": 3,
+        "direct": 0,
+        "aliases": {
+          "i": "POST",
+          "r": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/o83l1t9V.js": {
+        "calls": 31,
+        "direct": 0,
+        "aliases": {
+          "i": "PATCH",
+          "r": "GET",
+          "e": "POST",
+          "d": "DELETE"
+        }
+      },
+      "js/current/_app/immutable/chunks/OgaeRCbo.js": {
+        "calls": 6,
+        "direct": 0,
+        "aliases": {
+          "s": "GET"
+        }
+      },
+      "js/current/_app/immutable/chunks/RB4MXAIS.js": {
+        "calls": 9,
+        "direct": 0,
+        "aliases": {
+          "n": "GET",
+          "r": "POST",
+          "o": "PATCH",
+          "p": "DELETE"
+        }
+      },
+      "js/current/_app/immutable/chunks/wkVuIK41.js": {
+        "calls": 4,
+        "direct": 0,
+        "aliases": {
+          "o": "GET",
+          "p": "POST"
+        }
+      },
+      "js/current/_app/immutable/nodes/24.BngnQm9E.js": {
+        "calls": 2,
+        "direct": 0,
+        "aliases": {
+          "vs": "GET"
+        }
+      },
+      "js/current/_app/immutable/nodes/31.CATFgJg0.js": {
+        "calls": 3,
+        "direct": 0,
+        "aliases": {
+          "_e": "GET",
+          "he": "POST",
+          "ge": "DELETE"
+        }
+      },
+      "js/current/_app/immutable/nodes/35.DZfPrn4b.js": {
+        "calls": 7,
+        "direct": 0,
+        "aliases": {
+          "Ge": "GET",
+          "Rt": "DELETE",
+          "Wt": "PATCH",
+          "st": "POST"
+        }
+      },
+      "js/current/_app/immutable/nodes/39.BH6yHBpy.js": {
+        "calls": 4,
+        "direct": 0,
+        "aliases": {
+          "Ae": "POST",
+          "Vt": "GET"
+        }
+      },
+      "js/current/_app/immutable/nodes/49.D5gJ4-tr.js": {
+        "calls": 6,
+        "direct": 0,
+        "aliases": {
+          "Wt": "PATCH",
+          "ut": "POST",
+          "xe": "GET"
+        }
+      },
+      "js/current/_app/immutable/nodes/73.BbuEYMhF.js": {
+        "calls": 0,
+        "direct": 1
+      },
+      "js/current/_app/immutable/nodes/89.DpthjYV6.js": {
+        "calls": 0,
+        "direct": 1
+      }
+    }
+  },
+  "old": {
+    "files": 119,
+    "wrapper": {
+      "file": "js/all/_app_immutable_chunks_L4WPQHn8.js",
+      "base": "https://ictfromabc.com/api",
+      "methods": {
+        "T": "GET",
+        "O": "DELETE",
+        "P": "POST",
+        "$": "PUT",
+        "A": "PATCH"
+      },
+      "exportMap": {
+        "a": "T",
+        "b": "P",
+        "c": "$",
+        "d": "O",
+        "g": "U",
+        "p": "A"
+      },
+      "byExport": {
+        "a": "GET",
+        "b": "POST",
+        "c": "PUT",
+        "d": "DELETE",
+        "p": "PATCH"
+      },
+      "rawGetExports": [
+        "a"
+      ]
+    },
+    "callCount": 56,
+    "directCount": 3,
+    "calls": [
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/validate-otp-v2/{param}",
+        "rawPath": "`/validate-otp-v2/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "{otp:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "otp"
+        ],
+        "formFields": [],
+        "call": "`/validate-otp-v2/${o}`,{otp:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/request-otp-v2/{param}",
+        "rawPath": "`/request-otp-v2/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/request-otp-v2/${o}`,null,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/login",
+        "rawPath": "\"/login\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{phoneNumber:o,password:a,visitorId:n,confidenceScore:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "phoneNumber",
+          "password",
+          "visitorId",
+          "confidenceScore"
+        ],
+        "formFields": [],
+        "call": "\"/login\",{phoneNumber:o,password:a,visitorId:n,confidenceScore:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/register",
+        "rawPath": "\"/register\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/register\",a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/logout",
+        "rawPath": "\"/logout\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/logout\",{},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/user",
+        "rawPath": "\"/user\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/user\",a,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/forgot-password/request-otp/phone/{param}",
+        "rawPath": "`/forgot-password/request-otp/phone/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/forgot-password/request-otp/phone/${o}`,null,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/forgot-password/validate-otp/phone/{param}",
+        "rawPath": "`/forgot-password/validate-otp/phone/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "{otp:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "otp"
+        ],
+        "formFields": [],
+        "call": "`/forgot-password/validate-otp/phone/${o}`,{otp:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/forgot-password/reset/phone/{param}",
+        "rawPath": "`/forgot-password/reset/phone/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "{otp:a,password:s,password_confirmation:n}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "otp",
+          "password",
+          "password_confirmation"
+        ],
+        "formFields": [],
+        "call": "`/forgot-password/reset/phone/${o}`,{otp:a,password:s,password_confirmation:n},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/forgot-password/request-otp/email",
+        "rawPath": "\"/forgot-password/request-otp/email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{email:o}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email"
+        ],
+        "formFields": [],
+        "call": "\"/forgot-password/request-otp/email\",{email:o},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/forgot-password/validate-otp/email",
+        "rawPath": "\"/forgot-password/validate-otp/email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{email:o,otp:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email",
+          "otp"
+        ],
+        "formFields": [],
+        "call": "\"/forgot-password/validate-otp/email\",{email:o,otp:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "POST",
+        "path": "/forgot-password/reset/email",
+        "rawPath": "\"/forgot-password/reset/email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{email:o,otp:a,password:s,password_confirmation:n}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email",
+          "otp",
+          "password",
+          "password_confirmation"
+        ],
+        "formFields": [],
+        "call": "\"/forgot-password/reset/email\",{email:o,otp:a,password:s,password_confirmation:n},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "method": "GET",
+        "path": "/validate-phone-number/{param}",
+        "rawPath": "`/validate-phone-number/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/validate-phone-number/${o}`",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/public/tutes",
+        "rawPath": "\"/public/tutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/public/tutes\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/public/courses/ol-lessons",
+        "rawPath": "\"/public/courses/ol-lessons\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/public/courses/ol-lessons\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/public/courses/{param}",
+        "rawPath": "`/public/courses/${t}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/public/courses/${t}`",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/courses",
+        "rawPath": "\"/courses\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/courses\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/institutes",
+        "rawPath": "\"/institutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/institutes\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/institutes",
+        "rawPath": "\"/institutes\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/institutes\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/courses/grades",
+        "rawPath": "\"/courses/grades\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/courses/grades\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/admins",
+        "rawPath": "\"/admins\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admins\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/telegram",
+        "rawPath": "\"/telegram\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/telegram\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "method": "GET",
+        "path": "/public-reviews",
+        "rawPath": "\"/public-reviews\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/public-reviews\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/validate-otp-v2/{param}",
+        "rawPath": "`/validate-otp-v2/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "{otp:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "otp"
+        ],
+        "formFields": [],
+        "call": "`/validate-otp-v2/${o}`,{otp:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/request-otp-v2/{param}",
+        "rawPath": "`/request-otp-v2/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/request-otp-v2/${o}`,null,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/login",
+        "rawPath": "\"/login\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{phoneNumber:o,password:a,visitorId:n,confidenceScore:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "phoneNumber",
+          "password",
+          "visitorId",
+          "confidenceScore"
+        ],
+        "formFields": [],
+        "call": "\"/login\",{phoneNumber:o,password:a,visitorId:n,confidenceScore:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/register",
+        "rawPath": "\"/register\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/register\",a,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/logout",
+        "rawPath": "\"/logout\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/logout\",{},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/user",
+        "rawPath": "\"/user\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "a",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/user\",a,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/forgot-password/request-otp/phone/{param}",
+        "rawPath": "`/forgot-password/request-otp/phone/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/forgot-password/request-otp/phone/${o}`,null,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/forgot-password/validate-otp/phone/{param}",
+        "rawPath": "`/forgot-password/validate-otp/phone/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "{otp:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "otp"
+        ],
+        "formFields": [],
+        "call": "`/forgot-password/validate-otp/phone/${o}`,{otp:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/forgot-password/reset/phone/{param}",
+        "rawPath": "`/forgot-password/reset/phone/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": "{otp:a,password:s,password_confirmation:n}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "otp",
+          "password",
+          "password_confirmation"
+        ],
+        "formFields": [],
+        "call": "`/forgot-password/reset/phone/${o}`,{otp:a,password:s,password_confirmation:n},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/forgot-password/request-otp/email",
+        "rawPath": "\"/forgot-password/request-otp/email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{email:o}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email"
+        ],
+        "formFields": [],
+        "call": "\"/forgot-password/request-otp/email\",{email:o},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/forgot-password/validate-otp/email",
+        "rawPath": "\"/forgot-password/validate-otp/email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{email:o,otp:a}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email",
+          "otp"
+        ],
+        "formFields": [],
+        "call": "\"/forgot-password/validate-otp/email\",{email:o,otp:a},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "POST",
+        "path": "/forgot-password/reset/email",
+        "rawPath": "\"/forgot-password/reset/email\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{email:o,otp:a,password:s,password_confirmation:n}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "email",
+          "otp",
+          "password",
+          "password_confirmation"
+        ],
+        "formFields": [],
+        "call": "\"/forgot-password/reset/email\",{email:o,otp:a,password:s,password_confirmation:n},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/all/_authapi.js",
+        "method": "GET",
+        "path": "/validate-phone-number/{param}",
+        "rawPath": "`/validate-phone-number/${o}`",
+        "pathKind": "template",
+        "pathParams": [
+          "o"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/validate-phone-number/${o}`",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/24.CS0YFuf9.js",
+        "method": "GET",
+        "path": "/admin/past-papers/{param}",
+        "rawPath": "`/admin/past-papers/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/past-papers/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/24.CS0YFuf9.js",
+        "method": "POST",
+        "path": "/admin/past-papers",
+        "rawPath": "\"/admin/past-papers\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "past_paper",
+          "medium",
+          "year",
+          "type"
+        ],
+        "call": "\"/admin/past-papers\",e,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/24.CS0YFuf9.js",
+        "method": "DELETE",
+        "path": "/admin/past-papers/{param}",
+        "rawPath": "`/admin/past-papers/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/past-papers/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/28.DHI0dgP7.js",
+        "method": "GET",
+        "path": "/admin/practical-sessions",
+        "rawPath": "\"/admin/practical-sessions\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/practical-sessions\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/28.DHI0dgP7.js",
+        "method": "GET",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/practical-sessions/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/28.DHI0dgP7.js",
+        "method": "GET",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/practical-sessions/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/28.DHI0dgP7.js",
+        "method": "DELETE",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/practical-sessions/${n}`",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/28.DHI0dgP7.js",
+        "method": "PATCH",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": "null",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "`/admin/practical-sessions/${n}`,null,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/28.DHI0dgP7.js",
+        "method": "POST",
+        "path": "/admin/practical-sessions",
+        "rawPath": "\"/admin/practical-sessions\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "n",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "\"/admin/practical-sessions\",n,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/28.DHI0dgP7.js",
+        "method": "POST",
+        "path": "/admin/practical-sessions/{param}",
+        "rawPath": "`/admin/practical-sessions/${n}`",
+        "pathKind": "template",
+        "pathParams": [
+          "n"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [
+          "_method"
+        ],
+        "call": "`/admin/practical-sessions/${n}`,e,\"\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/32.Cxh8P42I.js",
+        "method": "POST",
+        "path": "/admin/sms/send",
+        "rawPath": "\"/admin/sms/send\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{message:l,courseIds:e,sender:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "message",
+          "courseIds",
+          "sender"
+        ],
+        "formFields": [],
+        "call": "\"/admin/sms/send\",{message:l,courseIds:e,sender:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/32.Cxh8P42I.js",
+        "method": "POST",
+        "path": "/admin/sms/test",
+        "rawPath": "\"/admin/sms/test\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{message:l,courseIds:e,sender:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "message",
+          "courseIds",
+          "sender"
+        ],
+        "formFields": [],
+        "call": "\"/admin/sms/test\",{message:l,courseIds:e,sender:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/32.Cxh8P42I.js",
+        "method": "POST",
+        "path": "/admin/sms/send-csv",
+        "rawPath": "\"/admin/sms/send-csv\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "{message:l,recipients:e,sender:t}",
+        "bodyKind": "json-or-form-object",
+        "bodyFields": [
+          "message",
+          "recipients",
+          "sender"
+        ],
+        "formFields": [],
+        "call": "\"/admin/sms/send-csv\",{message:l,recipients:e,sender:t},\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/32.Cxh8P42I.js",
+        "method": "GET",
+        "path": "/admin/sms/sender-options",
+        "rawPath": "\"/admin/sms/sender-options\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/sms/sender-options\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/42.C6sgRKDV.js",
+        "method": "PATCH",
+        "path": "/admin/tickets/{param}/status",
+        "rawPath": "`/admin/tickets/${s}/status`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": "e",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tickets/${s}/status`,e,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/42.C6sgRKDV.js",
+        "method": "POST",
+        "path": "/admin/ticket-categories",
+        "rawPath": "\"/admin/ticket-categories\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/ticket-categories\",s,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/42.C6sgRKDV.js",
+        "method": "POST",
+        "path": "/admin/tickets",
+        "rawPath": "\"/admin/tickets\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": "s",
+        "bodyKind": "var",
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/tickets\",s,\"application/json\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/42.C6sgRKDV.js",
+        "method": "GET",
+        "path": "/admin/ticket-categories",
+        "rawPath": "\"/admin/ticket-categories\"",
+        "pathKind": "literal",
+        "pathParams": [],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "\"/admin/ticket-categories\"",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/42.C6sgRKDV.js",
+        "method": "GET",
+        "path": "/admin/tickets{param}",
+        "rawPath": "`/admin/tickets${t?`?${t}`:\"\"}`",
+        "pathKind": "template",
+        "pathParams": [
+          "t?`?${t}`:\"\""
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tickets${t?`?${t}`:\"\"}`",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/42.C6sgRKDV.js",
+        "method": "GET",
+        "path": "/admin/tickets/{param}",
+        "rawPath": "`/admin/tickets/${s}`",
+        "pathKind": "template",
+        "pathParams": [
+          "s"
+        ],
+        "spoofedFrom": null,
+        "body": null,
+        "bodyKind": null,
+        "bodyFields": null,
+        "formFields": [],
+        "call": "`/admin/tickets/${s}`",
+        "line": 1
+      }
+    ],
+    "direct": [
+      {
+        "file": "js/all/_app_immutable_chunks_CsaFGerN.js",
+        "method": "GET",
+        "path": "/_app/version.json",
+        "raw": "`${j}/_app/version.json`",
+        "call": "`${j}/_app/version.json`,{headers:{pragma:\"no-cache\",\"cache-control\":\"no-cache\"}}",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/62.CoZIY_FK.js",
+        "method": "GET",
+        "path": "/past-papers/{param}",
+        "raw": "`${s}/past-papers/${p.toLowerCase()}`",
+        "call": "`${s}/past-papers/${p.toLowerCase()}`,{method:\"GET\",headers:{Accept:\"application/json\"}}",
+        "line": 1
+      },
+      {
+        "file": "js/nodes/77.Cgqbw9EY.js",
+        "method": "GET",
+        "path": "/past-papers/{param}",
+        "raw": "`${m}/past-papers/${s.params.slug.toLowerCase()}`",
+        "call": "`${m}/past-papers/${s.params.slug.toLowerCase()}`,{method:\"GET\",headers:{Accept:\"application/json\"}}",
+        "line": 7
+      }
+    ],
+    "perFile": {
+      "js/all/_app_immutable_chunks_B7ab6jJc.js": {
+        "calls": 13,
+        "direct": 0
+      },
+      "js/all/_app_immutable_chunks_CsaFGerN.js": {
+        "calls": 0,
+        "direct": 1
+      },
+      "js/all/_app_immutable_chunks_Cyimzgvh.js": {
+        "calls": 10,
+        "direct": 0
+      },
+      "js/all/_authapi.js": {
+        "calls": 13,
+        "direct": 0
+      },
+      "js/nodes/24.CS0YFuf9.js": {
+        "calls": 3,
+        "direct": 0
+      },
+      "js/nodes/28.DHI0dgP7.js": {
+        "calls": 7,
+        "direct": 0
+      },
+      "js/nodes/32.Cxh8P42I.js": {
+        "calls": 4,
+        "direct": 0
+      },
+      "js/nodes/42.C6sgRKDV.js": {
+        "calls": 6,
+        "direct": 0
+      },
+      "js/nodes/62.CoZIY_FK.js": {
+        "calls": 0,
+        "direct": 1
+      },
+      "js/nodes/77.Cgqbw9EY.js": {
+        "calls": 0,
+        "direct": 1
+      }
+    }
+  },
+  "union": [
+    {
+      "path": "/_app/version.json",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_CsaFGerN.js",
+        "js/current/_app/immutable/chunks/BeM-f5b2.js"
+      ]
+    },
+    {
+      "path": "/admin/add-admin",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/admins",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/admins/{param}",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/OgaeRCbo.js",
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/admins/role",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "title"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/all-admins",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/OgaeRCbo.js"
+      ]
+    },
+    {
+      "path": "/admin/applied/{param}/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "comments"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/call-responses",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CczqVMpR.js"
+      ]
+    },
+    {
+      "path": "/admin/call-responses/{param}",
+      "methods": [
+        "GET",
+        "PUT"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CczqVMpR.js"
+      ]
+    },
+    {
+      "path": "/admin/call-responses/{param}/students",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CczqVMpR.js"
+      ]
+    },
+    {
+      "path": "/admin/call-responses/{param}/toggle-status",
+      "methods": [
+        "PATCH"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CczqVMpR.js"
+      ]
+    },
+    {
+      "path": "/admin/call-responses/active",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CczqVMpR.js"
+      ]
+    },
+    {
+      "path": "/admin/check/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/check/{param}/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "comments"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/courses",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/3C00S3wM.js",
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/courses/{param}",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/3C00S3wM.js",
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/courses/{param}/students",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/3C00S3wM.js"
+      ]
+    },
+    {
+      "path": "/admin/courses/{param}/toggle-status-all",
+      "methods": [
+        "PATCH"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/courses/order",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/3C00S3wM.js"
+      ]
+    },
+    {
+      "path": "/admin/dashboard",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DtUzyJrk.js"
+      ]
+    },
+    {
+      "path": "/admin/event-purchases/{param}/resend",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "email"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/B6SKNgqH.js"
+      ]
+    },
+    {
+      "path": "/admin/event-tickets/{param}/check",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/B6SKNgqH.js"
+      ]
+    },
+    {
+      "path": "/admin/events",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)",
+        "archived"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/B6SKNgqH.js"
+      ]
+    },
+    {
+      "path": "/admin/events/{param}",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/B6SKNgqH.js"
+      ]
+    },
+    {
+      "path": "/admin/events/{param}/purchases",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B6SKNgqH.js"
+      ]
+    },
+    {
+      "path": "/admin/id/{param}/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "comments"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/ids/unverified",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DtUzyJrk.js"
+      ]
+    },
+    {
+      "path": "/admin/insights",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "course",
+        "refresh"
+      ],
+      "files": [
+        "js/current/_app/immutable/nodes/24.BngnQm9E.js"
+      ]
+    },
+    {
+      "path": "/admin/insights/lapsed-export",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "course"
+      ],
+      "files": [
+        "js/current/_app/immutable/nodes/24.BngnQm9E.js"
+      ]
+    },
+    {
+      "path": "/admin/lessons",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DtAuM1Kv.js",
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/lessons/{param}",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/lessons/{param}/students",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DtAuM1Kv.js"
+      ]
+    },
+    {
+      "path": "/admin/lessons/{param}/toggle-status-all",
+      "methods": [
+        "PATCH"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/model-papers",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)",
+        "course_id (form)",
+        "file (form)",
+        "title (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CgEnrGJP.js"
+      ]
+    },
+    {
+      "path": "/admin/model-papers/{param}",
+      "methods": [
+        "DELETE",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)",
+        "course_id (form)",
+        "file (form)",
+        "title (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CgEnrGJP.js"
+      ]
+    },
+    {
+      "path": "/admin/model-papers/answered/{param}",
+      "methods": [
+        "DELETE"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CgEnrGJP.js"
+      ]
+    },
+    {
+      "path": "/admin/model-papers/marked",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CgEnrGJP.js"
+      ]
+    },
+    {
+      "path": "/admin/model-papers/unmarked",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CgEnrGJP.js"
+      ]
+    },
+    {
+      "path": "/admin/model-papers/upload/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)",
+        "course_id (form)",
+        "file (form)",
+        "title (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CgEnrGJP.js"
+      ]
+    },
+    {
+      "path": "/admin/model-papers/user/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CgEnrGJP.js"
+      ]
+    },
+    {
+      "path": "/admin/new-year-purchases",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/Csyafj-i.js"
+      ]
+    },
+    {
+      "path": "/admin/new-year-purchases/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/Csyafj-i.js"
+      ]
+    },
+    {
+      "path": "/admin/new-year-purchases/resend/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "email"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/Csyafj-i.js"
+      ]
+    },
+    {
+      "path": "/admin/papers",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)",
+        "additional_file (form)",
+        "answer_script_file (form)",
+        "file (form)",
+        "marks (form)",
+        "notes (form)",
+        "title (form)",
+        "total_marks (form)",
+        "type (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/RB4MXAIS.js"
+      ]
+    },
+    {
+      "path": "/admin/papers/{param}",
+      "methods": [
+        "DELETE",
+        "PATCH",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)",
+        "additional_file (form)",
+        "answer_script_file (form)",
+        "file (form)",
+        "marks (form)",
+        "notes (form)",
+        "title (form)",
+        "total_marks (form)",
+        "type (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/RB4MXAIS.js"
+      ]
+    },
+    {
+      "path": "/admin/papers/{param}/marked-submissions",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/RB4MXAIS.js"
+      ]
+    },
+    {
+      "path": "/admin/papers/{param}/toggle-answer-script",
+      "methods": [
+        "PATCH"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/RB4MXAIS.js"
+      ]
+    },
+    {
+      "path": "/admin/papers/{param}/unmarked-submissions",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/RB4MXAIS.js"
+      ]
+    },
+    {
+      "path": "/admin/papers/upload/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method (form)",
+        "additional_file (form)",
+        "answer_script_file (form)",
+        "file (form)",
+        "marks (form)",
+        "notes (form)",
+        "title (form)",
+        "total_marks (form)",
+        "type (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/RB4MXAIS.js"
+      ]
+    },
+    {
+      "path": "/admin/past-papers",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "medium (form)",
+        "past_paper (form)",
+        "type (form)",
+        "year (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/nodes/31.CATFgJg0.js",
+        "js/nodes/24.CS0YFuf9.js"
+      ]
+    },
+    {
+      "path": "/admin/past-papers/{param}",
+      "methods": [
+        "DELETE",
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/nodes/31.CATFgJg0.js",
+        "js/nodes/24.CS0YFuf9.js"
+      ]
+    },
+    {
+      "path": "/admin/practical-sessions",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "_method (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/nodes/35.DZfPrn4b.js",
+        "js/nodes/28.DHI0dgP7.js"
+      ]
+    },
+    {
+      "path": "/admin/practical-sessions/{param}",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PATCH",
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "_method (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/nodes/35.DZfPrn4b.js",
+        "js/nodes/28.DHI0dgP7.js"
+      ]
+    },
+    {
+      "path": "/admin/purchases/{param}",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "items[] (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/BGBlHn-P.js"
+      ]
+    },
+    {
+      "path": "/admin/purchases/accepted",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BGBlHn-P.js"
+      ]
+    },
+    {
+      "path": "/admin/purchases/online",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BGBlHn-P.js"
+      ]
+    },
+    {
+      "path": "/admin/reviews?{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/reviews/{param}",
+      "methods": [
+        "PATCH"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "status"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/slips/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BGBlHn-P.js"
+      ]
+    },
+    {
+      "path": "/admin/sms/send",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "courseIds",
+        "message",
+        "sender"
+      ],
+      "files": [
+        "js/current/_app/immutable/nodes/39.BH6yHBpy.js",
+        "js/nodes/32.Cxh8P42I.js"
+      ]
+    },
+    {
+      "path": "/admin/sms/send-csv",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "message",
+        "recipients",
+        "sender"
+      ],
+      "files": [
+        "js/current/_app/immutable/nodes/39.BH6yHBpy.js",
+        "js/nodes/32.Cxh8P42I.js"
+      ]
+    },
+    {
+      "path": "/admin/sms/sender-options",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/nodes/39.BH6yHBpy.js",
+        "js/nodes/32.Cxh8P42I.js"
+      ]
+    },
+    {
+      "path": "/admin/sms/test",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "courseIds",
+        "message",
+        "sender"
+      ],
+      "files": [
+        "js/current/_app/immutable/nodes/39.BH6yHBpy.js",
+        "js/nodes/32.Cxh8P42I.js"
+      ]
+    },
+    {
+      "path": "/admin/student-calls",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BN2KxrB7.js"
+      ]
+    },
+    {
+      "path": "/admin/tags",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DXhKq_RN.js"
+      ]
+    },
+    {
+      "path": "/admin/tags/{param}",
+      "methods": [
+        "DELETE",
+        "GET",
+        "POST",
+        "PUT"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DXhKq_RN.js"
+      ]
+    },
+    {
+      "path": "/admin/tags/student/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DXhKq_RN.js"
+      ]
+    },
+    {
+      "path": "/admin/ticket-categories",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "js/nodes/42.C6sgRKDV.js"
+      ]
+    },
+    {
+      "path": "/admin/tickets",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "js/nodes/42.C6sgRKDV.js"
+      ]
+    },
+    {
+      "path": "/admin/tickets{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "js/nodes/42.C6sgRKDV.js"
+      ]
+    },
+    {
+      "path": "/admin/tickets/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "js/nodes/42.C6sgRKDV.js"
+      ]
+    },
+    {
+      "path": "/admin/tickets/{param}/status",
+      "methods": [
+        "PATCH"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/nodes/49.D5gJ4-tr.js",
+        "js/nodes/42.C6sgRKDV.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes",
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "items[] (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/{param}",
+      "methods": [
+        "DELETE",
+        "GET",
+        "PATCH",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "_method"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/{param}/students",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/csv",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "items[] (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/inventory",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/inventory/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/package",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "items[] (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/packed",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/pdf",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "items[] (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/transfer",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "items[] (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/tutes/unpacked",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CdvttfmZ.js"
+      ]
+    },
+    {
+      "path": "/admin/user",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/admin/users/{param}",
+      "methods": [
+        "GET",
+        "PATCH"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/users/{param}/reset-password",
+      "methods": [
+        "PATCH"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/users/blocked",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/OgaeRCbo.js"
+      ]
+    },
+    {
+      "path": "/admin/users/pending-student-calls",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BN2KxrB7.js"
+      ]
+    },
+    {
+      "path": "/admin/users/search/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/OgaeRCbo.js"
+      ]
+    },
+    {
+      "path": "/admin/users/unverified-email",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/OgaeRCbo.js"
+      ]
+    },
+    {
+      "path": "/admin/users/unverified-nic",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/OgaeRCbo.js"
+      ]
+    },
+    {
+      "path": "/admin/videos",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/videos/{param}",
+      "methods": [
+        "DELETE",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/videos/{param}/toggle-status",
+      "methods": [
+        "PATCH"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/zoom",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/zoom/",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admin/zoom/{param}",
+      "methods": [
+        "DELETE"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/o83l1t9V.js"
+      ]
+    },
+    {
+      "path": "/admins",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "js/current/_app/immutable/chunks/CzfSrzb2.js"
+      ]
+    },
+    {
+      "path": "/courses",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "js/current/_app/immutable/chunks/CzfSrzb2.js"
+      ]
+    },
+    {
+      "path": "/courses/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "js/current/_app/immutable/chunks/DEHBxsXW.js"
+      ]
+    },
+    {
+      "path": "/courses/grades",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "js/current/_app/immutable/chunks/CzfSrzb2.js"
+      ]
+    },
+    {
+      "path": "/courses/ol-lessons",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DEHBxsXW.js"
+      ]
+    },
+    {
+      "path": "/email/resend",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/events",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BuvdwmeH.js"
+      ]
+    },
+    {
+      "path": "/events/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BuvdwmeH.js"
+      ]
+    },
+    {
+      "path": "/events/{param}/my-purchases",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DWKMon6r.js"
+      ]
+    },
+    {
+      "path": "/events/{param}/purchases",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "numberOfTickets"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/DWKMon6r.js"
+      ]
+    },
+    {
+      "path": "/events/{param}/purchases/{param}/status",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BuvdwmeH.js"
+      ]
+    },
+    {
+      "path": "/events/{param}/purchases/guest",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BuvdwmeH.js"
+      ]
+    },
+    {
+      "path": "/files/secure/{param}/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DQn851FC.js"
+      ]
+    },
+    {
+      "path": "/forgot-password/request-otp/email",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "email"
+      ],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/forgot-password/request-otp/phone/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/forgot-password/reset/email",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "email",
+        "otp",
+        "password",
+        "password_confirmation"
+      ],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/forgot-password/reset/phone/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "otp",
+        "password",
+        "password_confirmation"
+      ],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/forgot-password/validate-otp/email",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "email",
+        "otp"
+      ],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/forgot-password/validate-otp/phone/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "otp"
+      ],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/institutes",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "js/current/_app/immutable/chunks/CzfSrzb2.js"
+      ]
+    },
+    {
+      "path": "/lessons",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/lessons/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/lessons/allowed",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/login",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "confidenceScore",
+        "password",
+        "phoneNumber",
+        "visitorId"
+      ],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/login/otp",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "confidenceScore",
+        "otp",
+        "password",
+        "phoneNumber",
+        "visitorId"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/logout",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/model-papers",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/FiLe4k14.js"
+      ]
+    },
+    {
+      "path": "/model-papers/availability",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/FiLe4k14.js"
+      ]
+    },
+    {
+      "path": "/model-papers/upload/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "file (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/FiLe4k14.js"
+      ]
+    },
+    {
+      "path": "/notifications",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DzAMTzGs.js"
+      ]
+    },
+    {
+      "path": "/notifications/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DzAMTzGs.js"
+      ]
+    },
+    {
+      "path": "/notifications/delete-all",
+      "methods": [
+        "DELETE"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DzAMTzGs.js"
+      ]
+    },
+    {
+      "path": "/notifications/read-all",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DzAMTzGs.js"
+      ]
+    },
+    {
+      "path": "/papers",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/Bso1vT72.js"
+      ]
+    },
+    {
+      "path": "/papers/leaderboard/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/Bso1vT72.js"
+      ]
+    },
+    {
+      "path": "/papers/upload/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "file (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/Bso1vT72.js"
+      ]
+    },
+    {
+      "path": "/past-papers/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/nodes/73.BbuEYMhF.js",
+        "js/current/_app/immutable/nodes/89.DpthjYV6.js",
+        "js/nodes/62.CoZIY_FK.js",
+        "js/nodes/77.Cgqbw9EY.js"
+      ]
+    },
+    {
+      "path": "/pdfs/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DEHBxsXW.js"
+      ]
+    },
+    {
+      "path": "/practical-sessions",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/D8xuGZSL.js"
+      ]
+    },
+    {
+      "path": "/practical-sessions/{param}",
+      "methods": [
+        "DELETE",
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/D8xuGZSL.js"
+      ]
+    },
+    {
+      "path": "/practical-sessions/availability",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/D8xuGZSL.js"
+      ]
+    },
+    {
+      "path": "/public-reviews",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "js/current/_app/immutable/chunks/CzfSrzb2.js"
+      ]
+    },
+    {
+      "path": "/public/courses/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "js/current/_app/immutable/chunks/CzfSrzb2.js"
+      ]
+    },
+    {
+      "path": "/public/courses/ol-lessons",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "js/current/_app/immutable/chunks/CzfSrzb2.js"
+      ]
+    },
+    {
+      "path": "/public/tutes",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "js/current/_app/immutable/chunks/CzfSrzb2.js"
+      ]
+    },
+    {
+      "path": "/purchases/bands/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CdMOgjNl.js"
+      ]
+    },
+    {
+      "path": "/purchases/bands/free-eligibility",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/CdMOgjNl.js"
+      ]
+    },
+    {
+      "path": "/purchases/bank-transfer/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "file (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/purchases/bank-transfer/0",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "file (form)",
+        "tute_ids[] (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/wkVuIK41.js"
+      ]
+    },
+    {
+      "path": "/purchases/online-transfer/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/purchases/tutes",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/register",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/request-otp-v2/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/reviews",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/student/events",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DWKMon6r.js"
+      ]
+    },
+    {
+      "path": "/student/events/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/DWKMon6r.js"
+      ]
+    },
+    {
+      "path": "/telegram",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_Cyimzgvh.js",
+        "js/current/_app/immutable/chunks/CzfSrzb2.js"
+      ]
+    },
+    {
+      "path": "/tutes",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/wkVuIK41.js"
+      ]
+    },
+    {
+      "path": "/tutes/delivery-fee",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "file (form)",
+        "tute_ids[] (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/wkVuIK41.js"
+      ]
+    },
+    {
+      "path": "/tutes/purchased?page={param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/wkVuIK41.js"
+      ]
+    },
+    {
+      "path": "/user",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/B_dqzIxx.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/user/delete",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "password"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/user/id",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [
+        "file (form)"
+      ],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/v2/purchases/online-transfer/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/validate-otp-v2/{param}",
+      "methods": [
+        "POST"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [
+        "otp"
+      ],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/validate-phone-number/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current",
+        "old"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/all/_app_immutable_chunks_B7ab6jJc.js",
+        "js/all/_authapi.js",
+        "js/current/_app/immutable/chunks/CD97E9Hu.js"
+      ]
+    },
+    {
+      "path": "/videos/{param}",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    },
+    {
+      "path": "/videos/{param}/generate-token",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/BoaDJuae.js"
+      ]
+    },
+    {
+      "path": "/zoom/{param}/add-registrant",
+      "methods": [
+        "GET"
+      ],
+      "builds": [
+        "current"
+      ],
+      "bodyFields": [],
+      "files": [
+        "js/current/_app/immutable/chunks/B_dqzIxx.js"
+      ]
+    }
+  ]
+}

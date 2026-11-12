@@ -1,0 +1,1 @@
+import{s as t,o as s}from"../chunks/BitTBVkN.js";import{S as e,i as a}from"../chunks/Bc7KUd1A.js";import{g as r}from"../chunks/IW6k_RM6.js";function i(n){return s(()=>{r("/admin/payments/pending")}),[]}class c extends e{constructor(o){super(),a(this,o,i,null,t,{})}}export{c as component};
